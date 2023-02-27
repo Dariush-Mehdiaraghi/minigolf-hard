@@ -10,23 +10,16 @@
 </svelte:head>
 
 <section>
-	<h1>Minigolf aber Hard ⛳️</h1>
+	<h1>Minigolf Hard</h1>
 	<div id="opencall">
-		<p>Big things comin..
-		</p>
-		<img src="https://media.tenor.com/-FZ2FAIUjt0AAAAS/fancy-dog-fancy.gif" alt="gif" width="300" height="300">
-
+		<button><a href="https://drive.google.com/file/d/1npSBJebLKHKQ3EQM7ksW94AslMda4fHE/view"target="_blank">Open Call</a></button>
+		<button><a href="https://minigolf.notion.site/Minigolf-Hard-7cbfdaae07594f61938d4e07e8b52f22"target="_blank">Offener Prozess</a></button>
+		<button><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp"target="_blank">Chat</a></button>
 	</div>
+
+	<img src="https://media.tenor.com/-FZ2FAIUjt0AAAAS/fancy-dog-fancy.gif" alt="gif" width="300" height="300">
 
 </section>
 
 <style scoped>
-	h1{
-		font-size: 1.5em;
-		text-align: center;
-
-	}
-#opencall{
-		text-align: center;
-	}
 </style>

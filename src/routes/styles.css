@@ -1,5 +1,16 @@
 @import '@fontsource/fira-mono';
 
+@font-face {
+	font-family: "CameraPlain";
+	src: url("../fonts/ABCCameraPlain-Medium-Trial.woff") format("woff");
+  }
+
+  @font-face {
+	font-family: "Camera";
+	src: url("../fonts/ABCCamera-Bold-Trial.woff") format("woff");
+  }
+
+
 :root {
 	--font-body: Helvetica, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -18,5 +29,42 @@
 
 body {
 	min-height: 100vh;
+	font-family: CameraPlain;
+	color: black;
+	font-size: 18pt;
+}
+
+h1{
+	font-family: Camera;
+	font-size: 5em;
+	margin-top: 0px;
+	margin-bottom: 1em;
+	text-align: left;
+}
+
+button{
+	background-color: black;
+	color: white;
+	border: none;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: #343434;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+#opencall{
+	display: block;
 }
 
