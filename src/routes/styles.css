@@ -32,6 +32,7 @@ body {
 	font-family: CameraPlain;
 	color: black;
 	font-size: 18pt;
+	margin: 0;
 }
 
 h1{
@@ -40,31 +41,59 @@ h1{
 	margin-top: 0px;
 	margin-bottom: 1em;
 	text-align: left;
-}
 
-button{
+}
+.link-collection{
+	display: flex;
+	gap: 2em;
+	flex-direction: column;
+	align-items: start;
+}
+.link-collection a{
 	background-color: black;
 	color: white;
-	border: none;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	display: block;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
-
-button:hover{
-    background-color: #343434;
-}
-
-a{
-	color: white;
 	text-decoration: none;
+	border: none;
+	padding: 1em;
+	padding-right: 4em;
+	text-transform: uppercase;
+	display: block;
+	width: min-content;
+	white-space: nowrap;
+	border-radius: 0 50px 50px 0;
+	position: relative;
+	overflow: visible;
 }
 
-#opencall{
+.link-collection a:hover{
+    background-color: #343434;
+
+}
+.link-collection a::after{
+    	/* a circle at the right that grows when hovering */
+	content: "";
 	display: block;
+	position: absolute;
+	height: 100%;
+	aspect-ratio: 1/1;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	z-index: -1;
+	border-radius: 50%;
+	background-color: inherit;
+	transition: all 0.2s ease-in-out, height 0.5s ease;
+
+}
+/* style after when hovering the link */
+.link-collection a:hover::after{
+	height: 150%;
+}
+
+img{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	opacity: .2;
 }
 
