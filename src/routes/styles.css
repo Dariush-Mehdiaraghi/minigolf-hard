@@ -64,11 +64,10 @@ h4{
 
 .link-collection{
 	display: flex;
-	gap: 2em;
+	gap: 10vh;
 	flex-direction: column;
-	align-items: start;
+	align-items: center;
 }
-
 
 .link-collection a{
 	background-color: black;
@@ -112,6 +111,18 @@ h4{
 	height: 150%;
 }
 
+.first{
+	transform: translate(-30vw) rotate(-20deg);
+}
+
+.second{
+	transform: translate(5vw) rotate(10deg);
+}
+
+.third{
+	transform: translate(20vw) rotate(-15deg);
+}
+
 img{
 	position: fixed;
 	bottom: 0;
@@ -123,3 +134,21 @@ img{
 	opacity: 0;
 }
 
+@media only screen and (max-width: 100px) {
+	body {
+	  font-size: 16pt;
+	}
+  }
+
+@media only screen and (max-width: 800px) {
+	body {
+	  font-size: 14pt;
+	}
+  }
+
+  @media only screen and (max-width: 600px) {
+
+	h1{
+		font-size: 3em;
+	}
+  }
