@@ -40,15 +40,36 @@ h1{
 	font-size: 5em;
 	margin-top: 0px;
 	margin-bottom: 1em;
-	text-align: left;
+	text-align: center;
 
 }
+
+h4{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-family: CameraPlain;
+	font-size: 0.75em;
+	margin-top: 0px;
+	margin-bottom: 1em;
+	text-align: center;
+
+}
+
+.link-wrapper{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 .link-collection{
 	display: flex;
 	gap: 2em;
 	flex-direction: column;
 	align-items: start;
 }
+
+
 .link-collection a{
 	background-color: black;
 	color: white;
@@ -66,7 +87,8 @@ h1{
 }
 
 .link-collection a:hover{
-    background-color: #343434;
+    background-color: black;
+	font-style: italic;
 
 }
 .link-collection a::after{
@@ -94,6 +116,10 @@ img{
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	opacity: .2;
+	opacity: 0;
+}
+
+.smally{
+	opacity: 0;
 }
 
