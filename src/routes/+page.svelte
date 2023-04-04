@@ -17,7 +17,7 @@
 		<a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp"target="_blank" class="second">Whatsapp Chat</a>
 		<a href="https://minigolf.notion.site/Minigolf-Hard-7cbfdaae07594f61938d4e07e8b52f22"target="_blank" class="third">Informationen auf Notion</a>
 	</div>
-	<div class="smally"><a href="https://www.zsonline.ch/2023/03/31/minigolf-auf-der-hardgutbrache"target="_blank">SZ</a></div>
+	<div class="smally"><a href="https://www.zsonline.ch/2023/03/31/minigolf-auf-der-hardgutbrache"target="_blank">zsonline</a></div>
 
 	<img src="https://media.tenor.com/-FZ2FAIUjt0AAAAS/fancy-dog-fancy.gif" alt="gif" width="300" height="300">
 
