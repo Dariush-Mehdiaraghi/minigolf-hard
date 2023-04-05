@@ -1,7 +1,5 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	
 </script>
 
 <svelte:head>
@@ -18,9 +16,6 @@
 		<a href="https://minigolf.notion.site/Minigolf-Hard-7cbfdaae07594f61938d4e07e8b52f22"target="_blank" class="third">Informationen auf Notion</a>
 	</div>
 	<div class="smally"><a href="https://www.zsonline.ch/2023/03/31/minigolf-auf-der-hardgutbrache"target="_blank">zsonline</a></div>
-
-	<img src="https://media.tenor.com/-FZ2FAIUjt0AAAAS/fancy-dog-fancy.gif" alt="gif" width="300" height="300">
-
 	<h4>Verein Minigolf Hard, Hardgutstrasse 7, 8048 Zürich</h4>
 	
 </section>
