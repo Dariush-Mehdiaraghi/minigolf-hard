@@ -13,7 +13,7 @@
 	<h1>Minigolf Hard</h1>
 	
 	<div class="link-collection">
-		<a href="https://minigolf.notion.site/Minigolf-Hard-7cbfdaae07594f61938d4e07e8b52f22"target="_blank" class="first">Instagram</a>
+		<a href="https://www.instagram.com/minigolfhard/"target="_blank" class="first">Instagram</a>
 		<a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp"target="_blank" class="second">Whatsapp Chat</a>
 		<a href="https://minigolf.notion.site/Minigolf-Hard-7cbfdaae07594f61938d4e07e8b52f22"target="_blank" class="third">Informationen auf Notion</a>
 	</div>
