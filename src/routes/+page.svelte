@@ -1,5 +1,5 @@
 <script>
-	import videofile from '$lib/images/MGH_Logo_GIF_loop.mp4';
+	import videofile from '$lib/images/MGH_Logo_GIF_loop.gif';
 	import bildli from '$lib/images/bounce.png';
 </script>
 
@@ -12,15 +12,9 @@
 
 	<div class="div-bounce x">
 		<img class="img-bounce y" src={bildli} alt="face" />
-	  </div>
-
-	<div>
-		<video class="video-size" autoplay muted loop>
-			<track kind="captions">
-			<source src={videofile}>
-			Your browser does not support the video tag.
-		</video>
 	</div>
+	
+	<img class="gif" src={videofile} alt="logo" />	
 
 	<div class="under">
 		<h1>Eröffnungsfest am 10. Juni ab 14:00 Uhr.</h1>
