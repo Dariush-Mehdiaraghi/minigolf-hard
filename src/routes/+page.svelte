@@ -1,5 +1,6 @@
 <script>
-	
+	import videofile from '$lib/images/MGH_Logo_GIF_loop.mp4';
+	import bildli from '$lib/images/bounce.png';
 </script>
 
 <svelte:head>
@@ -10,13 +11,13 @@
 <section>
 
 	<div class="div-bounce x">
-		<img class="img-bounce y" src="../src/lib/images/bounce.png" alt="face" />
+		<img class="img-bounce y" src={bildli} alt="face" />
 	  </div>
 
 	<div>
 		<video class="video-size" autoplay muted loop>
 			<track kind="captions">
-			<source src="../src/lib/images/MGH_Logo_GIF_loop.mp4">
+			<source src={videofile}>
 			Your browser does not support the video tag.
 		</video>
 	</div>
