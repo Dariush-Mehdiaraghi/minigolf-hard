@@ -8,16 +8,32 @@
 </svelte:head>
 
 <section>
-	<h1>Minigolf Hard</h1>
-	
-	<div class="link-collection">
-		<a href="https://www.instagram.com/minigolfhard/"target="_blank" class="first">Instagram</a>
-		<a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp"target="_blank" class="second">Whatsapp Chat</a>
-		<a href="https://minigolf.notion.site/Minigolf-Hard-7cbfdaae07594f61938d4e07e8b52f22"target="_blank" class="third">Informationen auf Notion</a>
+
+	<div class="div-bounce x">
+		<img class="img-bounce y" src="../src/lib/images/bounce.png" alt="face" />
+	  </div>
+
+	<div>
+		<video class="video-size" autoplay muted loop>
+			<track kind="captions">
+			<source src="../src/lib/images/MGH_Logo_GIF_loop.mp4">
+			Your browser does not support the video tag.
+		</video>
 	</div>
-	<div class="smally"><a href="https://www.zsonline.ch/2023/03/31/minigolf-auf-der-hardgutbrache"target="_blank">zsonline</a></div>
+
+	<div class="under">
+		<h1>Eröffnungsfest am 10. Juni ab 14:00 Uhr.</h1>
+	
+	<h3>
+		<a href="https://www.instagram.com/minigolfhard/"target="_blank" class="first">Instagram</a>
+		 – 
+		<a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp"target="_blank" class="second">Whatsapp Chat</a>
+	</h3>
+
 	<h4>Verein Minigolf Hard, Hardgutstrasse 7, 8048 Zürich</h4>
 	
+	
+	</div>
 </section>
 
 <style scoped>
