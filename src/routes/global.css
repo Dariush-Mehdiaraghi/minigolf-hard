@@ -31,6 +31,7 @@ body {
 	--green-main: rgb(42, 180, 116);
 	--yellow-main: #e1ff01;
 	--blue-main: #7994ff;
+	--pink-main: #EA9AC3;
 	font-family: var(--font-body);
 	color: var(--color-text);
 }

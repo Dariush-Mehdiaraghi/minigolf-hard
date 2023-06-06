@@ -1,5 +1,5 @@
 <script>
-	import content from '$lib/content/content.json';
+	import content from '$lib/content/content';
     const description = content.about.description
 </script>
 <section id="about">
