@@ -1,5 +1,5 @@
 import tschinggeFrisbee from '../images/withBackground/tschinggeFrisbee.png';
-import bälle from '../images/withBackground/bälle.png';
+import bälle from '../images/withBackground/Bälle.png';
 const content: { [x: string]: any; smallSections: SmallSectionProps[] } = {
 	about: {
 		title: 'About',
