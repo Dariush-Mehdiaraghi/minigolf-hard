@@ -1,10 +1,10 @@
 <script>
 	import content from '$lib/content/content';
     const description = content.about.description
-  import blueBall from '$lib/images/blueBall.svg';
-  import greenBall from '$lib/images/greenBall.svg';
-  import yellowBall from '$lib/images/yellowBall.svg';
-  import greenBallFriendly from '$lib/images/greenBallFriendly.svg';
+  import blueBall from '$lib/images/BlueBall.svg';
+  import greenBall from '$lib/images/GreenBall.svg';
+  import yellowBall from '$lib/images/YellowBall.svg';
+  import greenBallFriendly from '$lib/images/GreenBallFriendly.svg';
 </script>
 <section id="about">
     <img src={blueBall} alt="blue minigolf ball illustration"/>
