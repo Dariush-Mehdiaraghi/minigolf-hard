@@ -38,7 +38,7 @@ const content: { [x: string]: any; smallSections: SmallSectionProps[] } = {
 
 				{
 					size: 'm',
-					text: 'Betreuter Betrieb mit Bar bei gutem Wetter an folgenden Tagen<br><br>  MI  16 – 22 Uhr<br>FR  16 – 22 Uhr<br>SA  14 – 20 Uhr<br>SO  12 – 18 Uhr'
+					text: 'Betreuter Betrieb mit Bar bei gutem Wetter an folgenden Tagen<br><br>  MI  16 – 22 Uhr<br>FR  16 – 22 Uhr<br>SA  14 – 22 Uhr<br>SO  12 – 18 Uhr'
 				},
 				{ size: 'm', text: 'ADRESSE' },
 				{ size: 'm', text: 'Verein Minigolf Hard Hardgutstrasse 7 8048 Zürich' },
