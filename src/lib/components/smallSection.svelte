@@ -36,7 +36,7 @@
 			max-width: 700px;
 			text-align: center;
 		}
-		img{
+		img {
 			width: 100%;
 		}
 	}

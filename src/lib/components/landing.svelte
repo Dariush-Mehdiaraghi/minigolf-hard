@@ -1,5 +1,6 @@
 <script>
 	import videofile from '$lib/images/MGH_Logo_GIF_loop.gif';
+	import RealtimeIsItOpenNow from './realtimeIsItOpenNow.svelte';
 </script>
 
 <section id="landing">
@@ -26,6 +27,7 @@
 
 		<h4>Verein Minigolf Hard, Hardgutstrasse 7, 8048 Zürich</h4>
 	</div> -->
+	<RealtimeIsItOpenNow />
 </section>
 <style lang="scss" scoped>
 	#landing{
