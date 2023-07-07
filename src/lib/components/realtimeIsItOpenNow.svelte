@@ -1,12 +1,12 @@
-<script lang="ts">
+<script lang="ts" >
 	import PublicGoogleSheetsParser from 'public-google-sheets-parser';
 
 	const spreadsheetId = '1DWzdj3dfXAUQ0NJtNxDfqWvW6AeO8LcTMXUUZeGU4XU';
 	// https://docs.google.com/spreadsheets/d/1DWzdj3dfXAUQ0NJtNxDfqWvW6AeO8LcTMXUUZeGU4XU/edit?usp=sharing
 	// 1. You can pass spreadsheetId when instantiating the parser:
-	const parser = new PublicGoogleSheetsParser(spreadsheetId);
+	const parser = new PublicGoogleSheetsParser();
 	let isItOpen = false;
-	parser.parse().then((items: { datum: string; isOpen: boolean }[]) => {
+	parser.parse(spreadsheetId).then((items: { datum: string; isOpen: boolean }[]) => {
 		console.log(items);
 		const todaysItem = items.find((item) => {
 			const date = new Date(item.datum);
@@ -18,7 +18,6 @@
 			);
 		});
 		isItOpen = !!todaysItem?.isOpen;
-		// items should be [{"a":1,"b":2,"c":3},{"a":4,"b":5,"c":6},{"a":7,"b":8,"c":9}]
 	});
 </script>
 
