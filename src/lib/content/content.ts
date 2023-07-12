@@ -1,6 +1,24 @@
 import tschinggeFrisbee from '../images/withBackground/tschinggeFrisbee.png';
 import bälle from '../images/withBackground/Bälle.png';
-const content: { [x: string]: any; smallSections: SmallSectionProps[] } = {
+const content = {
+	linksPage: {
+		title: 'Links',
+		description: '',
+		links: [
+			{
+				title: 'Anmeldung Minigolf Hard Turnier 2023',
+				url: 'https://forms.gle/RU3d3jDHDbpY1N696'
+			},
+			{
+				title: 'Whatsapp Chat',
+				url: 'https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp'
+			},
+			{
+				title: 'Zur Hauptseite',
+				url: 'https://minigolfhard.ch/'
+			}
+		]
+	},
 	about: {
 		title: 'About',
 		description:
@@ -43,7 +61,10 @@ const content: { [x: string]: any; smallSections: SmallSectionProps[] } = {
 				{ size: 'm', text: 'ADRESSE' },
 				{ size: 'm', text: 'Verein Minigolf Hard Hardgutstrasse 7 8048 Zürich' },
 				{ size: 'm', text: 'KONTAKT' },
-				{ size: 'm', text: 'minigolf.hard@gmail.com <br/> <a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noreferrer">Instagram @minigolfhard</a><br/> <a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noreferrer">Whatsapp Chat →</a>' }
+				{
+					size: 'm',
+					text: 'minigolf.hard@gmail.com <br/> <a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noreferrer">Instagram @minigolfhard</a><br/> <a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noreferrer">Whatsapp Chat →</a>'
+				}
 			]
 		},
 		// {
@@ -55,8 +76,7 @@ const content: { [x: string]: any; smallSections: SmallSectionProps[] } = {
 			color: 'yellow',
 			align: 'left',
 			contentArray: [{ size: 'm', image: { src: bälle, alt: 'Bälle illustration' } }]
-		},
-		
+		}
 	]
 };
 export default content;

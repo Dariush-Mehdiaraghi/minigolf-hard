@@ -1,7 +1,7 @@
 <script lang="ts">
 	import content from '$lib/content/content';
 	import SmallSection from './smallSection.svelte';
-	const smallSectionsArray  = content.smallSections //as SmallSectionProps[];
+	const smallSectionsArray  = content.smallSections as SmallSectionProps[];
 </script>
 
 <div id="smallSections">
