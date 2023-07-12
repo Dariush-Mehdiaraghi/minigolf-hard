@@ -1,11 +1,12 @@
 <script>
 	import videofile from '$lib/images/MGH_Logo_GIF_loop.gif';
+	import Logo from './logo.svelte';
 	import RealtimeIsItOpenNow from './realtimeIsItOpenNow.svelte';
 </script>
 
 <section id="landing">
-	<img id="logo" src={videofile} alt="logo" />
-
+	<!-- <img id="logo" src={videofile} alt="logo" /> -->
+	<Logo/>
 	<!-- <div class="under">
 		<h1>Eröffnungsfest am 10. Juni ab 14:00 Uhr.</h1>
 
@@ -31,7 +32,7 @@
 </section>
 <style lang="scss" scoped>
 	#landing{
-		height: 100vh;
+		/* height: 100vh; */
 		min-height: 400px;
 		background: rgb(42,180,116);
 		display: grid;
