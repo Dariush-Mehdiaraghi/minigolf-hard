@@ -39,10 +39,10 @@
 			background: black;
 			color: white;
 			border-radius: 2em;
-			line-height: 1em;
+			line-height: 1.2em;
 			padding: 0.8em 1.2em;
 			&:hover {
-				outline: 4px solid var(--pink-main);
+				box-shadow: 0px 10px 0px 0px var(--pink-main);
 			}
 		}
 		#concours {
@@ -52,15 +52,18 @@
 			@keyframes pulse {
 				0% {
 					transform: scale(1);
-					outline: 0px solid transparent;
+					box-shadow: 0px 0px 0px 0px var(--pink-main);
+
 				}
 				50% {
 					transform: scale(1.05);
-					outline: 4px solid var(--pink-main);
+					box-shadow: 0px 10px 0px 0px var(--pink-main);
+
 				}
 				100% {
 					transform: scale(1);
-					outline: 0px solid transparent;
+					box-shadow: 0px 0px 0px 0px var(--pink-main);
+
 
 				}
 			}
