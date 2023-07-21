@@ -59,7 +59,7 @@ const content = {
 					text: 'Betreuter Betrieb mit Bar bei gutem Wetter an folgenden Tagen<br><br>  MI  16 – 21 Uhr<br>FR  16 – 21 Uhr<br>SO  16 – 21 Uhr'
 				},
 				{ size: 'm', text: 'ADRESSE' },
-				{ size: 'm', text: 'Verein Minigolf Hard Hardgutstrasse 7 8048 Zürich' },
+				{ size: 'm', text: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich' },
 				{ size: 'm', text: 'KONTAKT' },
 				{
 					size: 'm',
