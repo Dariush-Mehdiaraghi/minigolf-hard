@@ -1223,6 +1223,11 @@ prettier@^2.8.0:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
   integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
 
+public-google-sheets-parser@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/public-google-sheets-parser/-/public-google-sheets-parser-1.5.4.tgz#08f567989a9018147dcb7e6f4b18ab0a5ea3d45b"
+  integrity sha512-NPjeXtT7Nk+Q9jRt1mdSCtWdqEbZLiNa5+aVR1U/1W/6hfnCAAJF9HSz/UA2VUxo5YEPWxZW3Nxotbt8rU2JWQ==
+
 punycode@^2.1.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"

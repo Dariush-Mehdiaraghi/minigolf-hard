@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PublicGoogleSheetsParser from 'public-google-sheets-parser';
 	let isItOpen = false;
 	let isLoaded = false;
 	const isThisStringToday = (dateString: string) => {
@@ -15,13 +16,12 @@
 		return parsedDate.getTime() === today.getTime();
 	};
 	// Getting Shichtplan as json https://docs.google.com/spreadsheets/d/1DWzdj3dfXAUQ0NJtNxDfqWvW6AeO8LcTMXUUZeGU4XU/edit#gid=1769736678
-	fetch('https://api.fureweb.com/spreadsheets/1DWzdj3dfXAUQ0NJtNxDfqWvW6AeO8LcTMXUUZeGU4XU')
-		.then((res) => res.json())
-		.then((res?: { data?: { date?: string; isOpen?: boolean }[] }) => {
-			const todaysItem = res?.data?.find((item) => item.date && isThisStringToday(item.date));
-			isItOpen = !!todaysItem?.isOpen;
-			isLoaded = true;
-		});
+	const parser = new PublicGoogleSheetsParser('1DWzdj3dfXAUQ0NJtNxDfqWvW6AeO8LcTMXUUZeGU4XU');
+	parser.parse().then((data) => {
+		const todaysItem = data?.find((item) => item.date && isThisStringToday(item.date));
+		isItOpen = !!todaysItem?.isOpen;
+		isLoaded = true;
+	});
 </script>
 
 <section id="is-it-open-widget">
