@@ -1,6 +1,18 @@
 import tschinggeFrisbee from '../images/withBackground/tschinggeFrisbee.png';
 import bälle from '../images/withBackground/Bälle.png';
-const content = {
+type ContentObject = {
+	linksPage: {
+		title: string;
+		description: string;
+		links: { title: string; url: string }[];
+	};
+	about: {
+		title: string;
+		description: string;
+	};
+	smallSections: SmallSectionProps[];
+};
+const content: ContentObject = {
 	linksPage: {
 		title: 'Links',
 		description: '',
@@ -33,20 +45,58 @@ const content = {
 		// 		{ size: 'm', text: 'SAMSTAG 10.06.2023' }
 		// 	]
 		// },
-		// {
-		// 	color: 'yellow',
-		// 	contentArray: [
-		// 		{ size: 'm', text: 'PROGRAMM' },
-		// 		{
-		// 			size: 'm',
-		// 			text: '17:00 Saitün <br> 20:30 Walter Frosch<br>21:30 Labaya<br>23:00 Yuul<br>00:30 Molekühl'
-		// 		},
-		// 		{ size: 'm', text: 'SAMSTAG 10.06.2023' }
-		// 	]
-		// },
+		{
+			color: 'blue',
+			textAlign: 'center',
+			isFullWidth: true,
+
+			contentArray: [
+				{ size: 'l', text: 'FAQ' },
+				{
+					size: 'm',
+					text: 'Was kostet der Spass?'
+				},
+				{
+					size: 's',
+					text: 'Nichts! Das Spielen ist komplett gratis. Jedoch sind wir um jeden solidarischen Beitrag froh, um den Platz noch schöner gestalten zu können. TWINT QR-Codes dafür hängen beim roten Container.'
+				},
+				{
+					size: 'm',
+					text: 'Kann ich den Platz reservieren?'
+				},
+				{
+					size: 's',
+					text: 'Der Minigolf Hard ist ein öffentlicher Platz und kann darum nicht reserviert werden. Es sollte aber immer genug Schläger und Bälle, auch für grössere Gruppen haben.'
+				},
+				{
+					size: 'm',
+					text: 'Anfahrt'
+				},
+				{
+					size: 's',
+					text: 'Für Autos gibt es leider keine Parkmöglichkeit. Für Velos haben wir einen Veloständer. Mit dem ÖV kommst du am besten zur Haltestelle <a href="https://maps.app.goo.gl/Di8vWkbk9TCdJMY68" target="_blank" rel="noopener noreferrer"><u>SBB Werkstätte</u></a> oder <a href="https://maps.app.goo.gl/CCvHq8PFzUj2ZJbG9" target="_blank" rel="noopener noreferrer"><u>Herdernstrasse</u></a>.'
+				},
+				{
+					size: 'm',
+					text: 'Wohin mit dem Abfall?'
+				},
+				{
+					size: 's',
+					text: 'Direkt auf der anderen Seite der Strasse hats eine Entsorgungsstelle für Altglas und Metall'
+				},
+				{
+					size: 'm',
+					text: 'Verpflegung'
+				},
+				{
+					size: 's',
+					text: 'Du kannst gerne deine Getränke und Essen mitbringen. Bei gutem Wetter gibts auch Getränke bei der Minibar (siehe unten für Öffnungszeiten).'
+				}
+			]	
+		},
 		{
 			color: 'pink',
-			align: 'left',
+			textAlign: 'left',
 			contentArray: [
 				{ size: 'l', text: 'IMMER OFFEN' },
 				{
@@ -69,12 +119,12 @@ const content = {
 		},
 		// {
 		// 	color: 'pink',
-		// 	align: 'left',
+		// 	textAlign: 'left',
 		// 	contentArray: [{ size: 'm', image: { src: tschinggeFrisbee, alt: 'Pizza illustration' } }]
 		// },
 		{
 			color: 'yellow',
-			align: 'left',
+			textAlign: 'left',
 			contentArray: [{ size: 'm', image: { src: bälle, alt: 'Bälle illustration' } }]
 		}
 	]

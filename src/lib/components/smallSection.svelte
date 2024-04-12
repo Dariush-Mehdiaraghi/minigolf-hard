@@ -3,8 +3,8 @@
 </script>
 
 <section
-	class="small-section"
-	style="text-align: {section.align}; background:var(--{section.color}-main)"
+	class={(section.isFullWidth ? 'full-width' : '') + ' small-section'}
+	style="text-align: {section.textAlign}; background:var(--{section.color}-main)"
 >
 	<p id="about__text">
 		{#each section.contentArray as block}
@@ -19,13 +19,22 @@
 </section>
 
 <style lang="scss" scoped>
+	.full-width {
+		// take the full width in the grid
+		grid-column: 1 / -1;
+	}
 	.small-section {
 		display: grid;
 		place-items: center;
 		padding: 2em;
 		text-align: center;
+		p{
+			max-width: 61ch;
+		}
+
 		.m {
 			font-size: 2em;
+			margin-bottom: 0.5em;
 		}
 		.l {
 			font-size: 3em;
