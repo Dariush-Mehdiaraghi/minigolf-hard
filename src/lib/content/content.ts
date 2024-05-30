@@ -126,6 +126,63 @@ const content: ContentObject = {
 			color: 'yellow',
 			textAlign: 'left',
 			contentArray: [{ size: 'm', image: { src: bälle, alt: 'Bälle illustration' } }]
+		},
+		{
+			color: 'white',
+			textAlign: 'left',
+			isFullWidth: true,
+
+			contentArray: [
+				{ size: 'l', text: 'Unterstützung' },
+				{
+					size: 'm',
+					text: 'Jugendkulturhaus Dynamo'
+				},
+				{
+					size: 's',
+					text: 'Materielle Unterstützung: Partizipative Bau-Phase 2023 und 2024, Sommer Fest 2024 und Betrieb'
+				},
+				{
+					size: 'm',
+					text: 'Sozialdepartement Stadt Zürich'
+				},
+				{
+					size: 's',
+					text: 'Finanzielle Unterstützung: Partizipative Bau-Phase 2023, Sommer Fest 2024'
+				},
+				{
+					size: 'm',
+					text: 'Grün Stadt Zürich'
+				},
+				{
+					size: 's',
+					text: 'Materielle Unterstützung: Partizipative Bau-Phase 2023'
+				},
+				{
+					size: 'm',
+					text: 'Sportamt Stadt Zürich'
+				},
+				{
+					size: 's',
+					text: 'Finanzielle Unterstützung: Infrastruktur 2023'
+				},
+				{
+					size: 'm',
+					text: 'Migros Kulturprozent'
+				},
+				{
+					size: 's',
+					text: 'Finanzielle Unterstützung: Partizipative Bau-Phase 2023, Sommer Fest 2024.'
+				},
+				{
+					size: 'm',
+					text: 'Verein Baustell'
+				},
+				{
+					size: 's',
+					text: 'Materielle Unterstützung, Räumlichkeiten, Prozess'
+				}
+			]	
 		}
 	]
 };
