@@ -18,8 +18,8 @@ const content: ContentObject = {
 		description: '',
 		links: [
 			{
-				title: 'Anmeldung Minigolf Hard Turnier 2023',
-				url: 'https://forms.gle/RU3d3jDHDbpY1N696'
+				title: 'Hardgutbrache',
+				url: 'https://hardgutbrache.ch'
 			},
 			{
 				title: 'Whatsapp Chat',
@@ -28,6 +28,18 @@ const content: ContentObject = {
 			{
 				title: 'Zur Hauptseite',
 				url: 'https://minigolfhard.ch/'
+			},
+			{
+				title: 'Zugang (DE)',
+				url: 'https://drive.proton.me/urls/VS7S4XME8M#E6MUQpBGNBeJ'
+			},
+			{
+				title: 'Access (EN)',
+				url: 'https://drive.proton.me/urls/P1V5ZPGEVG#fZ0gcllfY7EO'
+			},
+			{
+				title: 'Google Maps',
+				url: 'https://maps.app.goo.gl/ksJQ4Lg1bfE5KJxTA'
 			}
 		]
 	},
@@ -91,6 +103,14 @@ const content: ContentObject = {
 				{
 					size: 's',
 					text: 'Du kannst gerne deine Getränke und Essen mitbringen. Bei gutem Wetter gibts auch Getränke bei der Minibar (siehe unten für Öffnungszeiten).'
+				},
+				{
+					size: 'm',
+					text: 'Access / Zugang'
+				},
+				{
+					size: 's',
+					text: 'Viele weitere Informationen zum Zugang zur Hardgutbrache und Minigolf Hard findest du in unserem Zugangsdokument auf Deutsch und English. </br> <a href="https://drive.proton.me/urls/VS7S4XME8M#E6MUQpBGNBeJ" target="_blank" rel="noopener noreferrer"><u>Zugangsdokument (DE)</u></a>, <a href="https://drive.proton.me/urls/P1V5ZPGEVG#fZ0gcllfY7EO" target="_blank" rel="noopener noreferrer"><u>Access Document (EN)</u></a>'
 				}
 			]	
 		},

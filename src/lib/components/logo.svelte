@@ -323,7 +323,8 @@
 
 <style lang="scss" scoped>
 	svg {
-		margin: 50vh 0;
+		margin: 10vh 0;
+		height: 50vh;
 		opacity: 0;
 		max-width: 1300px;
 		animation: fade-in 0.3s ease-in-out forwards;
