@@ -55,19 +55,19 @@
   <div class="box">
     <h2>Bauen</h2>
     <p>
-      Hab ihr eine Idee, was auf der Brache gebaut werden könnte? Ihr könnt an einer Minigolfbahn weiterbauen, Sitzgelegenheiten konzipieren, endlich einen Pizzaofen errichten oder eure Installation aufstellen. Hier ist das Werkzeug, ihr habt die Idee!  
+      Habt ihr eine Idee, was auf der Brache gebaut werden könnte? Ihr könnt an einer Minigolfbahn weiterbauen, Sitzgelegenheiten konzipieren, endlich einen Pizzaofen errichten oder eure Installation aufstellen. Hier ist das Werkzeug, ihr habt die Idee! 
     </p>
   </div>
   <div class="box">
     <h2>Veranstalten</h2>
     <p>
-      Hab ihr eine Idee, was auf der Brache gebaut werden könnte? Ihr könnt an einer Minigolfbahn weiterbauen, Sitzgelegenheiten konzipieren, endlich einen Pizzaofen errichten oder eure Installation aufstellen. Hier ist das Werkzeug, ihr habt die Idee!  
+      Wollt ihr eine öffentliche Veranstaltung auf der Brache organisieren? Egal ob Konzert, Lesung, Workshop, Performance, Kino, Public viewing, Yogasession oder Flohmi... Hier ist der Raum, ihr möchtet organisieren!
     </p>
   </div>
   <div class="box">
     <h2>Pflegen</h2>
     <p>
-      Hab ihr eine Idee, was auf der Brache gebaut werden könnte? Ihr könnt an einer Minigolfbahn weiterbauen, Sitzgelegenheiten konzipieren, endlich einen Pizzaofen errichten oder eure Installation aufstellen. Hier ist das Werkzeug, ihr habt die Idee!  
+      Möchtet ihr die Brache mit uns pflegen und neue Projekte anreissen? Die Grünflächen, die Gemüsebeete und die Werkstatt benötigen viel Care. Wir haben die kleinen und grossen Dinge, ihr möchtet mitwirken!
     </p>
   </div>
   <div class="box-b">
@@ -76,6 +76,12 @@
       <br>Dann meldet euch mit euerer Idee bei 
       <br>
       <br><a href="mailto:minigolf.hard@gmail.com">minigolf.hard@gmail.com</a>
+    </p>
+  </div>
+  <div class="box-kalender">
+    <h2>Kalender</h2>
+    <p>
+      Hast du gewusst, dass du auf <a href="https://hardgutbrache.ch/kalender">hardgutbrache.ch/kalender</a> immer aktuelle Veranstaltungen findest?
     </p>
   </div>
 </div>
@@ -100,6 +106,14 @@
   }
   .box{
     background-color: #EA9AC3;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    padding-bottom: 0.1em;
+  }
+
+  .box-kalender{
+    background-color: #C8DE1E;
     border-radius: 1em;
     padding: 1em;
     margin-top: 1em;
