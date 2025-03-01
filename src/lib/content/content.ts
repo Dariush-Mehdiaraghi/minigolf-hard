@@ -70,7 +70,7 @@ const content: ContentObject = {
 				},
 				{
 					size: 's',
-					text: 'Nichts! Das Spielen ist komplett gratis. Jedoch sind wir um jeden solidarischen Beitrag froh, um den Platz noch schöner gestalten zu können. TWINT QR-Codes dafür hängen beim roten Container.'
+					text: 'Nichts! Das Spielen ist komplett gratis. Jedoch sind wir um jeden solidarischen Beitrag froh, um den Platz noch schöner gestalten zu können. TWINT QR-Codes dafür hängen beim roten Container.<br/><br/> Oder direkt hier: <button id="twint-button" style="width: auto; height: 58px; border-radius: 6px; display: flex; justify-content: center; cursor: pointer; background-color: transparent; border: none; align-items: center; margin: 0 auto; padding-top: 2em;" onclick="window.open(\'https://go.twint.ch/1/e/tw?tw=acq.uuBulCtlRE-mEyd9V5R2A2mvX1TC_FGpSA7qn2tNbarI_bYlZ5Xrt-NeILaJS8jz\', \'_blank\')" > <img style="width: auto; height: 58px" alt="Embedded TWINT button" src="https://go.twint.ch/static/img/button_dark_de.svg"/></button>'
 				},
 				{
 					size: 'm',
