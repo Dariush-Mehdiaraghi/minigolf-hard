@@ -11,6 +11,11 @@ type ContentObject = {
 		description: string;
 	};
 	smallSections: SmallSectionProps[];
+	scoreboard: {
+		title: string;
+		description: string;
+		holes: {id: string, description: string}[];
+	};
 };
 const content: ContentObject = {
 	linksPage: {
@@ -205,6 +210,21 @@ const content: ContentObject = {
 				}
 			]	
 		}
-	]
+	],
+	scoreboard: {
+		title: 'Scoreboard',
+		description: 'Scoreboard description',
+		holes: [
+			{ id: 'L', description: 'L description' },
+			{ id: 'J', description: 'J description' },
+			{ id: 'M', description: 'M description' },
+			{ id: 'K', description: 'K description' },
+			{ id: 'I', description: 'I description' },
+			{ id: 'H', description: 'H description' },
+			{ id: 'A', description: 'A description' },
+			{ id: 'B', description: 'B description' },
+			{ id: 'D', description: 'D description' }
+		]
+	}
 };
 export default content;
