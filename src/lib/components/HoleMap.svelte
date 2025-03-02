@@ -10,7 +10,7 @@
 
     function getHoleColor(holeId: string): string {
         const holeState = gameState.holesState.find(h => h.holeId === holeId);
-        if (!holeState?.scores || holeState.scores.length === 0) {
+        if (!holeState?.scores || holeState.scores.length === 0 || holeState.scores.every(score => score.attempts === 0)) {
             return 'black';
         }
         return '#EA9AC3'; // completed holes are pink

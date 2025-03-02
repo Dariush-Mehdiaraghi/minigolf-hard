@@ -35,6 +35,7 @@ body {
 	--yellow-main: #e1ff01;
 	--blue-main: #7994ff;
 	--pink-main: #EA9AC3;
+	--red-main: #ff6b6b;
 	font-family: var(--font-body);
 	color: var(--color-text);
 }
