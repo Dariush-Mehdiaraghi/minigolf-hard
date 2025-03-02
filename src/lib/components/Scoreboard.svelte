@@ -136,13 +136,15 @@
 </main>
 
 <style lang="scss">
+	:global(:root) {
+		touch-action: pan-x pan-y;
+	}
 	:global(body) {
 		background-color: var(--green-main);
 	}
 	main {
 		display: grid;
 		place-items: center;
-		/* background: transparent; */
 	}
 	#scoreboard {
 		display: grid;

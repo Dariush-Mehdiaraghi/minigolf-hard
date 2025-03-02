@@ -32,15 +32,11 @@
 		box-sizing: border-box;
 		margin-top: 3em;
 		width: 100%;
-		padding: 0 1em;
+		padding: 1em;
 		display: flex;
 		flex-direction: column;
 		gap: 1.5em;
 		max-width: 500px;
-		h1 {
-			text-align: center;
-			border-bottom: 1px dotted black ;
-		}
 	}
 	.total-attempts {
 		font-weight: bold;

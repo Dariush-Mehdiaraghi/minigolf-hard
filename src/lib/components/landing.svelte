@@ -13,7 +13,7 @@
 		/* height: 100vh; */
 		position: relative;
 		min-height: 400px;
-		background: rgb(42, 180, 116);
+		background: var(--green-main);
 		display: grid;
 		place-items: center;
 	}
