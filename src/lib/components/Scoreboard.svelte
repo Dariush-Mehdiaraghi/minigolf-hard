@@ -256,6 +256,20 @@
 		&::backdrop {
 			background-color: rgba(0, 0, 0, 0.5);
 		}
+		animation: fadeIn 0.2s ease-in-out;
+		transform-origin: center;
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+				transform: translate(-50%, -50%) scale(0.9);
+				filter: blur(10px);
+			}
+			to {
+				opacity: 1;
+				transform: translate(-50%, -50%) scale(1);
+				filter: blur(0px);
+			}
+		}
 	}
 	.hole-title {
 		font-size: 2em;

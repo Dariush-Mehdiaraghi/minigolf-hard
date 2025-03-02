@@ -302,7 +302,9 @@
         
     }
 	g {
-		transition: fill 0.3s ease;
+        rect{
+            transition: all 0.3s ease-in-out;
+        }
 
 		&:hover {
 			opacity: 0.8;
