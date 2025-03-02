@@ -283,6 +283,7 @@
 		fill: none;
 		max-width: 500px;
 		cursor: pointer;
+		padding-top: 1em;
 	}
     g:focus {
         outline: none;

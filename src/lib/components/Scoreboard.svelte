@@ -4,7 +4,8 @@
 	import { gameStore } from '$lib/stores/gameStore';
 	import ScoreboardTable from './ScoreboardTable.svelte';
 	import ScoreBoardH1 from './ScoreBoardH1.svelte';
-
+	import { draw, fade, scale } from 'svelte/transition';
+	import { elasticOut, cubicInOut } from 'svelte/easing';
 	// Local UI state
 	let setupModalIsOpen = false;
 	let newPlayerName = '';
@@ -26,6 +27,12 @@
 
 	function addPlayer() {
 		if (newPlayerName.trim()) {
+			const nameOccurences = $gameStore.users.filter(
+				(user) => user.userName === newPlayerName || user.userName.startsWith(newPlayerName)
+			).length;
+			if (nameOccurences > 0) {
+				newPlayerName = newPlayerName + ` (${nameOccurences + 1})`;
+			}
 			gameStore.addPlayer(newPlayerName);
 			newPlayerName = '';
 		}
@@ -44,6 +51,18 @@
 		gameStore.updateScore(openHoleState.holeId, score.userName, increment);
 		// No need to manually update openHoleState as it's now reactive
 	}
+	const grow = (
+		node: HTMLElement,
+		params?: { delay?: number; duration?: number; easing?: (t: number) => number }
+	) => {
+		const initialHeight = node.clientHeight;
+		return {
+			delay: params?.delay || 0,
+			duration: params?.duration || 300,
+			easing: params?.easing || cubicInOut,
+			css: (t: number, u: number) => `max-height: ${t * initialHeight}px; filter: blur(${u * 7}px); opacity: ${t};`
+		};
+	};
 </script>
 
 <main>
@@ -51,21 +70,25 @@
 		<ScoreBoardH1>{content.scoreboard.title}</ScoreBoardH1>
 		{#if $gameStore.users.length === 0}
 			<button
+				transition:grow
 				id="start-btn"
 				on:click={() => {
 					setupModalIsOpen = true;
 				}}>+ Neues Spiel</button
 			>
 		{:else}
-			<button
-				id="reset-btn"
-				on:click={() => {
-					if (confirm('Möchten Sie wirklich das Spiel zurücksetzen?')) {
-						gameStore.resetGame();
-						selectedHoleId = null;
-					}
-				}}>Spiel zurücksetzen</button
-			>
+			<div class="scoreboard-top-menu" transition:grow >
+				<button
+				
+					id="reset-btn"
+					on:click={() => {
+						if (confirm('Möchten Sie wirklich das Spiel zurücksetzen?')) {
+							gameStore.resetGame();
+							selectedHoleId = null;
+						}
+					}}>Spiel zurücksetzen</button
+				>
+			</div>
 		{/if}
 
 		<dialog id="setup-modal" open={setupModalIsOpen}>
@@ -74,15 +97,15 @@
 					<input
 						type="text"
 						bind:value={newPlayerName}
-						placeholder="Neuer Spieler"
+						placeholder="Namen hinzufügen"
 						on:keydown={(e) => e.key === 'Enter' && addPlayer()}
 					/>
 					<button on:click={addPlayer} disabled={newPlayerName.trim() === ''}>+</button>
 				</div>
 
 				<div class="player-list">
-					{#each $gameStore.users as user, i}
-						<div class="player-row">
+					{#each $gameStore.users as user, i (user.userName)}
+						<div class="player-row" transition:grow>
 							<span>{user.userName}</span>
 							<button class="delete-btn" on:click={() => gameStore.deletePlayer(i)}>Löschen</button>
 						</div>
@@ -145,6 +168,7 @@
 	main {
 		display: grid;
 		place-items: center;
+		
 	}
 	#scoreboard {
 		display: grid;
@@ -176,15 +200,15 @@
 	#reset-btn {
 		background-color: var(--red-main);
 		font-size: 1.5em;
-		margin-bottom: 1em;
+	}
+	.scoreboard-top-menu {
+		overflow: hidden;
 	}
 
 	.dialog-content {
-		padding: 20px;
-		min-width: 300px;
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 1em;
 	}
 
 	.player-input {
@@ -202,13 +226,16 @@
 	.player-list {
 		display: flex;
 		flex-direction: column;
-		gap: 1em;
 	}
 
 	.player-row {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 1em;
+		overflow: hidden;
+		height: 3em;
+		box-sizing: border-box;
 	}
 
 	.dialog-buttons {
@@ -229,6 +256,7 @@
 
 	.start-btn {
 		background-color: var(--yellow-main);
+		white-space: nowrap;
 		&:disabled {
 			opacity: 0.5;
 		}
@@ -258,6 +286,7 @@
 		}
 		animation: fadeIn 0.2s ease-in-out;
 		transform-origin: center;
+		min-width: 300px;
 		@keyframes fadeIn {
 			from {
 				opacity: 0;

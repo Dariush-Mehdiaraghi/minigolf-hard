@@ -18,8 +18,11 @@
 			<div class="hole-grid">
 				{#each $gameStore.holesState as hole}
 					<div class="hole">
-						<td>{hole.holeId}</td>-
-						<td>{hole.scores.find((score) => score.userName === user.userName)?.attempts}</td>
+						<div class="hole-id">{hole.holeId}</div>
+						<div>-</div>
+						<div class="hole-attempts">
+							{hole.scores.find((score) => score.userName === user.userName)?.attempts}
+						</div>
 					</div>
 				{/each}
 			</div>
@@ -57,11 +60,18 @@
 		.hole-grid {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
+			gap: 0.5em;
 			.hole {
 				display: flex;
 				flex-direction: row;
 				align-items: center;
 				justify-content: center;
+				text-align: center;
+			}
+			.hole-id,
+			.hole-attempts {
+			
+				width: 1em;
 			}
 		}
 	}
