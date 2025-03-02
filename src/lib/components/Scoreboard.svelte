@@ -135,11 +135,14 @@
 	</div>
 </main>
 
-<style lang="scss" scoped>
+<style lang="scss">
+	:global(body) {
+		background-color: var(--green-main);
+	}
 	main {
 		display: grid;
 		place-items: center;
-		background-color: var(--green-main);
+		/* background: transparent; */
 	}
 	#scoreboard {
 		display: grid;
