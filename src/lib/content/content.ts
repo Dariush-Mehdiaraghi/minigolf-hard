@@ -223,7 +223,10 @@ const content: ContentObject = {
 			{ id: 'H', description: 'H description' },
 			{ id: 'A', description: 'A description' },
 			{ id: 'B', description: 'B description' },
-			{ id: 'D', description: 'D description' }
+			{ id: 'D', description: 'D description' },
+			{ id: 'F', description: 'F description' },
+			{ id: 'E', description: 'E description' },
+			{ id: 'G', description: 'G description' }
 		]
 	}
 };

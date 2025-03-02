@@ -1,29 +1,19 @@
 <script lang="ts">
 	import content from '$lib/content/content';
 	import HoleMap from './HoleMap.svelte';
-	import { onMount } from 'svelte';
-	export let gameState: GameState | undefined;
-	onMount(() => {
-		if (typeof window !== 'undefined') {
-			const savedState = localStorage.getItem('gameState');
-			if (savedState) {
-				console.log(JSON.parse(savedState));
-				gameState = JSON.parse(savedState);
-			} else {
-				resetGame();
-			}
-		}
-	});
-	function resetGame() {
-		gameState = {
-			isFinished: false,
-			users: [],
-			holesState: []
-		};
-	}
+	import { gameStore } from '$lib/stores/gameStore';
+	import ScoreboardTable from './ScoreboardTable.svelte';
+	import ScoreBoardH1 from './ScoreBoardH1.svelte';
+
+	// Local UI state
 	let setupModalIsOpen = false;
 	let newPlayerName = '';
-	let openHoleState: HoleState | undefined = undefined;
+	let selectedHoleId: string | null = null;
+
+	// Make openHoleState reactive by deriving it from the store and selectedHoleId
+	$: openHoleState = selectedHoleId
+		? $gameStore.holesState.find((hole) => hole.holeId === selectedHoleId)
+		: undefined;
 
 	function sanitizeAttempts(value: string | number): number {
 		// Convert to number and handle NaN
@@ -35,84 +25,49 @@
 	}
 
 	function addPlayer() {
-		if (gameState && newPlayerName.trim()) {
-			gameState.users = [
-				...gameState.users,
-				{
-					userName: newPlayerName.trim(),
-					totalAttempts: 0,
-					currentRank: gameState.users.length + 1
-				}
-			];
+		if (newPlayerName.trim()) {
+			gameStore.addPlayer(newPlayerName);
 			newPlayerName = '';
 		}
 	}
 
-	function deletePlayer(index: number) {
-		if (!gameState) return;
-		gameState.users = gameState.users.filter((_, i) => i !== index);
-	}
-
 	function startGame() {
-		if (!gameState) return;
-		if (gameState.users.length > 0) {
+		if ($gameStore.users.length > 0) {
 			addPlayer();
 			setupModalIsOpen = false;
-			gameState.holesState = content.scoreboard.holes.map((hole) => ({
-				holeId: hole.id,
-				scores: gameState!.users.map((user) => ({
-					userName: user.userName,
-					attempts: 0
-				}))
-			}));
-			// Additional game start logic can be added here
-		}
-	}
-	$: {
-		if (typeof window !== 'undefined' && gameState) {
-			// store the gameState in local storage
-
-			localStorage.setItem('gameState', JSON.stringify(gameState));
+			gameStore.startGame();
 		}
 	}
 
 	function updateScore(score: any, increment: boolean) {
-		if (!gameState) return;
-		if (increment) {
-			if (score.attempts < 7) score.attempts++;
-		} else {
-			if (score.attempts > 1) score.attempts--;
-		}
-		// Force reactivity update by creating a new array reference
-		gameState.holesState = [...gameState.holesState];
-
-		// Also update the openHoleState reference to ensure UI updates
-		if (openHoleState) {
-			openHoleState = { ...openHoleState, scores: [...openHoleState.scores] };
-		}
+		if (!openHoleState) return;
+		gameStore.updateScore(openHoleState.holeId, score.userName, increment);
+		// No need to manually update openHoleState as it's now reactive
 	}
 </script>
 
-<div id="scoreboard">
-	<h1>{content.scoreboard.title}</h1>
-	{#if gameState?.users.length === 0}
-		<button
-			id="start-btn"
-			on:click={() => {
-				setupModalIsOpen = true;
-			}}>+ Neues Spiel</button
-		>
-	{:else}
-		<button
-			id="reset-btn"
-			on:click={() => {
-				if (confirm('Möchten Sie wirklich das Spiel zurücksetzen?')) {
-					resetGame();
-				}
-			}}>Spiel zurücksetzen</button
-		>
-	{/if}
-	{#if gameState}
+<main>
+	<div id="scoreboard">
+		<ScoreBoardH1>{content.scoreboard.title}</ScoreBoardH1>
+		{#if $gameStore.users.length === 0}
+			<button
+				id="start-btn"
+				on:click={() => {
+					setupModalIsOpen = true;
+				}}>+ Neues Spiel</button
+			>
+		{:else}
+			<button
+				id="reset-btn"
+				on:click={() => {
+					if (confirm('Möchten Sie wirklich das Spiel zurücksetzen?')) {
+						gameStore.resetGame();
+						selectedHoleId = null;
+					}
+				}}>Spiel zurücksetzen</button
+			>
+		{/if}
+
 		<dialog id="setup-modal" open={setupModalIsOpen}>
 			<div class="dialog-content">
 				<div class="player-input">
@@ -126,15 +81,15 @@
 				</div>
 
 				<div class="player-list">
-					{#each gameState?.users as user, i}
+					{#each $gameStore.users as user, i}
 						<div class="player-row">
 							<span>{user.userName}</span>
-							<button class="delete-btn" on:click={() => deletePlayer(i)}>Löschen</button>
+							<button class="delete-btn" on:click={() => gameStore.deletePlayer(i)}>Löschen</button>
 						</div>
 					{/each}
 				</div>
 				<div class="dialog-buttons">
-					<button class="start-btn" disabled={gameState?.users.length === 0} on:click={startGame}
+					<button class="start-btn" disabled={$gameStore.users.length === 0} on:click={startGame}
 						>Spiel Starten</button
 					>
 					<button
@@ -151,7 +106,7 @@
 			<div class="dialog-content">
 				<h2 class="hole-title">{openHoleState?.holeId}</h2>
 				{#if openHoleState}
-					{#each openHoleState?.scores as score}
+					{#each openHoleState.scores as score}
 						<div class="player-row">
 							<span>{score.userName}</span>
 							<div class="score-input">
@@ -172,18 +127,26 @@
 						</div>
 					{/each}
 				{/if}
-				<button class="close-btn" on:click={() => (openHoleState = undefined)}>Schliessen</button>
+				<button class="close-btn" on:click={() => (selectedHoleId = null)}>Schliessen</button>
 			</div>
 		</dialog>
-		<HoleMap
-			{gameState}
-			onHoleSelected={(holeId) =>
-				(openHoleState = gameState?.holesState.find((hole) => hole.holeId === holeId))}
-		/>
-	{/if}
-</div>
+		<HoleMap {openHoleState} onHoleSelected={(holeId) => (selectedHoleId = holeId)} />
+		<ScoreboardTable />
+	</div>
+</main>
 
-<style lang="scss">
+<style lang="scss" scoped>
+	main {
+		display: grid;
+		place-items: center;
+		background-color: var(--green-main);
+	}
+	#scoreboard {
+		display: grid;
+		place-items: center;
+		max-width: 500px;
+		width: 100%;
+	}
 	button {
 		color: inherit;
 		border: none;
@@ -193,6 +156,7 @@
 	}
 	#start-btn {
 		font-size: 2em;
+		white-space: nowrap;
 		background-color: var(--yellow-main);
 		position: fixed;
 		top: 50%;
@@ -207,11 +171,7 @@
 	#reset-btn {
 		background-color: var(--red-main);
 		font-size: 1.5em;
-	}
-	#scoreboard {
-		display: grid;
-		place-items: center;
-		background-color: var(--green-main);
+		margin-bottom: 1em;
 	}
 
 	.dialog-content {
