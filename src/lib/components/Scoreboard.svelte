@@ -4,8 +4,7 @@
 	import { gameStore } from '$lib/stores/gameStore';
 	import ScoreboardTable from './ScoreboardTable.svelte';
 	import ScoreBoardH1 from './ScoreBoardH1.svelte';
-	import { draw, fade, scale } from 'svelte/transition';
-	import { elasticOut, cubicInOut } from 'svelte/easing';
+	import { grow } from '$lib/utils/growTransition';
 	// Local UI state
 	let setupModalIsOpen = false;
 	let newPlayerName = '';
@@ -26,6 +25,7 @@
 	}
 
 	function addPlayer() {
+		// to fix when there is a user called asdfgh the new player with asdfg will be called asdfg (1) wich is not neccessary
 		if (newPlayerName.trim()) {
 			const nameOccurences = $gameStore.users.filter(
 				(user) => user.userName === newPlayerName || user.userName.startsWith(newPlayerName)
@@ -51,18 +51,7 @@
 		gameStore.updateScore(openHoleState.holeId, score.userName, increment);
 		// No need to manually update openHoleState as it's now reactive
 	}
-	const grow = (
-		node: HTMLElement,
-		params?: { delay?: number; duration?: number; easing?: (t: number) => number }
-	) => {
-		const initialHeight = node.clientHeight;
-		return {
-			delay: params?.delay || 0,
-			duration: params?.duration || 300,
-			easing: params?.easing || cubicInOut,
-			css: (t: number, u: number) => `max-height: ${t * initialHeight}px; filter: blur(${u * 7}px); opacity: ${t};`
-		};
-	};
+
 </script>
 
 <main>
@@ -76,19 +65,6 @@
 					setupModalIsOpen = true;
 				}}>+ Neues Spiel</button
 			>
-		{:else}
-			<div class="scoreboard-top-menu" transition:grow >
-				<button
-				
-					id="reset-btn"
-					on:click={() => {
-						if (confirm('Möchten Sie wirklich das Spiel zurücksetzen?')) {
-							gameStore.resetGame();
-							selectedHoleId = null;
-						}
-					}}>Spiel zurücksetzen</button
-				>
-			</div>
 		{/if}
 
 		<dialog id="setup-modal" open={setupModalIsOpen}>
@@ -128,6 +104,7 @@
 		<dialog id="hole-modal" open={openHoleState !== undefined}>
 			<div class="dialog-content">
 				<h2 class="hole-title">{openHoleState?.holeId}</h2>
+				<p class="hole-description">{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.description}</p>
 				{#if openHoleState}
 					{#each openHoleState.scores as score}
 						<div class="player-row">
@@ -154,7 +131,20 @@
 			</div>
 		</dialog>
 		<HoleMap {openHoleState} onHoleSelected={(holeId) => (selectedHoleId = holeId)} />
-		<ScoreboardTable />
+		{#if $gameStore.users.length > 0}
+			<div class="scoreboard-top-menu" transition:grow>
+				<button
+					id="reset-btn"
+					on:click={() => {
+						if (confirm('Möchten Sie wirklich das Spiel zurücksetzen?')) {
+							gameStore.resetGame();
+							selectedHoleId = null;
+						}
+					}}>Spiel zurücksetzen</button
+				>
+			</div>
+			<ScoreboardTable/>
+		{/if}
 	</div>
 </main>
 
@@ -168,13 +158,13 @@
 	main {
 		display: grid;
 		place-items: center;
-		
 	}
 	#scoreboard {
 		display: grid;
 		place-items: center;
 		max-width: 500px;
 		width: 100%;
+		font-size: 1.5em;
 	}
 	button {
 		color: inherit;
@@ -200,6 +190,7 @@
 	#reset-btn {
 		background-color: var(--red-main);
 		font-size: 1.5em;
+		margin-top: 2em;
 	}
 	.scoreboard-top-menu {
 		overflow: hidden;
@@ -208,7 +199,7 @@
 	.dialog-content {
 		display: flex;
 		flex-direction: column;
-		gap: 1em;
+		gap: 0.5em;
 	}
 
 	.player-input {
@@ -226,6 +217,7 @@
 	.player-list {
 		display: flex;
 		flex-direction: column;
+		max-height: 70vh;
 	}
 
 	.player-row {
@@ -234,7 +226,7 @@
 		align-items: center;
 		gap: 1em;
 		overflow: hidden;
-		height: 3em;
+		height: 2em;
 		box-sizing: border-box;
 	}
 
@@ -303,7 +295,13 @@
 	.hole-title {
 		font-size: 2em;
 		text-align: center;
-		margin-bottom: 0.5em;
+		margin-bottom: 0em;
+		margin-top: 0;
+	}
+	.hole-description {
+		font-size: .75em;
+		text-align: center;
+		margin-bottom: 0em;
 		margin-top: 0;
 	}
 	.score-input {
@@ -311,6 +309,9 @@
 		flex-direction: row;
 		align-items: center;
 		gap: 1em;
+		button:disabled {
+			opacity: 0.5;
+		}
 		.score-input-value {
 			font-weight: bold;
 			width: 1em;

@@ -212,21 +212,21 @@ const content: ContentObject = {
 		}
 	],
 	scoreboard: {
-		title: 'Scoreboard',
+		title: 'Punktekarte',
 		description: 'Scoreboard description',
 		holes: [
-			{ id: 'L', description: 'L description' },
-			{ id: 'J', description: 'J description' },
-			{ id: 'M', description: 'M description' },
-			{ id: 'K', description: 'K description' },
-			{ id: 'I', description: 'I description' },
-			{ id: 'H', description: 'H description' },
-			{ id: 'A', description: 'A description' },
-			{ id: 'B', description: 'B description' },
-			{ id: 'D', description: 'D description' },
-			{ id: 'F', description: 'F description' },
-			{ id: 'E', description: 'E description' },
-			{ id: 'G', description: 'G description' }
+			{ id: 'L', description: 'Another Brick in the Wall' },
+			{ id: 'J', description: 'Minibermuda 2.0' },
+			{ id: 'M', description: 'Viele Wege führen nach Zürich' },
+			{ id: 'K', description: 'Von der Küche ... ins Badezimmer' },
+			{ id: 'I', description: 'Karambolage Cupcake' },
+			{ id: 'H', description: 'Mezcaland' },
+			{ id: 'A', description: 'Post-Humanism' },
+			{ id: 'B', description: 'Pizzaofen' },
+			{ id: 'D', description: 'Il vulcano che sputa cocciopesto' },
+			{ id: 'F', description: 'Dem Drachen eine Burg' },
+			{ id: 'E', description: 'Multigolf' },
+			{ id: 'G', description: 'DAGGELI' }
 		]
 	}
 };

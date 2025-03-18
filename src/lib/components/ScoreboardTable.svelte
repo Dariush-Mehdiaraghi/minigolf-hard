@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { gameStore } from '$lib/stores/gameStore';
+	import { grow } from '$lib/utils/growTransition';
 	import ScoreBoardH1 from './ScoreBoardH1.svelte';
 </script>
 
-<div id="scoreboard-table">
+<div id="scoreboard-table" transition:grow>
 	<ScoreBoardH1>Scoreboard</ScoreBoardH1>
 	{#each $gameStore.users as user}
 		<div class="user-row">
