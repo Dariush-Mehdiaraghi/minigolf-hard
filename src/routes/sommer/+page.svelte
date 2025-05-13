@@ -150,6 +150,7 @@
     font-size: 5em;
     padding-top: 1em;
     line-height: 90%;
+    color: black;
   }
   .map{
     width: 60%;
@@ -203,6 +204,7 @@
     font-weight: 300;
     text-align: center;
     margin-bottom: 2em;
+    color: black;
   }
 
   h2{
@@ -210,6 +212,7 @@
     font-size: 3.2em;
     margin-top: 0px;
     text-align: center;
+    color: black;
     line-height: 0.9em;
     text-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
   }
