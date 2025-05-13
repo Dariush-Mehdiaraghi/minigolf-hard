@@ -125,10 +125,30 @@
       </div>
     </div>
     <div class="box-attraktion">
-      <h3>Crepes am Freitag und Samstag</h3>
-      <p>
-         Am Stand der Minigolfbaugenossenschaft Wiedikon gibt es süsse und salzige Crepes.
-      </p>
+      <div class="image-container">
+        <img src="./images/sommer-crepes.png" alt="Crêpes" style="width:60%;">
+        <h2 class="center">Crêpes</h2>
+      </div>
+
+      <div>
+        <h3>Crêpes am Freitag und Samstag</h3>
+        <p>
+          Feine Crêpes gibt es von der Minigolfbahnbaugenossenschaft Wiedikon.
+        </p>
+      </div>
+    </div>
+    <div class="box-attraktion">
+      <div class="image-container">
+        <img src="./images/sommer-siebdruck.png" alt="Siebdruck" style="width:60%;">
+        <h2 class="center">Siebdruck</h2>
+      </div>
+
+      <div>
+        <h3>Siebdruck von ASZ am Samstag</h3>
+        <p>
+          Am Siebdruck Stand kannst du dein eigenes Shirt bedrucken. bestenfalls bringst du ein altes mit, oder findest eins im Brocki nebenan.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -136,6 +156,8 @@
     <h1>Info</h1>
     <div class="box-attraktion">
     <p>
+      Das Fest ist gratis für alle.
+    <br><br>
       Irgendwo zwischen den Stadtkreisen am Rande des alten Schlachthofs findet sich die Hardgutbrache mit ihrem Minigolfplatz. Dieser Ort lebt von all den aktiven Besucher:innen, die hier Zeit verbringen, Freund:innen finden, spielen und Feste feiern.  
     </p>
   </div>
@@ -212,7 +234,7 @@
     font-size: 3.2em;
     margin-top: 0px;
     text-align: center;
-    color: black;
+    color: white;
     line-height: 0.9em;
     text-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
   }
