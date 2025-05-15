@@ -4,8 +4,8 @@
 </svelte:head>
 
 <div class="content">
+  <div class="nav"> <div class="nav-box"><a href="#musik">Musik</a> <a href="#attraktionen">Attraktionen</a> <a href="#info">Info</a></div></div>
   <img class="logo" src="./images/sommer-logo.svg" alt="6+7 Juni 2025 - Sommerfest - Minigolf Hard">
-  <div class="nav"><a href="#musik">Musik</a> <a href="#attraktionen">Attraktionen</a> <a href="#info">Info</a></div>
   <div id="overview">
     <div class="box">
     <p> 
@@ -165,34 +165,33 @@
 </div>
 
 <style lang="scss" scoped>
-
   h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 3em;
     padding-top: 1em;
     line-height: 90%;
     color: black;
   }
-  .map{
-    width: 60%;
-  }
-
   .nav{
-    text-align: center;
+    width: 60vw;
     position: fixed;
-    width: 60%;
     top: 2em;
     z-index: 100;
   }
 
+  .nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .center{
     text-align: center;
   }
-
   img{
     align-self: center;
-    width: 100%;
+    width: auto;
+    height: auto;
     padding-left: 20%;
     padding-right: 20%;
   }
@@ -203,7 +202,6 @@
     margin-top: 1em;
     padding-bottom: 0.2em;
   }
-
   .box-attraktion{
     border-radius: 2em;
     color: #000000;
@@ -213,14 +211,12 @@
     margin-top: 1em;
     padding-bottom: 0.2em;
   }
-
   .box-b{
     background-color: transparent;
     border-radius: 1em;
     padding: 1em;
     padding-bottom: 0.1em;
   }
-
   p{
     font-size: 1.2em;
     font-weight: 300;
@@ -242,7 +238,7 @@
   .logo{
     margin-top: 12em;
     margin-bottom: 4em;
-    width: 60%;
+    max-width: 40vw;
   }
 
   h3{
@@ -258,23 +254,23 @@
   text-align: center;
   color: white;
   padding-bottom: 1em;
-}
+  }
 
-.center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   .content{
     min-height: 100vh;
+    width: 60vw;
     padding-left: 20vw;
     padding-right: 20vw;
     padding-bottom: 20vw;
     background-image: linear-gradient(to bottom, #F7C6E4 0%, 3.191489353775978%, #FF1452 6.382978707551956%, 9.840772274245339%, #FB8905 13.298565840938723%, 17.705007486475097%, #E25215 22.340425848960876%, 25.554106910039117%, #ACDD67 29.20469361147327%, 33.507170795306386%, #FCD500 36.50586701434159%, 40.80834419817471%, #F9FCE7 45.11082138200782%, 48.23989569752281%, #F7F8D8 51.36897001303781%, 56.71285407561833%, #24BDF6 62.05673813819885%, 65.96969892568352%, #60E9FB 69.88265971316818%, 73.98956975228161%, #F79C03 78.09647979139504%, 81.22555410691004%, #FA8900 84.35462842242504%, 87.74468963273657%, #00AA00 91.1347508430481%, 93.43971610069275%, #D2F419 95.7446813583374%, 97.8723406791687%, #B0FD55 100%); 
   }
-
   a {
       padding: 0.6em 1em;
       border-radius: 4em;
@@ -285,7 +281,7 @@
       margin-bottom: 0.4em;
       background-color: black;
       color: white;
-
+      margin-right: 0.2em;
       &.non-button {
         padding: 0.1em 0.5em;
         border-radius: none;
@@ -301,10 +297,16 @@
 
    @media only screen and (max-width: 600px) {
     .content {
-      padding-left: 0vw;
-      padding-right: 0vw;
-      font-size: 2em;
+      width: 90vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      font-size: 1.2em;
     }
+
+    .nav{
+      width: 90vw;
+    }
+
 
     h1{
       font-weight: 400;
