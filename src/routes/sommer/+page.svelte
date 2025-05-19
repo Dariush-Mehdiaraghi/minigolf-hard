@@ -9,7 +9,10 @@
   <div id="overview">
     <div class="box">
     <p> 
-      Am 6. und 7. Juni feiern wir das alljährliche Sommer Fest von Minigolf Hard. <br><br> Zum ersten Mal gibt es an zwei Tagen gratis Konzerte, Getränke, Essen, Minigolf und viele weitere EXTRAS! <br><br> Am Freitag wird das Fest um 16:00 Uhr starten und am Samstag beginnen wir bereits um 12:00 Uhr. Unsere Betonbahnen haben sich noch nicht verschoben, also treffen wir uns auch dieses Jahr an der Hardgutstrasse 7 in Zürich.
+      Am 6. und 7. Juni feiern wir das alljährliche Sommer Fest von Minigolf Hard. <br><br> Zum ersten Mal gibt es an zwei Tagen gratis Konzerte, Getränke, Essen, Minigolf und viele weitere EXTRAS! <br><br> Am Freitag wird das Fest um 17:00 Uhr starten und am Samstag beginnen wir bereits um 14:00 Uhr. Unsere Betonbahnen haben sich noch nicht verschoben, also treffen wir uns auch dieses Jahr an der Hardgutstrasse 7 in Zürich.
+    </p>
+    <p>
+    <a href="https://www.instagram.com/minigolfhard/">Mehr auf Instagram</a>
     </p>
   </div>
 
@@ -17,28 +20,14 @@
   <h1>Programm<br>Freitag 6. Juni</h1>
     <div class="box">
       <div class="image-container">
-        <img src="./images/sommer-neliamasengu.png" alt="Nelia Masengu | Bild: Binta Kopp" style="width:60%;">
-        <h2 class="center">Nelia Masengu</h2>
-      </div>
-      <h3>Nelia Masengu spielt am Freitag 6. Juni, 19:30 Uhr</h3>
-      <p>
-        Nelia Masengu macht Musik, die berührt - sanft, ehrlich und voller Gefühl. Ihre zweite EP à deux doigts ist ein ungefilterter und ehrlicher Einblick in ihre Welt. Mit sanften und intimen Melodien erzählt die 23-jährige schweizerisch-kongolesische Künstlerin von den verschiedenen Hindernissen in ihrem Leben. Mit Indie-Soul und alternativen R’n’B Klängen verarbeitet sie Trauer, Ängste und Herzschmerz, ohne dabei jemals die Hoffnung aus den Augen zu verlieren. Ihre in Lingala und Französisch gesungenen Texte tragen zärtliche und kraftvolle Töne.
-      </p>
-      <p>
-        <a href="https://www.instagram.com/neliamasengu/">instagram.com/neliamasengu</a>
-      </p>
-    </div>
-
-    <div class="box">
-      <div class="image-container">
-        <img src="./images/sommer-paraphon.png" alt="Nelia Masengu | Bild: Binta Kopp" style="width:60%;">
+        <img src="./images/sommer-paraphon.png" alt="Paraphon">
         <h2 class="center">Paraphon</h2>
       </div>
       <h3>Paraphon spielen am Freitag 6. Juni, 22:00 Uhr</h3>
       <p>
         Ob Paraphon nun noch als Geheimtipp gelten oder nicht, davon kann sich jeder selbst ein Bild machen. Mit über 45 Auftritten in den letzten Jahren und in bester Erinnerung liegenden Shows etwa am Krach am Bach-Festival oder am Quellrock Openair spielt sich das Synth-Pop Duo langsam in die Köpfe der Zuhörer*innen und wecken dort nostalgische Gefühle zu den 80er Jahren – ganz egal, ob man da schon geboren war oder nicht. Paraphons 80er-retro-Sound, kreiert und performt an verschiedenen Synthesizern, Drum Machines und E-Gitarre, entzückt nicht nur live, sondern auch digital.    </p>
       <p>
-        <a href="https://www.instagram.com/paraphon_music/">www.instagram.com/paraphon_music</a>
+        <a href="https://www.instagram.com/paraphon_music/">Instagram</a>
       </p>
     </div>
 
@@ -46,40 +35,40 @@
 
     <div class="box">
       <div class="image-container">
-        <img src="./images/sommer-daycap.png" alt="daycap" style="width:60%;">
+        <img src="./images/sommer-daycap.png" alt="daycap">
         <h2 class="center">daycap</h2>
       </div>
       <h3>daycap spielen am Samstag 7. Juni, 17:00</h3>
       <p>
         Sommerlich verträumter bedroom-Pop-Sound mit Vorliebe für effektgetränkte Gitarren, softe Synthesizer, melodiöse Basslines und groovy Rhythmen.
       <p>
-        <a href="https://www.instagram.com/daycapband/">instagram.com/daycapband</a>
+        <a href="https://www.instagram.com/daycapband/">Instagram</a>
       </p>
     </div>
 
     <div class="box">
       <div class="image-container">
-        <img src="./images/sommer-waverer.png" alt="Waverer" style="width:60%;">
+        <img src="./images/sommer-waverer.png" alt="Waverer">
         <h2 class="center">Waverer</h2>
       </div>
       <h3>Waverer spielt am Samstag 7. Juni, 19:30</h3>
       <p>
         In seinen Songs porträtiert Waverer an erster Stelle sich selbst: ein Mann, der oft etwas mehr denkt und fühlt, als ihm lieb ist. Der immer etwas in seiner eigenen Welt schwebt, und den man oft nicht so genau lesen kann. Der sich Sorgen macht, was andere von ihm denken, sich auch ab und zu gerne inszeniert, und dann gleich wieder zurückzieht. Hinter der Gitarre (oder Schlagzeug) und dem Mikrofon aber fühlt sich Waverer am wohlsten. Auf der Bühne ist es ihm endlich erlaubt, mit Worten und Stimmen zu spielen, sich sogar selbst zu widersprechen. Mit scharfer Ironie bewaffnet, schiesst er sich immer wieder versehentlich selbst ins Bein – so werden tiefe Ängste ausgesprochen, hart erkämpfte Meinungen fallen in sich zusammen. Die Wahrheit ist doch so selten einseitig.
       <p>
-        <a href="https://www.instagram.com/wavererwaverer/">instagram.com/wavererwaverer</a>
+        <a href="https://www.instagram.com/wavererwaverer/">Instagram</a>
       </p>
     </div>
 
     <div class="box">
       <div class="image-container">
-        <img src="./images/sommer-melicious.png" alt="Melicious" style="width:60%;">
+        <img src="./images/sommer-melicious.png" alt="Melicious">
         <h2 class="center">Melicious</h2>
       </div>
       <h3>Melicious spielt am Samstag 7. Juni, 22:00</h3>
       <p>
         Träumerisch und intim: Melicious hat keine Angst vor Verletzlichkeit. Die Basler Künstlerin ist ein Gefühlssprachrohr, und verarbeitet auf ihrer Debüt-EP «Risky Business» Herzschmerz, psychische Gesundheit und Gefühlschaos. Melicious navigiert mit ihren tröstlichen, schön traurigen, elektronischen Indie-Pop Songs durch die neblige Landschaft des Erwachsenwerdens.
       <p>
-        <a href="https://www.instagram.com/melicious.mp3/">instagram.com/melicious.mp3</a>
+        <a href="https://www.instagram.com/melicious.mp3/">Instagram</a>
       </p>
     </div>
   </div>
@@ -88,7 +77,7 @@
     <h1>Attraktionen</h1>
     <div class="box-attraktion">
       <div class="image-container">
-        <img src="./images/sommer-minibar.png" alt="Mini Bar" style="width:60%;">
+        <img src="./images/sommer-minibar.png" alt="Mini Bar">
         <h2 class="center">Mini Bar</h2>
       </div>
 
@@ -101,7 +90,7 @@
     </div>
     <div class="box-attraktion">
       <div class="image-container">
-        <img src="./images/sommer-komma3.png" alt="Mini Bar" style="width:60%;">
+        <img src="./images/sommer-komma3.png" alt="Mini Bar">
         <h2 class="center">Komma 3</h2>
       </div>
       <div>
@@ -113,7 +102,7 @@
     </div>
     <div class="box-attraktion">
       <div class="image-container">
-        <img src="./images/sommer-zirkuskafi.png" alt="Mini Bar" style="width:60%;">
+        <img src="./images/sommer-zirkuskafi.png" alt="Mini Bar">
         <h2 class="center">Zirkuskafi</h2>
       </div>
 
@@ -126,7 +115,7 @@
     </div>
     <div class="box-attraktion">
       <div class="image-container">
-        <img src="./images/sommer-crepes.png" alt="Crêpes" style="width:60%;">
+        <img src="./images/sommer-crepes.png" alt="Crêpes">
         <h2 class="center">Crêpes</h2>
       </div>
 
@@ -139,7 +128,7 @@
     </div>
     <div class="box-attraktion">
       <div class="image-container">
-        <img src="./images/sommer-siebdruck.png" alt="Siebdruck" style="width:60%;">
+        <img src="./images/sommer-siebdruck.png" alt="Siebdruck">
         <h2 class="center">Siebdruck</h2>
       </div>
 
@@ -147,6 +136,19 @@
         <h3>Siebdruck von ASZ am Samstag</h3>
         <p>
           Am Siebdruck Stand kannst du dein eigenes Shirt bedrucken. bestenfalls bringst du ein altes mit, oder findest eins im Brocki nebenan.
+        </p>
+      </div>
+    </div>
+    <div class="box-attraktion">
+      <div class="image-container">
+        <img src="./images/sommer-minigolf.png" alt="Minigolf">
+        <h2 class="center">Minigolf</h2>
+      </div>
+
+      <div>
+        <h3>Minigolf für immer offen und gratis</h3>
+        <p>
+          Natürlich könnt ihr auch eine Runde Minigolf spielen.
         </p>
       </div>
     </div>
@@ -194,6 +196,7 @@
     height: auto;
     padding-left: 20%;
     padding-right: 20%;
+    width: 60%;
   }
   .box{
     background-color: none;
@@ -238,7 +241,6 @@
   .logo{
     margin-top: 12em;
     margin-bottom: 4em;
-    max-width: 40vw;
   }
 
   h3{
@@ -298,6 +300,7 @@
    @media only screen and (max-width: 600px) {
     .content {
       width: 90vw;
+      font-size: 0.8em;
       padding-left: 5vw;
       padding-right: 5vw;
       font-size: 1.2em;
@@ -322,11 +325,17 @@
     }
 
     p{
-      margin-bottom: 1em;
+      margin-bottom: 2em;
     }
 
     a{
       padding: 1em 1em;
+    }
+
+    img{
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
     }
     
     .nav{
@@ -336,6 +345,10 @@
       margin-right: auto;
       padding: 0px;
       top: 24px;
+    }
+
+    .nav-box{
+      padding-right: 10vw;
     }
 }
 </style>
