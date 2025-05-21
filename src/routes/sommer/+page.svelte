@@ -1,6 +1,7 @@
 <svelte:head>
   <title>Sommerfest 2025 | Minigolf Hard</title>
-  <meta name="description" content="Mitmachen bei Minigolf Hard" />
+  <meta name="description" content=" Am 6. und 7. Juni feiern wir das alljährliche Sommer Fest von Minigolf Hard mit gratis Konzerten, Getränken, Essen und ganz viel Spass für alle." />
+	<meta name="keywords" content="sommerfest, konzert, gratis, sommer, festival, musik, party, free, minigolf, hard, golf, freizeit, holiday, zurich, altstetten, zurich, zürich, hardturm, letzigrund, schlachthof, hardgutbrache, sport, unkommerziell, uncommercial, selfmade, diy, bau, kollektiv, prozess, spass, drinks, kaffee, party, turniere, kinder, familie, kids, family, schweiz, 18, 12, eröffnung, open space, ausschreibung, kreativ">
 </svelte:head>
 
 <div class="content">

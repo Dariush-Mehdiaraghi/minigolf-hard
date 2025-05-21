@@ -58,9 +58,9 @@ const content: ContentObject = {
 			color: 'yellow',
 			isFullWidth: true,
 			contentArray: [
-				{ size: 'm', text: 'SAVE THE DATE: SOMMERFEST 2025' },
-				{ size: 'l', text: "DRINKS, FOOD,<br>BANDS, DJ'S und MEHR" },
-				{ size: 'm', text: 'FREITAG 06.06.2025 <br/> und <br/> SAMSTAG 07.06.2025' }
+				{ size: 'l', text: '6.+7. Juni <br/> Sommer Fest  <br/>Minigolf Hard' },
+				{ size: 'm', text: 'Mit gratis Konzerten, kalten Getränken, leckerem Essen und ganz viel Spass für alle!' },
+				{ size: 'm', text: '<a href="https://minigolfhard.ch/sommer" style="text-decoration: underline">Mehr Infos</a>' }
 			]
 		},
 		{
