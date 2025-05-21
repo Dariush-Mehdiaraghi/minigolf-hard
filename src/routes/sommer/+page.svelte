@@ -134,7 +134,7 @@
       </div>
 
       <div>
-        <h3>Siebdruck von ASZ am Samstag</h3>
+        <h3>Siebdruck von ASZ am Freitag und am Samstag</h3>
         <p>
           Am Siebdruck Stand kannst du dein eigenes Shirt bedrucken. bestenfalls bringst du ein altes mit, oder findest eins im Brocki nebenan.
         </p>
