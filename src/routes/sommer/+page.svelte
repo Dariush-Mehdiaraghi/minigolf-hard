@@ -19,12 +19,26 @@
 
   <div id="musik">
   <h1>Programm<br>Freitag 6. Juni</h1>
+
+    <div class="box">
+      <div class="image-container">
+        <img src="./images/sommer-kleruss.png" alt="kleruss">
+        <h2 class="center">kleruss</h2>
+      </div>
+      <h3>kleruss spielt am Freitag, 6. Juni um 19:30</h3>
+      <p>
+        kleruss, die junge Musikerin verzaubert mit ihrer einfühlsamen Stimme und ihrem facettenreichen Sound. Ihr Still ist eine spannende Mischung aus experimentellem Pop, Trip-Hop und elektronischen Einflüssen, die sowohl tanzbare Rhythmen als auch melancholische Töne umfasst. Mit ihrem letzten Album «time will tell» gelingt es kleruss, das Publikum mit emotionaler Tiefe und eingängigen Melodien zu begeistern. Besonders beeindruckend: kleruss produziert und nimmt ihre Musik komplett eigenständig auf und beweist damit eindrucksvoll ihre Vielseitgkeit und ihr Talent. 
+      <p>
+        <a href="https://www.instagram.com/kleruss/">Instagram</a>
+      </p>
+    </div>
+
     <div class="box">
       <div class="image-container">
         <img src="./images/sommer-paraphon.png" alt="Paraphon">
         <h2 class="center">Paraphon</h2>
       </div>
-      <h3>Paraphon spielen am Freitag 6. Juni, 22:00 Uhr</h3>
+      <h3>Paraphon spielen am Freitag, 6. Juni um 22:00 Uhr</h3>
       <p>
         Ob Paraphon nun noch als Geheimtipp gelten oder nicht, davon kann sich jeder selbst ein Bild machen. Mit über 45 Auftritten in den letzten Jahren und in bester Erinnerung liegenden Shows etwa am Krach am Bach-Festival oder am Quellrock Openair spielt sich das Synth-Pop Duo langsam in die Köpfe der Zuhörer*innen und wecken dort nostalgische Gefühle zu den 80er Jahren – ganz egal, ob man da schon geboren war oder nicht. Paraphons 80er-retro-Sound, kreiert und performt an verschiedenen Synthesizern, Drum Machines und E-Gitarre, entzückt nicht nur live, sondern auch digital.    </p>
       <p>
@@ -39,7 +53,7 @@
         <img src="./images/sommer-daycap.png" alt="daycap">
         <h2 class="center">daycap</h2>
       </div>
-      <h3>daycap spielen am Samstag 7. Juni, 17:00</h3>
+      <h3>daycap spielen am Samstag, 7. Juni um 17:00</h3>
       <p>
         Sommerlich verträumter bedroom-Pop-Sound mit Vorliebe für effektgetränkte Gitarren, softe Synthesizer, melodiöse Basslines und groovy Rhythmen.
       <p>
@@ -52,7 +66,7 @@
         <img src="./images/sommer-waverer.png" alt="Waverer">
         <h2 class="center">Waverer</h2>
       </div>
-      <h3>Waverer spielt am Samstag 7. Juni, 19:30</h3>
+      <h3>Waverer spielt am Samstag, 7. Juni um 19:30</h3>
       <p>
         In seinen Songs porträtiert Waverer an erster Stelle sich selbst: ein Mann, der oft etwas mehr denkt und fühlt, als ihm lieb ist. Der immer etwas in seiner eigenen Welt schwebt, und den man oft nicht so genau lesen kann. Der sich Sorgen macht, was andere von ihm denken, sich auch ab und zu gerne inszeniert, und dann gleich wieder zurückzieht. Hinter der Gitarre (oder Schlagzeug) und dem Mikrofon aber fühlt sich Waverer am wohlsten. Auf der Bühne ist es ihm endlich erlaubt, mit Worten und Stimmen zu spielen, sich sogar selbst zu widersprechen. Mit scharfer Ironie bewaffnet, schiesst er sich immer wieder versehentlich selbst ins Bein – so werden tiefe Ängste ausgesprochen, hart erkämpfte Meinungen fallen in sich zusammen. Die Wahrheit ist doch so selten einseitig.
       <p>
@@ -65,7 +79,7 @@
         <img src="./images/sommer-melicious.png" alt="Melicious">
         <h2 class="center">Melicious</h2>
       </div>
-      <h3>Melicious spielt am Samstag 7. Juni, 22:00</h3>
+      <h3>Melicious spielt am Samstag, 7. Juni um 22:00</h3>
       <p>
         Träumerisch und intim: Melicious hat keine Angst vor Verletzlichkeit. Die Basler Künstlerin ist ein Gefühlssprachrohr, und verarbeitet auf ihrer Debüt-EP «Risky Business» Herzschmerz, psychische Gesundheit und Gefühlschaos. Melicious navigiert mit ihren tröstlichen, schön traurigen, elektronischen Indie-Pop Songs durch die neblige Landschaft des Erwachsenwerdens.
       <p>
@@ -161,7 +175,11 @@
     <p>
       Das Fest ist gratis für alle.
     <br><br>
+      Es werden Awareness-Personen vor Ort sein und es gibt einen Safer Space.
+    <br><br>
       Irgendwo zwischen den Stadtkreisen am Rande des alten Schlachthofs findet sich die Hardgutbrache mit ihrem Minigolfplatz. Dieser Ort lebt von all den aktiven Besucher:innen, die hier Zeit verbringen, Freund:innen finden, spielen und Feste feiern.  
+    <br><br>
+      Minigolf Hard, Hardgutstrasse 7, 8048 Zürich
     </p>
   </div>
   </div>
