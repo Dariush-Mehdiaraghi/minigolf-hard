@@ -10,7 +10,7 @@
   <div id="overview">
     <div class="box">
     <p> 
-      Am 6. und 7. Juni feiern wir das alljährliche Sommer Fest von Minigolf Hard. <br><br> Zum ersten Mal gibt es an zwei Tagen gratis Konzerte, Getränke, Essen, Minigolf und viele weitere EXTRAS! <br><br> Am Freitag wird das Fest um 17:00 Uhr starten und am Samstag beginnen wir bereits um 14:00 Uhr. Unsere Betonbahnen haben sich noch nicht verschoben, also treffen wir uns auch dieses Jahr an der Hardgutstrasse 7 in Zürich.
+      Am 6. und 7. Juni feiern wir das alljährliche Sommer Fest von Minigolf Hard. <br><br> Zum ersten Mal gibt es an zwei Tagen gratis Konzerte, Getränke, Essen, Minigolf und viele weitere EXTRAS! <br><br> Am Freitag wird das Fest um 16:00 Uhr starten und am Samstag beginnen wir bereits um 14:00 Uhr. Unsere Betonbahnen haben sich noch nicht verschoben, also treffen wir uns auch dieses Jahr an der Hardgutstrasse 7 in Zürich.
     </p>
     <p>
     <a href="https://www.instagram.com/minigolfhard/">Mehr auf Instagram</a>
