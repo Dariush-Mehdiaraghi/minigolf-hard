@@ -1,4 +1,3 @@
-import tschinggeFrisbee from '../images/withBackground/tschinggeFrisbee.png';
 import bälle from '../images/withBackground/Bälle.png';
 type ContentObject = {
 	linksPage: {
@@ -54,15 +53,6 @@ const content: ContentObject = {
 			'Abseits der üblichen Zentren der Stadt soll die Hardgutbrache ein Freiraum sein, wo alle willkommen sind, um sich sportlich und kreativ auszuleben. Ein Ort, um aktiv zu sein oder um die Zeit zu geniessen. Wie vieles hier wurden die Bahnen von verschiedenen Gruppen, Vereinen und Einzelpersonen gebaut. '
 	},
 	smallSections: [
-		{
-			color: 'yellow',
-			isFullWidth: true,
-			contentArray: [
-				{ size: 'l', text: '6.+7. Juni <br/> Sommer Fest  <br/>Minigolf Hard' },
-				{ size: 'm', text: 'Mit gratis Konzerten, kalten Getränken, leckerem Essen und ganz viel Spass für alle!' },
-				{ size: 'm', text: '<a href="https://minigolfhard.ch/sommer" style="text-decoration: underline">Mehr Infos</a>' }
-			]
-		},
 		{
 			color: 'blue',
 			textAlign: 'center',
@@ -132,7 +122,7 @@ const content: ContentObject = {
 
 				{
 					size: 'm',
-					text: 'Betreuter Betrieb mit Bar bei gutem Wetter an folgenden Tagen<br><br>  MI  16 – 21 Uhr<br>FR  16 – 21 Uhr<br>SO  16 – 21 Uhr'
+					text: 'Betreuter Betrieb mit Care-Person bei gutem Wetter an folgenden Tagen<br><br>  FR  16:00 bis Schluss<br>SA  14:00 bis Schluss<br>SO  14:00 bis Schluss'
 				},
 				{ size: 'm', text: 'ADRESSE' },
 				{ size: 'm', text: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich' },
