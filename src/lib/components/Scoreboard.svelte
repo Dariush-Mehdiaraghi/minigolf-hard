@@ -103,8 +103,10 @@
 		</dialog>
 		<dialog id="hole-modal" open={openHoleState !== undefined}>
 			<div class="dialog-content">
-				<h2 class="hole-title">{openHoleState?.holeId}</h2>
-				<p class="hole-description">{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.description}</p>
+				<h2 class="hole-title">{openHoleState?.holeId}: {content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.description}</h2>
+				<p class="hole-description">{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.bauer}</p>
+				<p class="hole-description">{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.text}</p>
+				<p class="hole-description">{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.weiter}</p>
 				{#if openHoleState}
 					{#each openHoleState.scores as score}
 						<div class="player-row">
@@ -198,6 +200,7 @@
 
 	.dialog-content {
 		display: flex;
+		width: 100%;
 		flex-direction: column;
 		gap: 0.5em;
 	}
@@ -266,19 +269,19 @@
 
 	dialog {
 		border: none;
-		border-radius: 2em;
+		border-radius: 1em;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 		position: fixed;
 		margin: 0;
-		top: 50%;
+		top: 10px;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, 0%);
 		&::backdrop {
 			background-color: rgba(0, 0, 0, 0.5);
 		}
 		animation: fadeIn 0.2s ease-in-out;
 		transform-origin: center;
-		min-width: 300px;
+		min-width: 86vw;
 		@keyframes fadeIn {
 			from {
 				opacity: 0;
@@ -293,14 +296,14 @@
 		}
 	}
 	.hole-title {
-		font-size: 2em;
-		text-align: center;
+		font-size: 1.2em;
+		text-align: left;
 		margin-bottom: 0em;
 		margin-top: 0;
 	}
 	.hole-description {
-		font-size: .75em;
-		text-align: center;
+		font-size: 0.8em;
+		text-align: left;
 		margin-bottom: 0em;
 		margin-top: 0;
 	}

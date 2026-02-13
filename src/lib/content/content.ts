@@ -13,7 +13,7 @@ type ContentObject = {
 	scoreboard: {
 		title: string;
 		description: string;
-		holes: {id: string, description: string}[];
+		holes: {id: string; description: string; bauer: string; text: string; weiter: string}[];
 	};
 };
 const content: ContentObject = {
@@ -205,18 +205,18 @@ const content: ContentObject = {
 		title: 'Punktekarte',
 		description: 'Scoreboard description',
 		holes: [
-			{ id: 'L', description: 'Another Brick in the Wall' },
-			{ id: 'J', description: 'Minibermuda 2.0' },
-			{ id: 'M', description: 'Viele Wege führen nach Zürich' },
-			{ id: 'K', description: 'Von der Küche ... ins Badezimmer' },
-			{ id: 'I', description: 'Karambolage Cupcake' },
-			{ id: 'H', description: 'Mezcaland' },
-			{ id: 'A', description: 'Post-Humanism' },
-			{ id: 'B', description: 'Pizzaofen' },
-			{ id: 'D', description: 'Il vulcano che sputa cocciopesto' },
-			{ id: 'F', description: 'Dem Drachen eine Burg' },
-			{ id: 'E', description: 'Multigolf' },
-			{ id: 'G', description: 'DAGGELI' }
+			{ id: 'L', description: 'Another Brick in the Wall', bauer: '„Minigolfbaugenossenschaft Wiedikon”', text: 'Robustheit, Nachhaltigkeit, Optik und Spielfreude waren unsere Hauptkriterien. Gebaut wurde die Bahn weitestgehend aus nicht mehr gebrauchten Baumaterialien. Die Ton- und Ziegel-Elemente haben wir auf Tutti zusammengesucht und den Beton bekamen wir als Überschuss vom Betonwerk in Schlieren. Durch die Terracotta-Optik passt die Bahn zudem hervorragend zu den umliegenden Gebäuden.', weiter: 'Die Bahn erhielt 2024 und 2025 einen neuen Anstrich.' },
+			{ id: 'J', description: 'Susie the Dinosaur', bauer: '', text: 'Die Beschreibung kommt bald. ', weiter: ''},
+			{ id: 'M', description: 'Viele Wege führen nach Zürich', bauer: 'SCI Dynamo Volunteers', text: 'Aus der ganzen Welt sind wir zusammengekommen, um dieses Bauprojekt zu verwirklichen. Es gibt weder einen richtigen noch einen einzigen Weg, etwas zu erreichen, das haben wir gelernt. So ist diese Bahn mit unterschiedlichen Wegen und Zielen und zwei Teilen verbunden durch Brücken entstanden. ', weiter: '' },
+			{ id: 'K', description: 'Von der Küche ... ins Badezimmer', bauer: 'Morris, Andrea und Julian', text: 'Wenn Neues entstehen soll, muss meist Altes weichen: ausrangiert und zu entsorgen bitte. Schade eigentlich, dachten wir, die im Zusammenhang mit einem Umbau Herr (oder Frau) geworden sind von diesen Bauteilen. Also nutzen wir doch die Chance, aus Altem Neues zu schaffen und Vorhandenes in andere Zusammenhänge zu überführen.', weiter: '' },
+			{ id: 'I', description: 'Karambolage Cupcake', bauer: 'Fanny, Julius und Zohra', text: 'Sei zu Gast an unserer Tafel, wir laden dich ein! Aber Achtung Zuckerschock: Wenn der Cupcake dir den Kopf verdreht, zieht es dir ratzfatz die Tischdecke unter den Füssen weg, die Limo kippt, die Erdbeeren kugeln - und dein Ball endet im Abwasch. Also aufgepasst und Spass gehabt! Spätestens seit einem gemeinsamen Urlaub in Wien, wo es von beidem reichlich gab, teilen Fanny, Julius und Zohra ihre Leidenschaft für Minigolf und Kuchen. Ausser Süssspeisen mögen sie Kitsch und neuerdings Beton – und das gemeinsame Nachdenken, Ausprobieren und Kreativ-Werden. Sie bedanken sich herzlich bei ihren Freund*innen, die sich mit ihnen auf und abseits der Baustelle in den letzten Wochen mit dem grossen Thema Minigolf beschäftigt haben.', weiter: '2025 mit einem neuen Hinderniss aus PVC Rohren ergänzt.' },
+			{ id: 'H', description: 'Mezcaland', bauer: 'Werdi-Kollektiv & Fründe & Familiä', text: 'Zwei Gipfel, ein Looping umrandet von der Wüstenwurst. Das ist Mezcaland, denn in der Schöne liegt die Wüste. Wenig gekauft, viel gefunden und bekommen.', weiter: 'Die Bahn erhielt 2024 und 2025 einen neuen Anstrich und frische Kakteen.' },
+			{ id: 'A', description: 'Post-Humanism', bauer: 'Abbott', text: 'This low-tech golf hole uses only materials found on or very near the site (except the red clover seeds). Once the human player gets the ball up the ramp, the rocks decide where the ball will go. For a moment, human ambition is neutralized.', weiter: '2024 wurde die Bahn aufgefrischt. 2025 mit einem neuen Pachinko Board ergänzt.' },
+			{ id: 'B', description: 'Stadion', bauer: 'Verein Minigolf Hard', text: 'Eigentlich wollten wir nur als Test einen kleinen Pizzaofen bauen. Entstanden ist aber diese Bahn. Auf einem Magerbeton-Podest aus feinstem Kies dieser Brache ruhen alte Schalungsbretter. Gekleidet wurde das Ganze mit bestem Kunstrasen aus dem Off-Cut.', weiter: '2024 wurde die Bahn mit pinker Farbe aufgefrischt. 2025 wurde die Bahn von Claudio TOTALSANIERT und ist jetzt ein Fussballstadion.' },
+			{ id: 'D', description: 'Il vulcano che sputa cocciopesto', bauer: '', text: 'Das Ziel ist der Vulkankrater. Die Bahn besteht aus Cocciopesto (Sumpfkalk, Ziegelmehl), einem römischen Putzmörtel, den wir mit Halbedelsteine polierten und mit Olivenölseife imprägnierten. Das Kalkfundament (Sumpfkalk, hydraulischer Kalk, Branntkalk, Kies/Sand) mischten und verdichteten wir mit einem Handstampfer vor Ort.', weiter: '2024 mit einer neuen, filigranen Farbschicht und Epoxy-Harz überzogen. 2025 mit einer Metallbahn ergänzt.' },
+			{ id: 'F', description: 'Dem Drachen eine Burg', bauer: 'Patricia und Wim', text: 'Im Jahr 2023 wurde diese Bahn erbaut von der 5. Klasse, S. Ramos, Schulhaus Feld 1 in Urdorf. Jedes Kind hat dabei durch eigene Ideen, das Sammeln von Materialien, das Notieren von Abläufen, das Umsetzen und Herstellen von Einzelteilen einen grossen Beitrag am Ganzen geleistet.', weiter: '2024 wurde die Bahn von Wim und Patricia in eine Drachenwelt umgebaut. 2025 aufgefrischt mit einem neuen Burggraben.' },
+			{ id: 'E', description: 'Multigolf', bauer: 'Architecture for Refugees Schweiz', text: 'Die Minigolfbahn „Multigolf“ versucht auf die Notwendigkeit der Zusammenarbeit im Leben und Spiel hinzuweisen. Sowohl hier auf der Brache Hard als auch im täglichen Leben sind wir auf die Symbiose mit anderen Menschen angewiesen. Alle Holzstücke, die verwendet wurden kommen von unseren alten Projekten, die wir in drei letzten Jahren gebaut haben, kein Stück wurde geschnitten, es besteht immer die Möglichkeit, alte Projekte wieder zu bauen.', weiter: '2024 wurde die Bahn aufgefrischt. 2025 mit einem neuen Labyrinth verbessert.' },
+			{ id: 'G', description: 'Daggeli', bauer: 'Rafael und Tim', text: 'Dackel sind klein, lang und süss. Diese Bahn ist gross, noch länger und haarig. Versuche den Ball durch das borstige Fell des Dackels in sein Popo-Loch zu schiessen. ', weiter: '' }
 		]
 	}
 };

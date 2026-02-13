@@ -281,7 +281,10 @@
 <style lang="scss" scoped>
 	#map {
 		fill: none;
+		width: 92vw;
 		max-width: 500px;
+		padding-left: auto;
+		padding-right: auto;
 		cursor: pointer;
 		padding-top: 1em;
 	}
