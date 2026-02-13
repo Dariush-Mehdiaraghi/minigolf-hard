@@ -106,7 +106,7 @@ const content: ContentObject = {
 				},
 				{
 					size: 's',
-					text: 'Viele weitere Informationen zum Zugang zur Hardgutbrache und Minigolf Hard findest du in unserem Zugangsdokument auf Deutsch und English. </br> <a href="https://drive.proton.me/urls/VS7S4XME8M#E6MUQpBGNBeJ" target="_blank" rel="noopener noreferrer"><u>Zugangsdokument (DE)</u></a>, <a href="https://drive.proton.me/urls/P1V5ZPGEVG#fZ0gcllfY7EO" target="_blank" rel="noopener noreferrer"><u>Access Document (EN)</u></a>'
+					text: 'Viele weitere Informationen zum Zugang zur Hardgutbrache und Minigolf Hard findest du in unserem Zugangsdokument auf Deutsch und English. </br> <a href="https://docs.google.com/document/d/1t1WUAZUXulT6Zgki9bWCLppgvjY9A9WEfVtlUKIh2Sk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>Zugangsdokument (DE)</u></a>, <a href="https://docs.google.com/document/d/1jonnofPn8MuhIsExAloznorxo_MY9zlvLax2ttlmmFk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>Access Document (EN)</u></a>'
 				}
 			]	
 		},
