@@ -10,7 +10,7 @@
   <div id="overview">
     <div class="box">
     <p> 
-      Am 6. und 7. Juni feiern wir das alljährliche Sommer Fest von Minigolf Hard. <br><br> Zum ersten Mal gibt es an zwei Tagen gratis Konzerte, Getränke, Essen, Minigolf und viele weitere EXTRAS! <br><br> Am Freitag wird das Fest um 16:00 Uhr starten und am Samstag beginnen wir bereits um 14:00 Uhr. Unsere Betonbahnen haben sich noch nicht verschoben, also treffen wir uns auch dieses Jahr an der Hardgutstrasse 7 in Zürich.
+      Am 5. und 6. Juni 2026 feiern wir das alljährliche Sommer Fest von Minigolf Hard. <br><br> Zum zweiten Mal gibt es an zwei Tagen gratis Konzerte, Getränke, Essen, Minigolf und viele weitere EXTRAS! <br><br> Am Freitag wird das Fest um 16:00 Uhr starten und am Samstag beginnen wir bereits um 14:00 Uhr. Unsere Betonbahnen haben sich noch nicht verschoben, also treffen wir uns auch dieses Jahr an der Hardgutstrasse 7 in Zürich.
     </p>
     <p>
     <a href="https://www.instagram.com/minigolfhard/">Mehr auf Instagram</a>
@@ -18,8 +18,11 @@
   </div>
 
   <div id="musik">
-  <h1>Programm<br>Freitag 6. Juni</h1>
-
+  <h1>Programm<br>Freitag 5. Juni</h1>
+   <p> 
+      to be announced    
+    </p>
+<!-- 
     <div class="box">
       <div class="image-container">
         <img src="./images/sommer-kleruss.png" alt="kleruss">
@@ -45,9 +48,13 @@
         <a href="https://www.instagram.com/paraphon_music/">Instagram</a>
       </p>
     </div>
+ -->
+    <h1>Programm <br> Samstag 6. Juni</h1>
 
-    <h1>Programm <br> Samstag 7. Juni</h1>
-
+    <p> 
+      to be announced    
+    </p>
+<!-- 
     <div class="box">
       <div class="image-container">
         <img src="./images/sommer-daycap.png" alt="daycap">
@@ -86,6 +93,7 @@
         <a href="https://www.instagram.com/melicious.mp3/">Instagram</a>
       </p>
     </div>
+     -->
   </div>
   </div>
   <div id="attraktionen">
@@ -103,57 +111,7 @@
         </p>
       </div>
     </div>
-    <div class="box-attraktion">
-      <div class="image-container">
-        <img src="./images/sommer-komma3.png" alt="Mini Bar">
-        <h2 class="center">Komma 3</h2>
-      </div>
-      <div>
-        <h3>Komma 3 am Samstag</h3>
-        <p>
-          Am Kreativ-Tisch des Atelier Komma 3 könnt ihr auch dieses Jahr wieder Transparente für den 14. Juni gestalten.
-        </p>
-      </div>
-    </div>
-    <div class="box-attraktion">
-      <div class="image-container">
-        <img src="./images/sommer-zirkuskafi.png" alt="Mini Bar">
-        <h2 class="center">Zirkuskafi</h2>
-      </div>
-
-      <div>
-        <h3>Zirkuskafi am Freitag und Samstag</h3>
-        <p>
-          Beim Zirkuskafi findet ihr leckeren Kaffee und Kuchen.
-        </p>
-      </div>
-    </div>
-    <div class="box-attraktion">
-      <div class="image-container">
-        <img src="./images/sommer-crepes.png" alt="Crêpes">
-        <h2 class="center">Crêpes</h2>
-      </div>
-
-      <div>
-        <h3>Crêpes am Freitag und Samstag</h3>
-        <p>
-          Feine Crêpes gibt es von der Minigolfbahnbaugenossenschaft Wiedikon.
-        </p>
-      </div>
-    </div>
-    <div class="box-attraktion">
-      <div class="image-container">
-        <img src="./images/sommer-siebdruck.png" alt="Siebdruck">
-        <h2 class="center">Siebdruck</h2>
-      </div>
-
-      <div>
-        <h3>Siebdruck von ASZ am Freitag und am Samstag</h3>
-        <p>
-          Am Siebdruck Stand kannst du dein eigenes Shirt bedrucken. bestenfalls bringst du ein altes mit, oder findest eins im Brocki nebenan.
-        </p>
-      </div>
-    </div>
+    
     <div class="box-attraktion">
       <div class="image-container">
         <img src="./images/sommer-minigolf.png" alt="Minigolf">
@@ -290,7 +248,10 @@
     padding-left: 20vw;
     padding-right: 20vw;
     padding-bottom: 20vw;
-    background-image: linear-gradient(to bottom, #F7C6E4 0%, 3.191489353775978%, #FF1452 6.382978707551956%, 9.840772274245339%, #FB8905 13.298565840938723%, 17.705007486475097%, #E25215 22.340425848960876%, 25.554106910039117%, #ACDD67 29.20469361147327%, 33.507170795306386%, #FCD500 36.50586701434159%, 40.80834419817471%, #F9FCE7 45.11082138200782%, 48.23989569752281%, #F7F8D8 51.36897001303781%, 56.71285407561833%, #24BDF6 62.05673813819885%, 65.96969892568352%, #60E9FB 69.88265971316818%, 73.98956975228161%, #F79C03 78.09647979139504%, 81.22555410691004%, #FA8900 84.35462842242504%, 87.74468963273657%, #00AA00 91.1347508430481%, 93.43971610069275%, #D2F419 95.7446813583374%, 97.8723406791687%, #B0FD55 100%); 
+    background-color: #F47554;
+    background-image: url('./images/sommerfest-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   a {
       padding: 0.6em 1em;
