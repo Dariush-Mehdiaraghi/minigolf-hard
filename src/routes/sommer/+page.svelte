@@ -248,7 +248,6 @@
     padding-left: 20vw;
     padding-right: 20vw;
     padding-bottom: 20vw;
-    background-color: #F47554;
     background-image: url('./images/sommerfest-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
