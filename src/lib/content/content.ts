@@ -263,14 +263,6 @@ const content: ContentObject = {
 					'2024 wurde die Bahn mit pinker Farbe aufgefrischt. 2025 wurde die Bahn von Claudio TOTALSANIERT und ist jetzt ein Fussballstadion.'
 			},
 			{
-				id: 'D',
-				description: 'Il vulcano che sputa cocciopesto',
-				bauer: '',
-				text: 'Das Ziel ist der Vulkankrater. Die Bahn besteht aus Cocciopesto (Sumpfkalk, Ziegelmehl), einem römischen Putzmörtel, den wir mit Halbedelsteine polierten und mit Olivenölseife imprägnierten. Das Kalkfundament (Sumpfkalk, hydraulischer Kalk, Branntkalk, Kies/Sand) mischten und verdichteten wir mit einem Handstampfer vor Ort.',
-				weiter:
-					'2024 mit einer neuen, filigranen Farbschicht und Epoxy-Harz überzogen. 2025 mit einer Metallbahn ergänzt.'
-			},
-			{
 				id: 'F',
 				description: 'Dem Drachen eine Burg',
 				bauer: 'Patricia und Wim',

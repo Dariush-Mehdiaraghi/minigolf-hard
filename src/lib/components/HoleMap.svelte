@@ -240,32 +240,6 @@
 		/>
 	</g>
 	<g
-		id="D_Group"
-		tabindex="0"
-		role="button"
-		on:click={() => handleHoleClick('D')}
-		on:keydown={(e) => handleKeydown(e, 'D')}
-	>
-		<rect
-			class="bg-shape {holesPlayed.includes('D') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
-			'D'
-				? 'open'
-				: ''}"
-			id="Rectangle 55"
-			x="223.701"
-			y="967.526"
-			width="101.735"
-			height="222.545"
-			rx="50.8674"
-			transform="rotate(90 223.701 967.526)"
-		/>
-		<path
-			class="letter"
-			id="D"
-			d="M185.847 1017.81C185.847 1031.8 178.026 1040.06 164.991 1040.06H148.714V995.555H165.055C177.581 995.555 185.847 1003.31 185.847 1017.81ZM156.344 1033.83H164.037C173.702 1033.83 178.217 1028.68 178.217 1017.81C178.217 1007.13 173.829 1001.72 164.101 1001.72H156.344V1033.83Z"
-		/>
-	</g>
-	<g
 		id="F_Group"
 		tabindex="0"
 		role="button"
