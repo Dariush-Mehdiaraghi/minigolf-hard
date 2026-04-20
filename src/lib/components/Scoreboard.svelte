@@ -276,23 +276,25 @@
 		margin: 0;
 		top: 10px;
 		left: 50%;
-		transform: translate(-50%, 0%);
+		transform: translate(-50%, 0);
+		transform-origin: center top;
+		min-width: 86vw;
 		&::backdrop {
 			background-color: rgba(0, 0, 0, 0.5);
 		}
-		animation: fadeIn 0.2s ease-in-out;
-		transform-origin: center;
-		min-width: 86vw;
+		&[open] {
+			animation: fadeIn 0.2s ease-in-out;
+		}
 		@keyframes fadeIn {
 			from {
 				opacity: 0;
-				transform: translate(-50%, -50%) scale(0.9);
+				transform: translate(-50%, 0) scale(0.9);
 				filter: blur(10px);
 			}
 			to {
 				opacity: 1;
-				transform: translate(-50%, -50%) scale(1);
-				filter: blur(0px);
+				transform: translate(-50%, 0) scale(1);
+				filter: blur(0);
 			}
 		}
 	}
