@@ -7,7 +7,7 @@
 	style="text-align: {section.textAlign}; background:var(--{section.color}-main)"
 >
 	<p id="about__text">
-		{#each section.contentArray as block}
+		{#each section.contentArray as block, i (i)}
 			{#if block.text}
 				<p class={block.size} bind:innerHTML={block.text} contenteditable="false" />
 			{/if}
@@ -28,7 +28,7 @@
 		place-items: center;
 		padding: 2em;
 		text-align: center;
-		p{
+		p {
 			max-width: 61ch;
 		}
 

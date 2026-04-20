@@ -1,21 +1,21 @@
 interface User {
-    userName: string;
-    totalAttempts: number;
-    currentRank: number;
+	userName: string;
+	totalAttempts: number;
+	currentRank: number;
 }
 
 interface HoleScore {
-    userName: string;
-    attempts: number;
+	userName: string;
+	attempts: number;
 }
 
 interface HoleState {
-    holeId: string;
-    scores: HoleScore[];
+	holeId: string;
+	scores: HoleScore[];
 }
 
 interface GameState {
-    isFinished: boolean;
-    users: User[];
-    holesState: HoleState[];
+	isFinished: boolean;
+	users: User[];
+	holesState: HoleState[];
 }

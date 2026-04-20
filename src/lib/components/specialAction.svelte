@@ -19,7 +19,7 @@
 		font-size: 3em;
 		animation: wiggle 2s infinite ease-in-out;
 		transition: all 0.5s ease-in-out;
-		
+
 		@media (max-width: 1400px) {
 			font-size: 1.3em;
 		}
@@ -42,11 +42,11 @@
 			}
 		}
 	}
-	
+
 	#special-action:hover {
 		/* Base hover font size before media queries */
 		font-size: 3.5em;
-		
+
 		@media (max-width: 1400px) {
 			font-size: 1.5em;
 		}

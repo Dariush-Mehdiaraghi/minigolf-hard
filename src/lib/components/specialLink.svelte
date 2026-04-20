@@ -1,16 +1,17 @@
 <script lang="ts">
-export let anchorProps: {
-    href: string;
-    [key: string]: any;
-};
+	export let anchorProps: {
+		href: string;
+		[key: string]: string | number | boolean | undefined;
+	};
 </script>
 
 <a {...anchorProps} target="_blank" rel="noopener noreferrer">
-    <slot />
+	<slot />
 </a>
+
 <style lang="scss" scoped>
-   	a {
-        white-space: nowrap;
+	a {
+		white-space: nowrap;
 		font-size: 2em;
 		padding: 1em;
 		color: white;
@@ -38,4 +39,4 @@ export let anchorProps: {
 			}
 		}
 	}
-    </style>
+</style>

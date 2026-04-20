@@ -6,7 +6,7 @@
 
 <div id="scoreboard-table" transition:grow>
 	<ScoreBoardH1>Scoreboard</ScoreBoardH1>
-	{#each $gameStore.users as user}
+	{#each $gameStore.users as user (user.userName)}
 		<div class="user-row">
 			<div class="user-name-and-attempts">
 				<h2 class="user-name">{user.userName}</h2>
@@ -17,7 +17,7 @@
 				</p>
 			</div>
 			<div class="hole-grid">
-				{#each $gameStore.holesState as hole}
+				{#each $gameStore.holesState as hole (hole.holeId)}
 					<div class="hole">
 						<div class="hole-id">{hole.holeId}</div>
 						<div>-</div>
@@ -71,7 +71,6 @@
 			}
 			.hole-id,
 			.hole-attempts {
-			
 				width: 1em;
 			}
 		}

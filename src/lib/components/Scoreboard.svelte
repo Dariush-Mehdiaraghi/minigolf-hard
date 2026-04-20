@@ -1,7 +1,7 @@
 <script lang="ts">
 	import content from '$lib/content/content';
 	import HoleMap from './HoleMap.svelte';
-	import { gameStore } from '$lib/stores/gameStore';
+	import { gameStore, type HoleScore } from '$lib/stores/gameStore';
 	import ScoreboardTable from './ScoreboardTable.svelte';
 	import ScoreBoardH1 from './ScoreBoardH1.svelte';
 	import { grow } from '$lib/utils/growTransition';
@@ -14,15 +14,6 @@
 	$: openHoleState = selectedHoleId
 		? $gameStore.holesState.find((hole) => hole.holeId === selectedHoleId)
 		: undefined;
-
-	function sanitizeAttempts(value: string | number): number {
-		// Convert to number and handle NaN
-		const numValue = Number(value);
-		if (isNaN(numValue)) return 1;
-
-		// Clamp between 1 and 7
-		return Math.min(Math.max(Math.round(numValue), 1), 7);
-	}
 
 	function addPlayer() {
 		// to fix when there is a user called asdfgh the new player with asdfg will be called asdfg (1) wich is not neccessary
@@ -46,12 +37,11 @@
 		}
 	}
 
-	function updateScore(score: any, increment: boolean) {
+	function updateScore(score: HoleScore, increment: boolean) {
 		if (!openHoleState) return;
 		gameStore.updateScore(openHoleState.holeId, score.userName, increment);
 		// No need to manually update openHoleState as it's now reactive
 	}
-
 </script>
 
 <main>
@@ -103,12 +93,22 @@
 		</dialog>
 		<dialog id="hole-modal" open={openHoleState !== undefined}>
 			<div class="dialog-content">
-				<h2 class="hole-title">{openHoleState?.holeId}: {content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.description}</h2>
-				<p class="hole-description">{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.bauer}</p>
-				<p class="hole-description">{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.text}</p>
-				<p class="hole-description">{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.weiter}</p>
+				<h2 class="hole-title">
+					{openHoleState?.holeId}: {content.scoreboard.holes.find(
+						(hole) => hole.id === openHoleState?.holeId
+					)?.description}
+				</h2>
+				<p class="hole-description">
+					{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.bauer}
+				</p>
+				<p class="hole-description">
+					{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.text}
+				</p>
+				<p class="hole-description">
+					{content.scoreboard.holes.find((hole) => hole.id === openHoleState?.holeId)?.weiter}
+				</p>
 				{#if openHoleState}
-					{#each openHoleState.scores as score}
+					{#each openHoleState.scores as score (score.userName)}
 						<div class="player-row">
 							<span>{score.userName}</span>
 							<div class="score-input">
@@ -145,7 +145,7 @@
 					}}>Spiel zurücksetzen</button
 				>
 			</div>
-			<ScoreboardTable/>
+			<ScoreboardTable />
 		{/if}
 	</div>
 </main>
@@ -208,6 +208,7 @@
 	.player-input {
 		display: flex;
 		flex-direction: row;
+		gap: 1em;
 		input {
 			width: 100%;
 			padding: 0.5em 1em;

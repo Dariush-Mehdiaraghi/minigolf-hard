@@ -8,9 +8,10 @@
 	<meta name="description" content="Links für Minigolf Hard" />
 </svelte:head>
 
+<!-- eslint-disable svelte/no-navigation-without-resolve -- hrefs are external URLs from content config -->
 <main id="link-page">
 	<h1>{linksPage.title}</h1>
-	{#each linksPage.links as link}
+	{#each linksPage.links as link (link.url)}
 		<a
 			id={link.url.includes('forms.gle/') ? 'concours' : ''}
 			href={link.url}
@@ -23,7 +24,7 @@
 </main>
 
 <style lang="scss" scoped>
-	h1{
+	h1 {
 		font-size: 3em;
 	}
 	#link-page {
@@ -53,18 +54,14 @@
 				0% {
 					transform: scale(1);
 					box-shadow: 0px 0px 0px 0px var(--pink-main);
-
 				}
 				50% {
 					transform: scale(1.05);
 					box-shadow: 0px 10px 0px 0px var(--pink-main);
-
 				}
 				100% {
 					transform: scale(1);
 					box-shadow: 0px 0px 0px 0px var(--pink-main);
-
-
 				}
 			}
 		}

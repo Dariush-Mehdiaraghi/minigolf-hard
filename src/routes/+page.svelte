@@ -1,7 +1,6 @@
 <script>
 	import About from '$lib/components/about.svelte';
 	import Landing from '$lib/components/landing.svelte';
-	import RealtimeIsItOpenNow from '$lib/components/realtimeIsItOpenNow.svelte';
 	import SmallSections from '$lib/components/smallSections.svelte';
 </script>
 

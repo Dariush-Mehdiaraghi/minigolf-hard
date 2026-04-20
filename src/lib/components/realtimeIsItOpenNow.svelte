@@ -10,6 +10,7 @@
 
 		const parsedDate = new Date(year, month, day);
 
+		// eslint-disable-next-line svelte/prefer-svelte-reactivity -- One-shot comparison, no reactivity needed
 		const today = new Date();
 		today.setHours(0, 0, 0, 0); // Set the time to midnight for comparison
 
