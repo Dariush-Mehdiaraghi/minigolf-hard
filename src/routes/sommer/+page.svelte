@@ -38,85 +38,63 @@
 
 		<div id="musik">
 			<h1>Programm<br />Freitag 5. Juni</h1>
-			<p>to be announced</p>
-			<!-- 
+			
     <div class="box">
       <div class="image-container">
-        <img src="./images/sommer-kleruss.png" alt="kleruss">
-        <h2 class="center">kleruss</h2>
+        <img src="./images/corinora.png" alt="Cori Nora">
       </div>
-      <h3>kleruss spielt am Freitag, 6. Juni um 19:30</h3>
+      <h3>Cori Nora spielt am Freitag, 5. Juni um 19:30</h3>
       <p>
-        kleruss, die junge Musikerin verzaubert mit ihrer einfühlsamen Stimme und ihrem facettenreichen Sound. Ihr Still ist eine spannende Mischung aus experimentellem Pop, Trip-Hop und elektronischen Einflüssen, die sowohl tanzbare Rhythmen als auch melancholische Töne umfasst. Mit ihrem letzten Album «time will tell» gelingt es kleruss, das Publikum mit emotionaler Tiefe und eingängigen Melodien zu begeistern. Besonders beeindruckend: kleruss produziert und nimmt ihre Musik komplett eigenständig auf und beweist damit eindrucksvoll ihre Vielseitgkeit und ihr Talent. 
-      <p>
-        <a href="https://www.instagram.com/kleruss/">Instagram</a>
+		Cori Nora ist eine Sängerin, Komponistin und Multiinstrumentalistin, die alltägliche Momente und die Rhythmen der Natur in warme, unmittelbare Songs verwandelt. Aufgewachsen mit der Jazz-Plattensammlung ihres Vaters aus den 60er und 70er Jahren, verbindet sie Alternative-Musik mit durchdachtem Songwriting und einem starken Fokus auf Live-Auftritte.      <p>
+        <a href="https://www.instagram.com/cori___nora/">Instagram</a>
       </p>
     </div>
 
     <div class="box">
       <div class="image-container">
-        <img src="./images/sommer-paraphon.png" alt="Paraphon">
-        <h2 class="center">Paraphon</h2>
+        <img src="./images/awalion.png" alt="AWA LION">
       </div>
-      <h3>Paraphon spielen am Freitag, 6. Juni um 22:00 Uhr</h3>
+      <h3>AWA LION spielen am Freitag, 5. Juni um 22:00 Uhr</h3>
       <p>
-        Ob Paraphon nun noch als Geheimtipp gelten oder nicht, davon kann sich jeder selbst ein Bild machen. Mit über 45 Auftritten in den letzten Jahren und in bester Erinnerung liegenden Shows etwa am Krach am Bach-Festival oder am Quellrock Openair spielt sich das Synth-Pop Duo langsam in die Köpfe der Zuhörer*innen und wecken dort nostalgische Gefühle zu den 80er Jahren – ganz egal, ob man da schon geboren war oder nicht. Paraphons 80er-retro-Sound, kreiert und performt an verschiedenen Synthesizern, Drum Machines und E-Gitarre, entzückt nicht nur live, sondern auch digital.    </p>
+		AWA LION ist ein audiovisuelles Musikprojekt von Lydia Perrot und Tunay Bora, das Klang und Bild zu einem fesselnden Live-Erlebnis verschmelzen lässt. Mit kraftvollen Beats, tiefen Bässen, eingängigen Synthmelodien und eindringlichen Vocals kreiert Lydia eine musikalische Atmosphäre, die von Tunays intensiven Live-Visuals visuell ergänzt wird. Das Ergebnis ist eine immersive Performance, die das Publikum in düstere, tranceartige Sphären entführt.
       <p>
-        <a href="https://www.instagram.com/paraphon_music/">Instagram</a>
+        <a href="https://www.instagram.com/awalion.music/">Instagram</a>
       </p>
     </div>
- -->
-			<h1>Programm <br /> Samstag 6. Juni</h1>
 
-			<p>to be announced</p>
-			<!-- 
+	<h1>Programm <br /> Samstag 6. Juni</h1>
+
     <div class="box">
       <div class="image-container">
-        <img src="./images/sommer-daycap.png" alt="daycap">
-        <h2 class="center">daycap</h2>
+        <img src="./images/nophase.png" alt="no phase">
       </div>
-      <h3>daycap spielen am Samstag, 7. Juni um 17:00</h3>
+      <h3>no phase spielen am Samstag, 6. Juni um 17:30</h3>
       <p>
-        Sommerlich verträumter bedroom-Pop-Sound mit Vorliebe für effektgetränkte Gitarren, softe Synthesizer, melodiöse Basslines und groovy Rhythmen.
-      <p>
-        <a href="https://www.instagram.com/daycapband/">Instagram</a>
+		Treibende Riffs, verschlungener Bass und eine Energie, die gleichzeitig nostalgisch und erfrischend ist — das ist das Berner Quartett 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚. Inspiriert von Alternative-Peers wie King Hannah, Warpaint oder Dehd, entfalten 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚 einen Shoegaze-Sound mit Post-Punk-Einflüssen, dessen Lässigkeit ansteckend ist. Im Februar 2024 erschien ihre erste EP 𝙩𝙞𝙧𝙚𝙙 — vier Songs, die mal hart und unkontrolliert abgehen, mal introspektiv und warm schweben. Wenn 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚 spielen, verdichten sich ihre Klangwellen wie eine undurchdringbare Nebelwolke, aus der immer wieder schimmernde Gitarrensplitter fallen.      <p>
+        <a href="https://www.instagram.com/nophase.band/">Instagram</a>
       </p>
     </div>
 
     <div class="box">
       <div class="image-container">
-        <img src="./images/sommer-waverer.png" alt="Waverer">
-        <h2 class="center">Waverer</h2>
+        <img src="./images/namaka.png" alt="Namaka">
       </div>
-      <h3>Waverer spielt am Samstag, 7. Juni um 19:30</h3>
+      <h3>Namaka spielen am Samstag, 6. Juni um 22:00</h3>
       <p>
-        In seinen Songs porträtiert Waverer an erster Stelle sich selbst: ein Mann, der oft etwas mehr denkt und fühlt, als ihm lieb ist. Der immer etwas in seiner eigenen Welt schwebt, und den man oft nicht so genau lesen kann. Der sich Sorgen macht, was andere von ihm denken, sich auch ab und zu gerne inszeniert, und dann gleich wieder zurückzieht. Hinter der Gitarre (oder Schlagzeug) und dem Mikrofon aber fühlt sich Waverer am wohlsten. Auf der Bühne ist es ihm endlich erlaubt, mit Worten und Stimmen zu spielen, sich sogar selbst zu widersprechen. Mit scharfer Ironie bewaffnet, schiesst er sich immer wieder versehentlich selbst ins Bein – so werden tiefe Ängste ausgesprochen, hart erkämpfte Meinungen fallen in sich zusammen. Die Wahrheit ist doch so selten einseitig.
-      <p>
-        <a href="https://www.instagram.com/wavererwaverer/">Instagram</a>
+       Im September 2025 veröffentlichte Namaka ihr zweites Album, Cloudspotting. Geschrieben, produziert und aufgenommen zwischen Zürich und Brüssel. Cloudspotting ist wie im Gras oder auf einem warmen Dach zu liegen, Wolken beim Vorüberziehen zuzuschauen und die Gedanken schweifen zu lassen. Das unablässige gesellschaftliche Rauschen, das uns mit Erwartungen und Anforderungen überwältigt, ausblenden. Stattdessen ist dieses Album ein Aufruf zum Tagträumen – einer Tätigkeit, die übrigens wirklich unterschätzt wird – und bietet den perfekten Soundtrack für einen entspannten Weg zur Selbstbestimmung.
+	   </p>
+	   <p>
+        <a href="https://www.instagram.com/namakamusic/">Instagram</a>
       </p>
     </div>
 
-    <div class="box">
-      <div class="image-container">
-        <img src="./images/sommer-melicious.png" alt="Melicious">
-        <h2 class="center">Melicious</h2>
-      </div>
-      <h3>Melicious spielt am Samstag, 7. Juni um 22:00</h3>
-      <p>
-        Träumerisch und intim: Melicious hat keine Angst vor Verletzlichkeit. Die Basler Künstlerin ist ein Gefühlssprachrohr, und verarbeitet auf ihrer Debüt-EP «Risky Business» Herzschmerz, psychische Gesundheit und Gefühlschaos. Melicious navigiert mit ihren tröstlichen, schön traurigen, elektronischen Indie-Pop Songs durch die neblige Landschaft des Erwachsenwerdens.
-      <p>
-        <a href="https://www.instagram.com/melicious.mp3/">Instagram</a>
-      </p>
-    </div>
-     -->
 		</div>
 	</div>
 	<div id="attraktionen">
 		<h1>Attraktionen</h1>
 		<div class="box-attraktion">
 			<div class="image-container">
-				<img src="./images/sommer-minibar.png" alt="Mini Bar" />
-				<h2 class="center">Mini Bar</h2>
+				<img src="./images/minibar.png" alt="Mini Bar" />
 			</div>
 
 			<div>
@@ -130,8 +108,17 @@
 
 		<div class="box-attraktion">
 			<div class="image-container">
-				<img src="./images/sommer-minigolf.png" alt="Minigolf" />
-				<h2 class="center">Minigolf</h2>
+				<img src="./images/gekoech.png" alt="Geköch" />
+			</div>
+			<div>
+				<p>Es gibt feines Essen von Geköch.</p>
+			</div>
+		</div>
+
+		<div class="box-attraktion">
+			<div class="image-container">
+				<img src="./images/minigolf.png" alt="Minigolf" />
+
 			</div>
 
 			<div>
@@ -266,7 +253,7 @@
 		padding-bottom: 20vw;
 		background-image: src('./images/sommerfest-bg.jpg');
 		background-repeat: no-repeat;
-		background-color: #cf6417;
+		background-color: #FF6213;
 		background-size: cover;
 	}
 	a {
