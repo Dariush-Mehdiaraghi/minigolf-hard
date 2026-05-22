@@ -68,7 +68,7 @@
       <div class="image-container">
         <img src="./images/nophase.png" alt="no phase">
       </div>
-      <h3>no phase spielen am Samstag, 6. Juni um 17:30</h3>
+      <h3>no phase spielen am Samstag, 6. Juni um 19:30</h3>
       <p>
 		Treibende Riffs, verschlungener Bass und eine Energie, die gleichzeitig nostalgisch und erfrischend ist — das ist das Berner Quartett 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚. Inspiriert von Alternative-Peers wie King Hannah, Warpaint oder Dehd, entfalten 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚 einen Shoegaze-Sound mit Post-Punk-Einflüssen, dessen Lässigkeit ansteckend ist. Im Februar 2024 erschien ihre erste EP 𝙩𝙞𝙧𝙚𝙙 — vier Songs, die mal hart und unkontrolliert abgehen, mal introspektiv und warm schweben. Wenn 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚 spielen, verdichten sich ihre Klangwellen wie eine undurchdringbare Nebelwolke, aus der immer wieder schimmernde Gitarrensplitter fallen.      <p>
         <a href="https://www.instagram.com/nophase.band/">Instagram</a>
