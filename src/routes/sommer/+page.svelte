@@ -27,7 +27,7 @@
 				Am 5. und 6. Juni 2026 feiern wir das alljährliche Sommer Fest von Minigolf Hard. <br /><br
 				/>
 				Zum zweiten Mal gibt es an zwei Tagen gratis Konzerte, Getränke, Essen, Minigolf und viele weitere
-				EXTRAS! <br /><br /> Am Freitag wird das Fest um 16:00 Uhr starten und am Samstag beginnen wir
+				EXTRAS! <br /><br /> Am Freitag wird das Fest um 17:00 Uhr starten und am Samstag beginnen wir
 				bereits um 14:00 Uhr. Unsere Betonbahnen haben sich noch nicht verschoben, also treffen wir uns
 				auch dieses Jahr an der Hardgutstrasse 7 in Zürich.
 			</p>
@@ -63,6 +63,18 @@
     </div>
 
 	<h1>Programm <br /> Samstag 6. Juni</h1>
+
+	 <div class="box">
+      <div class="image-container">
+        <img src="./images/choose-the-juice.png" alt="Choose the Juice">
+      </div>
+      <h3>Choose the Juice spielen am Samstag, 6. Juni um 16:00</h3>
+      <p>
+			Sphärisch, dynamisch und dramatisch. Diese drei Worte beschreiben den Sound der Ostschweizer Neo-Psychedelic-/Shoegaze-Band präzise. Die fünf Musiker*innen aus St. Gallen – Nicolas Kölbener(Bass, Vocals), Vera Zollikofer (Vocals, Synths), Mo Bernasconi (Vocals, Gitarre, Synths), Andrea-Gion Künzle (Gitarre) und Milan Egloff (Drums) – nehmen ihr Publikum mit auf eine Reise durch mystische Tiefen und weite Klangräume. Vom verträumten Shoegaze der 90er-Jahre inspirierte Gitarrenflächen und Synths entfalten eine emotionale Berg-und Talfahrt, die Raum für Träume und Fantasie schafft. Dynamische Drums und ein markanter Bass erden diese Klangwelten im Hier und Jetzt. 
+			<p>
+	        <a href="https://www.instagram.com/choosethejuice/">Instagram</a>
+      </p>
+    </div>
 
     <div class="box">
       <div class="image-container">
@@ -111,7 +123,25 @@
 				<img src="./images/gekoech.png" alt="Geköch" />
 			</div>
 			<div>
-				<p>Es gibt feines Essen von Geköch.</p>
+				<p>Es gibt feines Essen von Geköch. Es gibt Tofu Satay & Rice Bowl.</p>
+			</div>
+		</div>
+
+		<div class="box-attraktion">
+			<div class="image-container">
+				<img src="./images/siebdruck.png" alt="Siebdruck" />
+			</div>
+			<div>
+				<p>Komma 3 macht einen Siebdruck-Stand. Bring dein eigenes T-Shirt mit!</p>
+			</div>
+		</div>
+
+		<div class="box-attraktion">
+			<div class="image-container">
+				<img src="./images/kinderbaustell.png" alt="Kinderbaustelle" />
+			</div>
+			<div>
+				<p>Für die Kinder gibt es am Samstag eine Kinderbaustelle, wo eine Kugelbahn gebaut wird.</p>
 			</div>
 		</div>
 
