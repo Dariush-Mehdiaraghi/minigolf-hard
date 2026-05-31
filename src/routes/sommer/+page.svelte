@@ -123,7 +123,7 @@
 				<img src="./images/gekoech.png" alt="Geköch" />
 			</div>
 			<div>
-				<p>Es gibt feines Essen von Geköch. Es gibt Tofu Satay & Rice Bowl.</p>
+				<p>Leckere Tofu Satay & Rice Bowls von Geköch.</p>
 			</div>
 		</div>
 
