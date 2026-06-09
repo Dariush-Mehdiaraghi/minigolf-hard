@@ -4,7 +4,8 @@
 	let isLoaded = false;
 	const isThisStringToday = (dateString: string) => {
 		const dateParts = dateString.split('.');
-		const year = parseInt(dateParts[2]);
+		const rawYear = parseInt(dateParts[2]);
+		const year = rawYear < 100 ? 2000 + rawYear : rawYear;
 		const month = parseInt(dateParts[1]) - 1; // Subtract 1 since months are zero-based
 		const day = parseInt(dateParts[0]);
 
