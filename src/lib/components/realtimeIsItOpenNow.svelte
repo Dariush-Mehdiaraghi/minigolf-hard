@@ -1,28 +1,18 @@
 <script lang="ts">
-	import PublicGoogleSheetsParser from 'public-google-sheets-parser';
+	import { onMount } from 'svelte';
+	import { fetchIsOpenToday } from '$lib/utils/shiftPlan';
+
 	let isItOpen = false;
 	let isLoaded = false;
-	const isThisStringToday = (dateString: string) => {
-		const dateParts = dateString.split('.');
-		const rawYear = parseInt(dateParts[2]);
-		const year = rawYear < 100 ? 2000 + rawYear : rawYear;
-		const month = parseInt(dateParts[1]) - 1; // Subtract 1 since months are zero-based
-		const day = parseInt(dateParts[0]);
 
-		const parsedDate = new Date(year, month, day);
-
-		// eslint-disable-next-line svelte/prefer-svelte-reactivity -- One-shot comparison, no reactivity needed
-		const today = new Date();
-		today.setHours(0, 0, 0, 0); // Set the time to midnight for comparison
-
-		return parsedDate.getTime() === today.getTime();
-	};
-	// Getting Shichtplan as json https://docs.google.com/spreadsheets/d/1DWzdj3dfXAUQ0NJtNxDfqWvW6AeO8LcTMXUUZeGU4XU/edit#gid=1769736678
-	const parser = new PublicGoogleSheetsParser('1DWzdj3dfXAUQ0NJtNxDfqWvW6AeO8LcTMXUUZeGU4XU');
-	parser.parse().then((data) => {
-		const todaysItem = data?.find((item) => item.date && isThisStringToday(item.date));
-		isItOpen = !!todaysItem?.isOpen;
-		isLoaded = true;
+	// Pages are prerendered, so the Schichtplan has to be read in the browser
+	onMount(async () => {
+		try {
+			isItOpen = await fetchIsOpenToday();
+			isLoaded = true;
+		} catch (error) {
+			console.error('Could not read the Schichtplan', error);
+		}
 	});
 </script>
 
