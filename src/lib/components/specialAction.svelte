@@ -1,8 +1,7 @@
 <script lang="ts">
 	import SpecialLink from './specialLink.svelte';
 
-	export let url: string;
-	export let label: string;
+	let { url, label }: { url: string; label: string } = $props();
 </script>
 
 <div id="special-action">

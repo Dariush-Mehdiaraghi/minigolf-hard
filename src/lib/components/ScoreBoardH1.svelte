@@ -1,6 +1,12 @@
-<h1><slot /></h1>
+<script lang="ts">
+	import type { Snippet } from 'svelte';
 
-<style scoped>
+	let { children }: { children: Snippet } = $props();
+</script>
+
+<h1>{@render children()}</h1>
+
+<style>
 	h1 {
 		text-align: center;
 		border-bottom: 1px dotted black;

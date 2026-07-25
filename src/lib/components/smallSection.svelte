@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let section: SmallSectionProps;
+	let { section }: { section: SmallSectionProps } = $props();
 </script>
 
 <section
@@ -9,7 +9,7 @@
 	<p id="about__text">
 		{#each section.contentArray as block, i (i)}
 			{#if block.text}
-				<p class={block.size} bind:innerHTML={block.text} contenteditable="false" />
+				<p class={block.size} bind:innerHTML={block.text} contenteditable="false"></p>
 			{/if}
 			{#if block.image}
 				<img class={block.size} src={block.image.src} alt={block.image.alt} />

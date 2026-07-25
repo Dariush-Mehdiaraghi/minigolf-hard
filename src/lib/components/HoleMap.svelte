@@ -1,8 +1,14 @@
 <script lang="ts">
 	import { gameStore } from '$lib/stores/gameStore';
 
-	export let onHoleSelected: (holeId: string) => void;
-	export let openHoleState: HoleState | undefined;
+	let {
+		onHoleSelected,
+		openHoleState
+	}: {
+		onHoleSelected: (holeId: string) => void;
+		openHoleState: HoleState | undefined;
+	} = $props();
+
 	function handleHoleClick(holeId: string) {
 		onHoleSelected(holeId);
 	}
@@ -14,10 +20,11 @@
 		}
 	}
 
-	$: holesPlayed = $gameStore.holesState
-		.filter((hole) => hole.scores.some((score) => score.attempts > 0))
-		.map((hole) => hole.holeId);
-	$: console.log(holesPlayed);
+	const holesPlayed = $derived(
+		$gameStore.holesState
+			.filter((hole) => hole.scores.some((score) => score.attempts > 0))
+			.map((hole) => hole.holeId)
+	);
 </script>
 
 <svg
@@ -31,8 +38,8 @@
 		id="L_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('L')}
-		on:keydown={(e) => handleKeydown(e, 'L')}
+		onclick={() => handleHoleClick('L')}
+		onkeydown={(e) => handleKeydown(e, 'L')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('L') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -69,8 +76,8 @@
 		id="J_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('J')}
-		on:keydown={(e) => handleKeydown(e, 'J')}
+		onclick={() => handleHoleClick('J')}
+		onkeydown={(e) => handleKeydown(e, 'J')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('J') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -94,8 +101,8 @@
 		id="M_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('M')}
-		on:keydown={(e) => handleKeydown(e, 'M')}
+		onclick={() => handleHoleClick('M')}
+		onkeydown={(e) => handleKeydown(e, 'M')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('M') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -119,8 +126,8 @@
 		id="K_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('K')}
-		on:keydown={(e) => handleKeydown(e, 'K')}
+		onclick={() => handleHoleClick('K')}
+		onkeydown={(e) => handleKeydown(e, 'K')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('K') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -144,8 +151,8 @@
 		id="I_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('I')}
-		on:keydown={(e) => handleKeydown(e, 'I')}
+		onclick={() => handleHoleClick('I')}
+		onkeydown={(e) => handleKeydown(e, 'I')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('I') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -166,8 +173,8 @@
 		id="H_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('H')}
-		on:keydown={(e) => handleKeydown(e, 'H')}
+		onclick={() => handleHoleClick('H')}
+		onkeydown={(e) => handleKeydown(e, 'H')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('H') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -191,8 +198,8 @@
 		id="A_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('A')}
-		on:keydown={(e) => handleKeydown(e, 'A')}
+		onclick={() => handleHoleClick('A')}
+		onkeydown={(e) => handleKeydown(e, 'A')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('A') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -217,8 +224,8 @@
 		id="B_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('B')}
-		on:keydown={(e) => handleKeydown(e, 'B')}
+		onclick={() => handleHoleClick('B')}
+		onkeydown={(e) => handleKeydown(e, 'B')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('B') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -243,8 +250,8 @@
 		id="F_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('F')}
-		on:keydown={(e) => handleKeydown(e, 'F')}
+		onclick={() => handleHoleClick('F')}
+		onkeydown={(e) => handleKeydown(e, 'F')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('F') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -268,8 +275,8 @@
 		id="E_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('E')}
-		on:keydown={(e) => handleKeydown(e, 'E')}
+		onclick={() => handleHoleClick('E')}
+		onkeydown={(e) => handleKeydown(e, 'E')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('E') ? 'played' : 'unplayed'} {openHoleState?.holeId ===
@@ -294,8 +301,8 @@
 		id="G_Group"
 		tabindex="0"
 		role="button"
-		on:click={() => handleHoleClick('G')}
-		on:keydown={(e) => handleKeydown(e, 'G')}
+		onclick={() => handleHoleClick('G')}
+		onkeydown={(e) => handleKeydown(e, 'G')}
 	>
 		<rect
 			class="bg-shape {holesPlayed.includes('G') ? 'played' : 'unplayed'} {openHoleState?.holeId ===

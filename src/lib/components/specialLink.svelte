@@ -1,15 +1,23 @@
 <script lang="ts">
-	export let anchorProps: {
-		href: string;
-		[key: string]: string | number | boolean | undefined;
-	};
+	import type { Snippet } from 'svelte';
+
+	let {
+		anchorProps,
+		children
+	}: {
+		anchorProps: {
+			href: string;
+			[key: string]: string | number | boolean | undefined;
+		};
+		children?: Snippet;
+	} = $props();
 </script>
 
 <a {...anchorProps} target="_blank" rel="noopener noreferrer">
-	<slot />
+	{@render children?.()}
 </a>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	a {
 		white-space: nowrap;
 		font-size: 2em;

@@ -38,68 +38,100 @@
 
 		<div id="musik">
 			<h1>Programm<br />Freitag 5. Juni</h1>
-			
-    <div class="box">
-      <div class="image-container">
-        <img src="./images/corinora.png" alt="Cori Nora">
-      </div>
-      <h3>Cori Nora spielt am Freitag, 5. Juni um 19:30</h3>
-      <p>
-		Cori Nora ist eine Sängerin, Komponistin und Multiinstrumentalistin, die alltägliche Momente und die Rhythmen der Natur in warme, unmittelbare Songs verwandelt. Aufgewachsen mit der Jazz-Plattensammlung ihres Vaters aus den 60er und 70er Jahren, verbindet sie Alternative-Musik mit durchdachtem Songwriting und einem starken Fokus auf Live-Auftritte.      <p>
-        <a href="https://www.instagram.com/cori___nora/">Instagram</a>
-      </p>
-    </div>
 
-    <div class="box">
-      <div class="image-container">
-        <img src="./images/awalion.png" alt="AWA LION">
-      </div>
-      <h3>AWA LION spielen am Freitag, 5. Juni um 22:00 Uhr</h3>
-      <p>
-		AWA LION ist ein audiovisuelles Musikprojekt von Lydia Perrot und Tunay Bora, das Klang und Bild zu einem fesselnden Live-Erlebnis verschmelzen lässt. Mit kraftvollen Beats, tiefen Bässen, eingängigen Synthmelodien und eindringlichen Vocals kreiert Lydia eine musikalische Atmosphäre, die von Tunays intensiven Live-Visuals visuell ergänzt wird. Das Ergebnis ist eine immersive Performance, die das Publikum in düstere, tranceartige Sphären entführt.
-      <p>
-        <a href="https://www.instagram.com/awalion.music/">Instagram</a>
-      </p>
-    </div>
+			<div class="box">
+				<div class="image-container">
+					<img src="./images/corinora.png" alt="Cori Nora" />
+				</div>
+				<h3>Cori Nora spielt am Freitag, 5. Juni um 19:30</h3>
+				<p>
+					Cori Nora ist eine Sängerin, Komponistin und Multiinstrumentalistin, die alltägliche
+					Momente und die Rhythmen der Natur in warme, unmittelbare Songs verwandelt. Aufgewachsen
+					mit der Jazz-Plattensammlung ihres Vaters aus den 60er und 70er Jahren, verbindet sie
+					Alternative-Musik mit durchdachtem Songwriting und einem starken Fokus auf Live-Auftritte.
+				</p>
+				<p>
+					<a href="https://www.instagram.com/cori___nora/">Instagram</a>
+				</p>
+			</div>
 
-	<h1>Programm <br /> Samstag 6. Juni</h1>
+			<div class="box">
+				<div class="image-container">
+					<img src="./images/awalion.png" alt="AWA LION" />
+				</div>
+				<h3>AWA LION spielen am Freitag, 5. Juni um 22:00 Uhr</h3>
+				<p>
+					AWA LION ist ein audiovisuelles Musikprojekt von Lydia Perrot und Tunay Bora, das Klang
+					und Bild zu einem fesselnden Live-Erlebnis verschmelzen lässt. Mit kraftvollen Beats,
+					tiefen Bässen, eingängigen Synthmelodien und eindringlichen Vocals kreiert Lydia eine
+					musikalische Atmosphäre, die von Tunays intensiven Live-Visuals visuell ergänzt wird. Das
+					Ergebnis ist eine immersive Performance, die das Publikum in düstere, tranceartige Sphären
+					entführt.
+				</p>
+				<p>
+					<a href="https://www.instagram.com/awalion.music/">Instagram</a>
+				</p>
+			</div>
 
-	 <div class="box">
-      <div class="image-container">
-        <img src="./images/choose-the-juice.png" alt="Choose the Juice">
-      </div>
-      <h3>Choose the Juice spielen am Samstag, 6. Juni um 16:00</h3>
-      <p>
-			Sphärisch, dynamisch und dramatisch. Diese drei Worte beschreiben den Sound der Ostschweizer Neo-Psychedelic-/Shoegaze-Band präzise. Die fünf Musiker*innen aus St. Gallen – Nicolas Kölbener(Bass, Vocals), Vera Zollikofer (Vocals, Synths), Mo Bernasconi (Vocals, Gitarre, Synths), Andrea-Gion Künzle (Gitarre) und Milan Egloff (Drums) – nehmen ihr Publikum mit auf eine Reise durch mystische Tiefen und weite Klangräume. Vom verträumten Shoegaze der 90er-Jahre inspirierte Gitarrenflächen und Synths entfalten eine emotionale Berg-und Talfahrt, die Raum für Träume und Fantasie schafft. Dynamische Drums und ein markanter Bass erden diese Klangwelten im Hier und Jetzt. 
-			<p>
-	        <a href="https://www.instagram.com/choosethejuice/">Instagram</a>
-      </p>
-    </div>
+			<h1>Programm <br /> Samstag 6. Juni</h1>
 
-    <div class="box">
-      <div class="image-container">
-        <img src="./images/nophase.png" alt="no phase">
-      </div>
-      <h3>no phase spielen am Samstag, 6. Juni um 19:30</h3>
-      <p>
-		Treibende Riffs, verschlungener Bass und eine Energie, die gleichzeitig nostalgisch und erfrischend ist — das ist das Berner Quartett 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚. Inspiriert von Alternative-Peers wie King Hannah, Warpaint oder Dehd, entfalten 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚 einen Shoegaze-Sound mit Post-Punk-Einflüssen, dessen Lässigkeit ansteckend ist. Im Februar 2024 erschien ihre erste EP 𝙩𝙞𝙧𝙚𝙙 — vier Songs, die mal hart und unkontrolliert abgehen, mal introspektiv und warm schweben. Wenn 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚 spielen, verdichten sich ihre Klangwellen wie eine undurchdringbare Nebelwolke, aus der immer wieder schimmernde Gitarrensplitter fallen.      <p>
-        <a href="https://www.instagram.com/nophase.band/">Instagram</a>
-      </p>
-    </div>
+			<div class="box">
+				<div class="image-container">
+					<img src="./images/choose-the-juice.png" alt="Choose the Juice" />
+				</div>
+				<h3>Choose the Juice spielen am Samstag, 6. Juni um 16:00</h3>
+				<p>
+					Sphärisch, dynamisch und dramatisch. Diese drei Worte beschreiben den Sound der
+					Ostschweizer Neo-Psychedelic-/Shoegaze-Band präzise. Die fünf Musiker*innen aus St. Gallen
+					– Nicolas Kölbener(Bass, Vocals), Vera Zollikofer (Vocals, Synths), Mo Bernasconi (Vocals,
+					Gitarre, Synths), Andrea-Gion Künzle (Gitarre) und Milan Egloff (Drums) – nehmen ihr
+					Publikum mit auf eine Reise durch mystische Tiefen und weite Klangräume. Vom verträumten
+					Shoegaze der 90er-Jahre inspirierte Gitarrenflächen und Synths entfalten eine emotionale
+					Berg-und Talfahrt, die Raum für Träume und Fantasie schafft. Dynamische Drums und ein
+					markanter Bass erden diese Klangwelten im Hier und Jetzt.
+				</p>
+				<p>
+					<a href="https://www.instagram.com/choosethejuice/">Instagram</a>
+				</p>
+			</div>
 
-    <div class="box">
-      <div class="image-container">
-        <img src="./images/namaka.png" alt="Namaka">
-      </div>
-      <h3>Namaka spielen am Samstag, 6. Juni um 22:00</h3>
-      <p>
-       Im September 2025 veröffentlichte Namaka ihr zweites Album, Cloudspotting. Geschrieben, produziert und aufgenommen zwischen Zürich und Brüssel. Cloudspotting ist wie im Gras oder auf einem warmen Dach zu liegen, Wolken beim Vorüberziehen zuzuschauen und die Gedanken schweifen zu lassen. Das unablässige gesellschaftliche Rauschen, das uns mit Erwartungen und Anforderungen überwältigt, ausblenden. Stattdessen ist dieses Album ein Aufruf zum Tagträumen – einer Tätigkeit, die übrigens wirklich unterschätzt wird – und bietet den perfekten Soundtrack für einen entspannten Weg zur Selbstbestimmung.
-	   </p>
-	   <p>
-        <a href="https://www.instagram.com/namakamusic/">Instagram</a>
-      </p>
-    </div>
+			<div class="box">
+				<div class="image-container">
+					<img src="./images/nophase.png" alt="no phase" />
+				</div>
+				<h3>no phase spielen am Samstag, 6. Juni um 19:30</h3>
+				<p>
+					Treibende Riffs, verschlungener Bass und eine Energie, die gleichzeitig nostalgisch und
+					erfrischend ist — das ist das Berner Quartett 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚. Inspiriert von Alternative-Peers
+					wie King Hannah, Warpaint oder Dehd, entfalten 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚 einen Shoegaze-Sound mit
+					Post-Punk-Einflüssen, dessen Lässigkeit ansteckend ist. Im Februar 2024 erschien ihre
+					erste EP 𝙩𝙞𝙧𝙚𝙙 — vier Songs, die mal hart und unkontrolliert abgehen, mal introspektiv und
+					warm schweben. Wenn 𝙣𝙤 𝙥𝙝𝙖𝙨𝙚 spielen, verdichten sich ihre Klangwellen wie eine
+					undurchdringbare Nebelwolke, aus der immer wieder schimmernde Gitarrensplitter fallen.
+				</p>
+				<p>
+					<a href="https://www.instagram.com/nophase.band/">Instagram</a>
+				</p>
+			</div>
 
+			<div class="box">
+				<div class="image-container">
+					<img src="./images/namaka.png" alt="Namaka" />
+				</div>
+				<h3>Namaka spielen am Samstag, 6. Juni um 22:00</h3>
+				<p>
+					Im September 2025 veröffentlichte Namaka ihr zweites Album, Cloudspotting. Geschrieben,
+					produziert und aufgenommen zwischen Zürich und Brüssel. Cloudspotting ist wie im Gras oder
+					auf einem warmen Dach zu liegen, Wolken beim Vorüberziehen zuzuschauen und die Gedanken
+					schweifen zu lassen. Das unablässige gesellschaftliche Rauschen, das uns mit Erwartungen
+					und Anforderungen überwältigt, ausblenden. Stattdessen ist dieses Album ein Aufruf zum
+					Tagträumen – einer Tätigkeit, die übrigens wirklich unterschätzt wird – und bietet den
+					perfekten Soundtrack für einen entspannten Weg zur Selbstbestimmung.
+				</p>
+				<p>
+					<a href="https://www.instagram.com/namakamusic/">Instagram</a>
+				</p>
+			</div>
 		</div>
 	</div>
 	<div id="attraktionen">
@@ -141,14 +173,15 @@
 				<img src="./images/kinderbaustell.png" alt="Kinderbaustelle" />
 			</div>
 			<div>
-				<p>Für die Kinder gibt es am Samstag eine Kinderbaustelle, wo eine Kugelbahn gebaut wird.</p>
+				<p>
+					Für die Kinder gibt es am Samstag eine Kinderbaustelle, wo eine Kugelbahn gebaut wird.
+				</p>
 			</div>
 		</div>
 
 		<div class="box-attraktion">
 			<div class="image-container">
 				<img src="./images/minigolf.png" alt="Minigolf" />
-
 			</div>
 
 			<div>
@@ -283,7 +316,7 @@
 		padding-bottom: 20vw;
 		background-image: src('./images/sommerfest-bg.jpg');
 		background-repeat: no-repeat;
-		background-color: #FF6213;
+		background-color: #ff6213;
 		background-size: cover;
 	}
 	a {

@@ -6,14 +6,15 @@
 	import ScoreBoardH1 from './ScoreBoardH1.svelte';
 	import { grow } from '$lib/utils/growTransition';
 	// Local UI state
-	let setupModalIsOpen = false;
-	let newPlayerName = '';
-	let selectedHoleId: string | null = null;
+	let setupModalIsOpen = $state(false);
+	let newPlayerName = $state('');
+	let selectedHoleId = $state<string | null>(null);
 
-	// Make openHoleState reactive by deriving it from the store and selectedHoleId
-	$: openHoleState = selectedHoleId
-		? $gameStore.holesState.find((hole) => hole.holeId === selectedHoleId)
-		: undefined;
+	const openHoleState = $derived(
+		selectedHoleId
+			? $gameStore.holesState.find((hole) => hole.holeId === selectedHoleId)
+			: undefined
+	);
 
 	function addPlayer() {
 		// to fix when there is a user called asdfgh the new player with asdfg will be called asdfg (1) wich is not neccessary
@@ -51,7 +52,7 @@
 			<button
 				transition:grow
 				id="start-btn"
-				on:click={() => {
+				onclick={() => {
 					setupModalIsOpen = true;
 				}}>+ Neues Spiel</button
 			>
@@ -64,26 +65,26 @@
 						type="text"
 						bind:value={newPlayerName}
 						placeholder="Namen hinzufügen"
-						on:keydown={(e) => e.key === 'Enter' && addPlayer()}
+						onkeydown={(e) => e.key === 'Enter' && addPlayer()}
 					/>
-					<button on:click={addPlayer} disabled={newPlayerName.trim() === ''}>+</button>
+					<button onclick={addPlayer} disabled={newPlayerName.trim() === ''}>+</button>
 				</div>
 
 				<div class="player-list">
 					{#each $gameStore.users as user, i (user.userName)}
 						<div class="player-row" transition:grow>
 							<span>{user.userName}</span>
-							<button class="delete-btn" on:click={() => gameStore.deletePlayer(i)}>Löschen</button>
+							<button class="delete-btn" onclick={() => gameStore.deletePlayer(i)}>Löschen</button>
 						</div>
 					{/each}
 				</div>
 				<div class="dialog-buttons">
-					<button class="start-btn" disabled={$gameStore.users.length === 0} on:click={startGame}
+					<button class="start-btn" disabled={$gameStore.users.length === 0} onclick={startGame}
 						>Spiel Starten</button
 					>
 					<button
 						class="close-btn"
-						on:click={() => {
+						onclick={() => {
 							addPlayer();
 							setupModalIsOpen = false;
 						}}>Schliessen</button
@@ -115,21 +116,21 @@
 								<button
 									class="score-btn-decrement"
 									aria-label="Anzahl Versuche verringern"
-									on:click={() => updateScore(score, false)}
+									onclick={() => updateScore(score, false)}
 									disabled={score.attempts <= 1}>-</button
 								>
 								<div class="score-input-value">{score.attempts}</div>
 								<button
 									class="score-btn-increment"
 									aria-label="Anzahl Versuche erhöhen"
-									on:click={() => updateScore(score, true)}
+									onclick={() => updateScore(score, true)}
 									disabled={score.attempts >= 7}>+</button
 								>
 							</div>
 						</div>
 					{/each}
 				{/if}
-				<button class="close-btn" on:click={() => (selectedHoleId = null)}>Schliessen</button>
+				<button class="close-btn" onclick={() => (selectedHoleId = null)}>Schliessen</button>
 			</div>
 		</dialog>
 		<HoleMap {openHoleState} onHoleSelected={(holeId) => (selectedHoleId = holeId)} />
@@ -137,7 +138,7 @@
 			<div class="scoreboard-top-menu" transition:grow>
 				<button
 					id="reset-btn"
-					on:click={() => {
+					onclick={() => {
 						if (confirm('Möchten Sie wirklich das Spiel zurücksetzen?')) {
 							gameStore.resetGame();
 							selectedHoleId = null;

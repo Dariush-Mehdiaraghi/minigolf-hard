@@ -1,9 +1,11 @@
 <script>
 	import './global.css';
+
+	let { children } = $props();
 </script>
 
 <main>
-	<slot />
+	{@render children()}
 </main>
 
 <style>

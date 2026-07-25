@@ -107,32 +107,34 @@ function createGameStore() {
 			});
 		},
 
-		// Update a player's score
+		// Update a player's score.
+		// Replaces the affected hole and score objects rather than mutating them:
+		// Svelte only re-renders when a reference changes, so an in-place `attempts++`
+		// leaves the UI showing a stale number.
 		updateScore: (holeId: string, userName: string, increment: boolean) => {
 			update((state) => {
-				const newState = { ...state };
-				const holeIndex = newState.holesState.findIndex((h) => h.holeId === holeId);
+				const hole = state.holesState.find((h) => h.holeId === holeId);
 
-				if (holeIndex === -1) return state;
+				if (!hole || !hole.scores.some((s) => s.userName === userName)) return state;
 
-				const scoreIndex = newState.holesState[holeIndex].scores.findIndex(
-					(s) => s.userName === userName
-				);
-
-				if (scoreIndex === -1) return state;
-
-				const score = newState.holesState[holeIndex].scores[scoreIndex];
-
-				if (increment) {
-					if (score.attempts < 7) score.attempts++;
-				} else {
-					if (score.attempts > 1) score.attempts--;
-				}
-
-				// Create new references to trigger reactivity
-				newState.holesState = [...newState.holesState];
-
-				return newState;
+				return {
+					...state,
+					holesState: state.holesState.map((h) =>
+						h.holeId !== holeId
+							? h
+							: {
+									...h,
+									scores: h.scores.map((score) => {
+										if (score.userName !== userName) return score;
+										if (increment && score.attempts < 7)
+											return { ...score, attempts: score.attempts + 1 };
+										if (!increment && score.attempts > 1)
+											return { ...score, attempts: score.attempts - 1 };
+										return score;
+									})
+								}
+					)
+				};
 			});
 		},
 
