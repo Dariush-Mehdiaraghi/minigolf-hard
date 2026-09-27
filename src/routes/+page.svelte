@@ -114,6 +114,7 @@
 				padding: 0.54rem 0.42rem;
 				font-size: 1.2rem;
 				background: #f1f1f1;
+				display: none;
 			}
 
 		.language-switch button {

@@ -55,9 +55,7 @@ const content: ContentObject = {
 			contentArray: [
 				{ size: 'm', text: 'GRATIS UND IMMER OFFEN', textEn: 'FREE AND ALWAYS OPEN' },
 				{ size: 'm', text: 'Schläger und Bälle findest du jederzeit in der Kiste beim roten Container.', textEn: 'Clubs and balls are always available in the box next to the red container.' },
-				{ size: 'm', text: 'Betreuter Betrieb mit Care-Person bei gutem Wetter an folgenden Tagen<br><br>FR 16:00 bis Schluss<br>SA 14:00 bis Schluss<br>SO 14:00 bis Schluss', textEn: 'Minigolf with a care person in good weather:<br><br>FR 16:00 until close<br>SA 14:00 until close<br>SU 14:00 until close' },
-				{ size: 'm', text: 'ADRESSE', textEn: 'ADDRESS' },
-				{ size: 'm', text: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich', textEn: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich' }
+				{ size: 'm', text: 'Betreuter Betrieb mit Care-Person bei gutem Wetter an folgenden Tagen<br><br>FR 16:00 bis Schluss<br>SA 14:00 bis Schluss<br>SO 14:00 bis Schluss', textEn: 'Minigolf with a care person in good weather:<br><br>FR 16:00 until close<br>SA 14:00 until close<br>SU 14:00 until close' }
 			]
 		},
 		{
@@ -105,7 +103,9 @@ const content: ContentObject = {
 			textAlign: 'left',
 			contentArray: [
 				{ size: 'l', text: 'Kontakt', textEn: 'Contact' },
-				{ size: 'm', text: 'minigolf.hard@gmail.com<br/><a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noopener noreferrer">Instagram @minigolfhard</a><br/><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noopener noreferrer">Whatsapp Chat →</a>', textEn: 'minigolf.hard@gmail.com<br/><a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noopener noreferrer">Instagram @minigolfhard</a><br/><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noopener noreferrer">WhatsApp chat →</a>' }
+				{ size: 'm', text: 'minigolf.hard@gmail.com<br/><a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noopener noreferrer">Instagram @minigolfhard</a><br/><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noopener noreferrer">Whatsapp Chat →</a>', textEn: 'minigolf.hard@gmail.com<br/><a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noopener noreferrer">Instagram @minigolfhard</a><br/><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noopener noreferrer">WhatsApp chat →</a>' },
+				{ size: 'm', text: 'Adresse', textEn: 'Address' },
+				{ size: 'm', text: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich', textEn: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich' }
 			]
 		},
 		{
