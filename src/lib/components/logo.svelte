@@ -321,8 +321,9 @@
 
 <style lang="scss" scoped>
 	svg {
-		margin: 10vh 0;
-		max-height: 60vh;
+		margin: 12vh 0 4vh;
+		width: min(90vw, 44vh);
+		max-height: 48vh;
 		opacity: 0;
 		max-width: 1300px;
 		animation: fade-in 0.3s ease-in-out forwards;
@@ -339,6 +340,7 @@
 		}
 		#letters {
 			path {
+				fill: var(--green-main);
 				opacity: 0;
 				animation: fade-in;
 				animation-delay: calc(var(--order) * 20ms);
@@ -347,7 +349,7 @@
 			}
 		}
 		#holes {
-			fill: var(--green-main);
+			fill: var(--yellow-main);
 			circle {
 			}
 			animation: fade-in 0.5s ease-in-out forwards;

@@ -1,31 +1,27 @@
 <script>
 	import content from '$lib/content/content';
+	import { language } from '$lib/stores/language';
 	const description = content.about.description;
-	import blueBall from '$lib/images/BlueBall.svg';
-	import greenBall from '$lib/images/GreenBall.svg';
-	import yellowBall from '$lib/images/YellowBall.svg';
-	import greenBallFriendly from '$lib/images/GreenBallFriendly.svg';
+	const descriptionEn = content.about.descriptionEn;
 </script>
 
 <section id="about">
-	<img src={blueBall} alt="blue minigolf ball illustration" />
-	<img src={yellowBall} alt="yellow minigolf ball illustration" />
 	<p id="about__text">
-		{description}
+		{$language === 'en' ? descriptionEn : description}
 	</p>
-	<img src={greenBall} alt="green minigolf ball illustration" />
-	<img src={greenBallFriendly} alt="green minigolf ball illustration" />
 </section>
 
 <style lang="scss" scoped>
 	#about {
 		display: grid;
 		place-items: center;
-		padding: 2em;
+		padding: var(--section-vertical-space) 2em;
+		background: var(--white-main);
 		&__text {
-			padding: 2em;
+			box-sizing: border-box;
+			width: min(100%, var(--full-section-content-width));
+			max-width: none;
 			font-size: 2em;
-			max-width: 700px;
 			text-align: center;
 		}
 	}

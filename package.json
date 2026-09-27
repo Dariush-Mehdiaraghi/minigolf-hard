@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
+		"ical.js": "^2.2.1",
 		"@sveltejs/adapter-netlify": "^6.0.4",
 		"@sveltejs/kit": "^2.70.1",
 		"@sveltejs/vite-plugin-svelte": "^7.2.0",
@@ -13,6 +14,7 @@
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.22.0",
 		"globals": "^17.7.0",
+		"ical.js": "^2.2.1",
 		"prettier": "^3.9.6",
 		"prettier-plugin-svelte": "^4.1.1",
 		"sass": "^1.102.0",

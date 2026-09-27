@@ -68,6 +68,10 @@ body {
 	--blue-main: #7994ff;
 	--pink-main: #ea9ac3;
 	--red-main: #ff6b6b;
+	--white-main: #fff;
+	--lightgray-main: #f2f2f2;
+	--full-section-content-width: 60rem;
+	--section-vertical-space: clamp(4rem, 8vw, 7rem);
 	font-family: var(--font-body);
 	color: var(--color-text);
 }

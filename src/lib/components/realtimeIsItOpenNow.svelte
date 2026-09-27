@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fetchIsOpenToday } from '$lib/utils/shiftPlan';
+	import { language } from '$lib/stores/language';
 
 	let isItOpen = false;
 	let isLoaded = false;
@@ -19,13 +20,13 @@
 <section id="is-it-open-widget">
 	{#if isLoaded}
 		{#if isItOpen}
-			<span>Heute ist die Mini Bar offen!</span>
+			<span>{$language === 'de' ? 'Heute ist die Mini Bar offen!' : 'The Mini Bar is open today!'}</span>
 		{:else}
-			<span>Heute keine Mini Bar</span>
+			<span>{$language === 'de' ? 'Heute keine Mini Bar' : 'The Mini Bar is closed today'}</span>
 		{/if}
 	{:else}
 		<span id="loading"
-			>Heute Mini Bar?<span class="loader__dot">.</span><span class="loader__dot">.</span><span
+			>{$language === 'de' ? 'Heute Mini Bar?' : 'Mini Bar open today?'}<span class="loader__dot">.</span><span class="loader__dot">.</span><span
 				class="loader__dot">.</span
 			></span
 		>
@@ -41,6 +42,15 @@
 		text-align: center;
 		min-height: 2em;
 		margin-bottom: 1em;
+		> span {
+			box-sizing: border-box;
+			max-width: calc(100% - 2rem);
+			padding: 0.25em 0.55em;
+			border-radius: 32px;
+			box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+			background: white;
+			line-height: 1.2;
+		}
 		#loading {
 			@keyframes blink {
 				50% {

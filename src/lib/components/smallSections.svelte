@@ -1,12 +1,17 @@
 <script lang="ts">
 	import content from '$lib/content/content';
+	import CalendarSection from './calendarSection.svelte';
 	import SmallSection from './smallSection.svelte';
 	const smallSectionsArray = content.smallSections as SmallSectionProps[];
 </script>
 
 <div id="smallSections">
 	{#each smallSectionsArray as section, i (i)}
-		<SmallSection {section} />
+		{#if section.id === 'kalender'}
+			<CalendarSection />
+		{:else}
+			<SmallSection {section} />
+		{/if}
 	{/each}
 </div>
 
