@@ -21,6 +21,7 @@ body {
 	font-family: 'WerkNeue';
 	font-style: normal;
 	font-weight: 500;
+	font-display: swap;
 	src:
 		local('Werk Neue'),
 		url('/fonts/WerkNeue-Medium.eot?#iefix') format('embedded-opentype'),
@@ -34,6 +35,7 @@ body {
 	font-family: 'Klinker';
 	font-style: normal;
 	font-weight: 400;
+	font-display: swap;
 	src:
 		local('Klinker'),
 		url('/fonts/Klinker-Medium.woff') format('woff');
@@ -43,6 +45,7 @@ body {
 	font-family: 'Klinker';
 	font-style: normal;
 	font-weight: 300;
+	font-display: swap;
 	src:
 		local('Klinker'),
 		url('/fonts/Klinker-Regular.woff') format('woff');
@@ -52,6 +55,7 @@ body {
 	font-family: 'Klinker';
 	font-style: normal;
 	font-weight: 500;
+	font-display: swap;
 	src:
 		local('Klinker'),
 		url('/fonts/Klinker-SemiBold.woff') format('woff');
