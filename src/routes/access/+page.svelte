@@ -18,7 +18,7 @@
 	<a href="https://drive.proton.me/urls/VS7S4XME8M#E6MUQpBGNBeJ">Access Document (ENGLISH)</a>
 </div>
 
-<style lang="scss" scoped>
+<style scoped>
 	a {
 		margin: 0;
 		padding: 0.6em 1em;

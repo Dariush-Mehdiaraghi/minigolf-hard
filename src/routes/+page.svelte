@@ -49,7 +49,7 @@
 <About />
 <SmallSections />
 
-<style lang="scss">
+<style>
 	.nav-gradient {
 		position: fixed;
 		inset: 0 0 auto;

@@ -15,12 +15,12 @@
 	{/each}
 </div>
 
-<style lang="scss" scoped>
+<style scoped>
 	#smallSections {
 		display: grid;
-		// have 2 columns if possible else wrap to 1 column
+		/* have 2 columns if possible else wrap to 1 column */
 		grid-template-columns: 1fr;
-		// have maximum of two columns
+		/* have maximum of two columns */
 		@media screen and (min-width: 800px) {
 			grid-template-columns: repeat(2, 1fr);
 		}

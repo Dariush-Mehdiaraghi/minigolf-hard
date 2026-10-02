@@ -20,9 +20,9 @@
 		</div>
 </section>
 
-<style lang="scss" scoped>
+<style scoped>
 	.full-width {
-		// take the full width in the grid
+		/* take the full width in the grid */
 		grid-column: 1 / -1;
 	}
 	.small-section {
@@ -59,12 +59,6 @@
 		}
 		.l {
 			font-size: 3em;
-		}
-		&__text {
-			padding: 2em;
-			font-size: 2em;
-			max-width: 700px;
-			text-align: center;
 		}
 		img {
 			width: 100%;

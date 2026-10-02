@@ -3,7 +3,7 @@
 	<img src="/images/Betrieb7_JaninaTanner.webp" alt="Visitors playing minigolf at Minigolf Hard" />
 </section>
 
-<style lang="scss" scoped>
+<style scoped>
 	.ball-images {
 		display: grid;
 		grid-template-columns: 1fr;

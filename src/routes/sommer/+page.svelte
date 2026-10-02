@@ -209,7 +209,7 @@
 	</div>
 </div>
 
-<style lang="scss" scoped>
+<style scoped>
 	h1 {
 		text-align: center;
 		text-transform: uppercase;

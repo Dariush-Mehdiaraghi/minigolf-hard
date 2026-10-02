@@ -33,7 +33,7 @@
 	{/if}
 </section>
 
-<style lang="scss">
+<style>
 	#is-it-open-widget {
 		width: 100%;
 		display: grid;
@@ -52,11 +52,6 @@
 			line-height: 1.2;
 		}
 		#loading {
-			@keyframes blink {
-				50% {
-					color: transparent;
-				}
-			}
 			.loader__dot {
 				animation: 1s blink infinite ease-in-out;
 			}
@@ -66,6 +61,12 @@
 			.loader__dot:nth-child(3) {
 				animation-delay: 500ms;
 			}
+		}
+	}
+
+	@keyframes blink {
+		50% {
+			color: transparent;
 		}
 	}
 </style>

@@ -11,18 +11,18 @@
 	</p>
 </section>
 
-<style lang="scss" scoped>
+<style scoped>
 	#about {
 		display: grid;
 		place-items: center;
 		padding: var(--section-vertical-space) 2em;
 		background: var(--white-main);
-		&__text {
-			box-sizing: border-box;
-			width: min(100%, var(--full-section-content-width));
-			max-width: none;
-			font-size: 2em;
-			text-align: center;
-		}
+	}
+	#about__text {
+		box-sizing: border-box;
+		width: min(100%, var(--full-section-content-width));
+		max-width: none;
+		font-size: 2em;
+		text-align: center;
 	}
 </style>

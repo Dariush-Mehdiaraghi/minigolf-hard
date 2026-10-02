@@ -324,7 +324,7 @@
 	</g>
 </svg>
 
-<style lang="scss" scoped>
+<style scoped>
 	#map {
 		fill: none;
 		width: 92vw;

@@ -13,7 +13,7 @@
 	<RealtimeIsItOpenNow />
 </section>
 
-<style lang="scss" scoped>
+<style scoped>
 	#landing {
 		position: relative;
 		isolation: isolate;

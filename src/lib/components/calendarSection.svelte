@@ -56,7 +56,7 @@
 	</div>
 </section>
 
-<style lang="scss" scoped>
+<style scoped>
 	.calendar-section {
 		grid-column: 1 / -1;
 		padding: var(--section-vertical-space) 1.5rem;

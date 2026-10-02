@@ -8,7 +8,7 @@
 	<SpecialLink anchorProps={{ href: url }}>{label}</SpecialLink>
 </div>
 
-<style lang="scss">
+<style>
 	#special-action {
 		position: absolute;
 		z-index: 3;
@@ -28,17 +28,17 @@
 		@media (max-width: 400px) {
 			font-size: 0.8em;
 		}
+	}
 
-		@keyframes wiggle {
-			0% {
-				transform: rotate(-30deg);
-			}
-			50% {
-				transform: rotate(-20deg);
-			}
-			100% {
-				transform: rotate(-30deg);
-			}
+	@keyframes wiggle {
+		0% {
+			transform: rotate(-30deg);
+		}
+		50% {
+			transform: rotate(-20deg);
+		}
+		100% {
+			transform: rotate(-30deg);
 		}
 	}
 

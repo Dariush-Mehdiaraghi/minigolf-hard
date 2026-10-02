@@ -151,7 +151,7 @@
 	</div>
 </main>
 
-<style lang="scss">
+<style>
 	:global(:root) {
 		touch-action: pan-x pan-y;
 	}
@@ -286,17 +286,18 @@
 		&[open] {
 			animation: fadeIn 0.2s ease-in-out;
 		}
-		@keyframes fadeIn {
-			from {
-				opacity: 0;
-				transform: translate(-50%, 0) scale(0.9);
-				filter: blur(10px);
-			}
-			to {
-				opacity: 1;
-				transform: translate(-50%, 0) scale(1);
-				filter: blur(0);
-			}
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			transform: translate(-50%, 0) scale(0.9);
+			filter: blur(10px);
+		}
+		to {
+			opacity: 1;
+			transform: translate(-50%, 0) scale(1);
+			filter: blur(0);
 		}
 	}
 	.hole-title {

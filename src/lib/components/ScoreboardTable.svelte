@@ -31,7 +31,7 @@
 	{/each}
 </div>
 
-<style lang="scss" scoped>
+<style scoped>
 	#scoreboard-table {
 		box-sizing: border-box;
 		margin-top: 3em;

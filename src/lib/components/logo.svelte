@@ -319,7 +319,7 @@
 	<defs />
 </svg>
 
-<style lang="scss" scoped>
+<style scoped>
 	svg {
 		margin: 12vh 0 4vh;
 		width: min(90vw, 44vh);
@@ -327,14 +327,6 @@
 		opacity: 0;
 		max-width: 1300px;
 		animation: fade-in 0.3s ease-in-out forwards;
-		@keyframes fade-in {
-			from {
-				opacity: 0;
-			}
-			to {
-				opacity: 1;
-			}
-		}
 		#paths {
 			display: none;
 		}
@@ -350,9 +342,16 @@
 		}
 		#holes {
 			fill: var(--yellow-main);
-			circle {
-			}
 			animation: fade-in 0.5s ease-in-out forwards;
+		}
+	}
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
 		}
 	}
 </style>

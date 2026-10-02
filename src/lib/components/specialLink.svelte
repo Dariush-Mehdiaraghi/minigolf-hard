@@ -17,7 +17,7 @@
 	{@render children?.()}
 </a>
 
-<style lang="scss">
+<style>
 	a {
 		white-space: nowrap;
 		font-size: 2em;
@@ -32,19 +32,20 @@
 		background: var(--yellow-main);
 		color: black;
 		animation: pulse 2s infinite ease-in-out;
-		@keyframes pulse {
-			0% {
-				transform: scale(1) translateY(10px);
-				box-shadow: 0px 0px 0px 0px var(--pink-main);
-			}
-			50% {
-				transform: scale(1.05) translateY(0px);
-				box-shadow: 0px 10px 0px 0px var(--pink-main);
-			}
-			100% {
-				transform: scale(1) translateY(-10px);
-				box-shadow: 0px 0px 0px 0px var(--pink-main);
-			}
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(1) translateY(10px);
+			box-shadow: 0px 0px 0px 0px var(--pink-main);
+		}
+		50% {
+			transform: scale(1.05) translateY(0px);
+			box-shadow: 0px 10px 0px 0px var(--pink-main);
+		}
+		100% {
+			transform: scale(1) translateY(-10px);
+			box-shadow: 0px 0px 0px 0px var(--pink-main);
 		}
 	}
 </style>
