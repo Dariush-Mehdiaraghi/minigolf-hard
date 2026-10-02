@@ -1,5 +1,5 @@
 import { writable, derived } from 'svelte/store';
-import content from '$lib/content/content';
+import content from '#lib/content/content.js';
 
 export interface User {
 	userName: string;

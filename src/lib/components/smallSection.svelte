@@ -1,23 +1,40 @@
 <script lang="ts">
-	import { language } from '$lib/stores/language';
+	import { language } from '#lib/stores/language.js';
 	let { section }: { section: SmallSectionProps } = $props();
 </script>
 
 <section
 	id={section.id}
-	class={(section.isFullWidth ? 'full-width ' : '') + (section.id === 'faq' ? 'faq-centered ' : '') + (section.contentArray.length > 0 && section.contentArray.every((block) => block.image) ? 'image-only ' : '') + 'small-section'}
-	style="text-align: {section.id === 'faq' ? 'center' : section.textAlign}; background:var(--{section.color}-main)"
-	>
-		<div class="section-content">
-			{#each section.contentArray as block, i (i)}
-				{#if block.text}
-					<p id={block.id} class={block.size}>{@html $language === 'en' && block.textEn ? block.textEn : block.text}</p>
-				{/if}
-				{#if block.image}
-					<img class={block.size} src={block.image.src} srcset={block.image.srcset} sizes={block.image.sizes} alt={block.image.alt} loading="lazy" decoding="async" />
-				{/if}
-			{/each}
-		</div>
+	class={(section.isFullWidth ? 'full-width ' : '') +
+		(section.id === 'faq' ? 'faq-centered ' : '') +
+		(section.contentArray.length > 0 && section.contentArray.every((block) => block.image)
+			? 'image-only '
+			: '') +
+		'small-section'}
+	style="text-align: {section.id === 'faq'
+		? 'center'
+		: section.textAlign}; background:var(--{section.color}-main)"
+>
+	<div class="section-content">
+		{#each section.contentArray as block, i (i)}
+			{#if block.text}
+				<p id={block.id} class={block.size}>
+					{@html $language === 'en' && block.textEn ? block.textEn : block.text}
+				</p>
+			{/if}
+			{#if block.image}
+				<img
+					class={block.size}
+					src={block.image.src}
+					srcset={block.image.srcset}
+					sizes={block.image.sizes}
+					alt={block.image.alt}
+					loading="lazy"
+					decoding="async"
+				/>
+			{/if}
+		{/each}
+	</div>
 </section>
 
 <style scoped>
@@ -32,7 +49,9 @@
 		text-align: left;
 		box-sizing: border-box;
 
-		p { margin-block: 0 0.75em; }
+		p {
+			margin-block: 0 0.75em;
+		}
 
 		.section-content {
 			width: 100%;
@@ -94,8 +113,14 @@
 	}
 
 	@media (max-width: 600px) {
-		.small-section p { font-size: 1.35em; }
-		.small-section p.m { font-size: 2.2em; }
-		.small-section p.l { font-size: 3em; }
+		.small-section p {
+			font-size: 1.35em;
+		}
+		.small-section p.m {
+			font-size: 2.2em;
+		}
+		.small-section p.l {
+			font-size: 3em;
+		}
 	}
 </style>

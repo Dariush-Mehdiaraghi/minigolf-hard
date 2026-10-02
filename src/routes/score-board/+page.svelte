@@ -1,5 +1,5 @@
 <script>
-	import Scoreboard from '$lib/components/Scoreboard.svelte';
+	import Scoreboard from '#lib/components/Scoreboard.svelte';
 </script>
 
 <svelte:head>

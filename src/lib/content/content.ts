@@ -47,8 +47,10 @@ const content: ContentObject = {
 	},
 	about: {
 		title: 'Über Minigolf Hard',
-		description: 'Minigolf Hard ist ein Freiraum, wo alle willkommen sind sich sportlich und kreativ auszuleben. Ein Ort der Freundschaft und des Zusammenkommens. Unser Motto: gratis und immer offen.',
-		descriptionEn: 'Minigolf Hard is an open space where everyone is welcome to be active and creative. A place for friendship and coming together. Our motto: free and always open.',
+		description:
+			'Minigolf Hard ist ein Freiraum, wo alle willkommen sind sich sportlich und kreativ auszuleben. Ein Ort der Freundschaft und des Zusammenkommens. Unser Motto: gratis und immer offen.',
+		descriptionEn:
+			'Minigolf Hard is an open space where everyone is welcome to be active and creative. A place for friendship and coming together. Our motto: free and always open.'
 	},
 
 	smallSections: [
@@ -58,14 +60,33 @@ const content: ContentObject = {
 			textAlign: 'left',
 			contentArray: [
 				{ size: 'm', text: 'GRATIS UND IMMER OFFEN', textEn: 'FREE AND ALWAYS OPEN' },
-				{ size: 'm', text: 'Schläger und Bälle findest du jederzeit in der Kiste beim roten Container.', textEn: 'Clubs and balls are always available in the box next to the red container.' },
-				{ size: 'm', text: 'Betreuter Betrieb mit Care-Person bei gutem Wetter an folgenden Tagen<br><br>FR 16:00 bis Schluss<br>SA 14:00 bis Schluss<br>SO 14:00 bis Schluss', textEn: 'Minigolf with a care person in good weather:<br><br>FR 16:00 until close<br>SA 14:00 until close<br>SU 14:00 until close' }
+				{
+					size: 'm',
+					text: 'Schläger und Bälle findest du jederzeit in der Kiste beim roten Container.',
+					textEn: 'Clubs and balls are always available in the box next to the red container.'
+				},
+				{
+					size: 'm',
+					text: 'Betreuter Betrieb mit Care-Person bei gutem Wetter an folgenden Tagen<br><br>FR 16:00 bis Schluss<br>SA 14:00 bis Schluss<br>SO 14:00 bis Schluss',
+					textEn:
+						'Minigolf with a care person in good weather:<br><br>FR 16:00 until close<br>SA 14:00 until close<br>SU 14:00 until close'
+				}
 			]
 		},
 		{
 			color: 'yellow',
 			textAlign: 'left',
-			contentArray: [{ size: 'm', image: { src: dscf8115_1200, srcset: `${dscf8115_800} 800w, ${dscf8115_1200} 1200w, ${dscf8115_1600} 1600w`, sizes: '(min-width: 800px) 50vw, 100vw', alt: 'Visitors playing minigolf at Minigolf Hard' } }]
+			contentArray: [
+				{
+					size: 'm',
+					image: {
+						src: dscf8115_1200,
+						srcset: `${dscf8115_800} 800w, ${dscf8115_1200} 1200w, ${dscf8115_1600} 1600w`,
+						sizes: '(min-width: 800px) 50vw, 100vw',
+						alt: 'Visitors playing minigolf at Minigolf Hard'
+					}
+				}
+			]
 		},
 		{
 			id: 'kalender',
@@ -78,7 +99,17 @@ const content: ContentObject = {
 			color: 'yellow',
 			textAlign: 'left',
 			isFullWidth: true,
-			contentArray: [{ size: 'm', image: { src: betrieb9_1600, srcset: `${betrieb9_960} 960w, ${betrieb9_1600} 1600w, ${betrieb9_2560} 2560w`, sizes: '100vw', alt: 'Visitors playing minigolf at Minigolf Hard' } }]
+			contentArray: [
+				{
+					size: 'm',
+					image: {
+						src: betrieb9_1600,
+						srcset: `${betrieb9_960} 960w, ${betrieb9_1600} 1600w, ${betrieb9_2560} 2560w`,
+						sizes: '100vw',
+						alt: 'Visitors playing minigolf at Minigolf Hard'
+					}
+				}
+			]
 		},
 		{
 			id: 'faq',
@@ -88,17 +119,46 @@ const content: ContentObject = {
 			contentArray: [
 				{ size: 'l', text: 'FAQ' },
 				{ size: 'm', text: 'Was kostet der Spass?', textEn: 'How much does it cost?' },
-				{ size: 's', text: 'Nichts! Das Spielen ist komplett gratis. Jedoch sind wir um jeden solidarischen Beitrag froh, um den Platz noch schöner gestalten zu können. TWINT QR-Codes dafür hängen beim roten Container.<br/><br/>Oder direkt hier: <button id="twint-button" style="width:auto;height:58px;border-radius:6px;display:flex;justify-content:center;cursor:pointer;background-color:transparent;border:none;align-items:center;margin:0 auto;padding-top:2em" onclick="window.open(\'https://go.twint.ch/1/e/tw?tw=acq.uuBulCtlRE-mEyd9V5R2A2mvX1TC_FGpSA7qn2tNbarI_bYlZ5Xrt-NeILaJS8jz\',\'_blank\')"><img style="width:auto;height:58px" alt="TWINT" src="https://go.twint.ch/static/img/button_dark_de.svg"/></button>', textEn: 'Playing is free! We appreciate any contribution to help make the course even better. TWINT donation QR codes are next to the red container.<br/><br/>Or contribute directly: <button id="twint-button" style="width:auto;height:58px;border-radius:6px;display:flex;justify-content:center;cursor:pointer;background-color:transparent;border:none;align-items:center;margin:0 auto;padding-top:2em" onclick="window.open(\'https://go.twint.ch/1/e/tw?tw=acq.uuBulCtlRE-mEyd9V5R2A2mvX1TC_FGpSA7qn2tNbarI_bYlZ5Xrt-NeILaJS8jz\',\'_blank\')"><img style="width:auto;height:58px" alt="TWINT" src="https://go.twint.ch/static/img/button_dark_de.svg"/></button>' },
+				{
+					size: 's',
+					text: 'Nichts! Das Spielen ist komplett gratis. Jedoch sind wir um jeden solidarischen Beitrag froh, um den Platz noch schöner gestalten zu können. TWINT QR-Codes dafür hängen beim roten Container.<br/><br/>Oder direkt hier: <button id="twint-button" style="width:auto;height:58px;border-radius:6px;display:flex;justify-content:center;cursor:pointer;background-color:transparent;border:none;align-items:center;margin:0 auto;padding-top:2em" onclick="window.open(\'https://go.twint.ch/1/e/tw?tw=acq.uuBulCtlRE-mEyd9V5R2A2mvX1TC_FGpSA7qn2tNbarI_bYlZ5Xrt-NeILaJS8jz\',\'_blank\')"><img style="width:auto;height:58px" alt="TWINT" src="https://go.twint.ch/static/img/button_dark_de.svg"/></button>',
+					textEn:
+						'Playing is free! We appreciate any contribution to help make the course even better. TWINT donation QR codes are next to the red container.<br/><br/>Or contribute directly: <button id="twint-button" style="width:auto;height:58px;border-radius:6px;display:flex;justify-content:center;cursor:pointer;background-color:transparent;border:none;align-items:center;margin:0 auto;padding-top:2em" onclick="window.open(\'https://go.twint.ch/1/e/tw?tw=acq.uuBulCtlRE-mEyd9V5R2A2mvX1TC_FGpSA7qn2tNbarI_bYlZ5Xrt-NeILaJS8jz\',\'_blank\')"><img style="width:auto;height:58px" alt="TWINT" src="https://go.twint.ch/static/img/button_dark_de.svg"/></button>'
+				},
 				{ size: 'm', text: 'Kann ich den Platz reservieren?', textEn: 'Can I reserve the course?' },
-				{ size: 's', text: 'Der Minigolf Hard ist ein öffentlicher Platz und kann darum nicht reserviert werden. Es sollte aber immer genug Schläger und Bälle, auch für grössere Gruppen haben.', textEn: 'Minigolf Hard is a public course and cannot be reserved. There should always be enough clubs and balls, even for larger groups.' },
+				{
+					size: 's',
+					text: 'Der Minigolf Hard ist ein öffentlicher Platz und kann darum nicht reserviert werden. Es sollte aber immer genug Schläger und Bälle, auch für grössere Gruppen haben.',
+					textEn:
+						'Minigolf Hard is a public course and cannot be reserved. There should always be enough clubs and balls, even for larger groups.'
+				},
 				{ size: 'm', text: 'Anfahrt', textEn: 'Getting here' },
-				{ size: 's', text: 'Für Autos gibt es leider keine Parkmöglichkeit. Für Velos haben wir einen Veloständer. Mit dem ÖV kommst du am besten zur Haltestelle <a href="https://maps.app.goo.gl/Di8vWkbk9TCdJMY68" target="_blank" rel="noopener noreferrer"><u>SBB Werkstätte</u></a> oder <a href="https://maps.app.goo.gl/CCvHq8PFzUj2ZJbG9" target="_blank" rel="noopener noreferrer"><u>Herdernstrasse</u></a>.', textEn: 'There is no parking for cars, but there is a bike rack. By public transport, get off at <a href="https://maps.app.goo.gl/Di8vWkbk9TCdJMY68" target="_blank" rel="noopener noreferrer"><u>SBB Werkstätte</u></a> or <a href="https://maps.app.goo.gl/CCvHq8PFzUj2ZJbG9" target="_blank" rel="noopener noreferrer"><u>Herdernstrasse</u></a>.' },
+				{
+					size: 's',
+					text: 'Für Autos gibt es leider keine Parkmöglichkeit. Für Velos haben wir einen Veloständer. Mit dem ÖV kommst du am besten zur Haltestelle <a href="https://maps.app.goo.gl/Di8vWkbk9TCdJMY68" target="_blank" rel="noopener noreferrer"><u>SBB Werkstätte</u></a> oder <a href="https://maps.app.goo.gl/CCvHq8PFzUj2ZJbG9" target="_blank" rel="noopener noreferrer"><u>Herdernstrasse</u></a>.',
+					textEn:
+						'There is no parking for cars, but there is a bike rack. By public transport, get off at <a href="https://maps.app.goo.gl/Di8vWkbk9TCdJMY68" target="_blank" rel="noopener noreferrer"><u>SBB Werkstätte</u></a> or <a href="https://maps.app.goo.gl/CCvHq8PFzUj2ZJbG9" target="_blank" rel="noopener noreferrer"><u>Herdernstrasse</u></a>.'
+				},
 				{ size: 'm', text: 'Wohin mit dem Abfall?', textEn: 'Where can I dispose of rubbish?' },
-				{ size: 's', text: 'Direkt auf der anderen Seite der Strasse hats eine Entsorgungsstelle für Altglas und Metall', textEn: 'There is a recycling point for glass and metal just across the street.' },
+				{
+					size: 's',
+					text: 'Direkt auf der anderen Seite der Strasse hats eine Entsorgungsstelle für Altglas und Metall',
+					textEn: 'There is a recycling point for glass and metal just across the street.'
+				},
 				{ size: 'm', text: 'Verpflegung', textEn: 'Food and drinks' },
-				{ size: 's', text: 'Du kannst gerne deine Getränke und Essen mitbringen. Bei gutem Wetter gibts auch Getränke bei der Minibar (siehe unten für Öffnungszeiten).', textEn: 'Feel free to bring your own food and drinks. In good weather, drinks are also available at the Mini Bar (see below for opening hours).' },
+				{
+					size: 's',
+					text: 'Du kannst gerne deine Getränke und Essen mitbringen. Bei gutem Wetter gibts auch Getränke bei der Minibar (siehe unten für Öffnungszeiten).',
+					textEn:
+						'Feel free to bring your own food and drinks. In good weather, drinks are also available at the Mini Bar (see below for opening hours).'
+				},
 				{ size: 'm', text: 'Access / Zugang', textEn: 'Access' },
-				{ size: 's', text: 'Viele weitere Informationen zum Zugang zur Hardgutbrache und Minigolf Hard findest du in unserem Zugangsdokument auf Deutsch und English.<br/><a href="https://docs.google.com/document/d/1t1WUAZUXulT6Zgki9bWCLppgvjY9A9WEfVtlUKIh2Sk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>Zugangsdokument (DE)</u></a>, <a href="https://docs.google.com/document/d/1jonnofPn8MuhIsExAloznorxo_MY9zlvLax2ttlmmFk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>Access Document (EN)</u></a>', textEn: 'Find more information about access to Hardgutbrache and Minigolf Hard in our access documents:<br/><a href="https://docs.google.com/document/d/1t1WUAZUXulT6Zgki9bWCLppgvjY9A9WEfVtlUKIh2Sk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>German access document</u></a>, <a href="https://docs.google.com/document/d/1jonnofPn8MuhIsExAloznorxo_MY9zlvLax2ttlmmFk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>English access document</u></a>.' }
+				{
+					size: 's',
+					text: 'Viele weitere Informationen zum Zugang zur Hardgutbrache und Minigolf Hard findest du in unserem Zugangsdokument auf Deutsch und English.<br/><a href="https://docs.google.com/document/d/1t1WUAZUXulT6Zgki9bWCLppgvjY9A9WEfVtlUKIh2Sk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>Zugangsdokument (DE)</u></a>, <a href="https://docs.google.com/document/d/1jonnofPn8MuhIsExAloznorxo_MY9zlvLax2ttlmmFk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>Access Document (EN)</u></a>',
+					textEn:
+						'Find more information about access to Hardgutbrache and Minigolf Hard in our access documents:<br/><a href="https://docs.google.com/document/d/1t1WUAZUXulT6Zgki9bWCLppgvjY9A9WEfVtlUKIh2Sk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>German access document</u></a>, <a href="https://docs.google.com/document/d/1jonnofPn8MuhIsExAloznorxo_MY9zlvLax2ttlmmFk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><u>English access document</u></a>.'
+				}
 			]
 		},
 		{
@@ -107,9 +167,18 @@ const content: ContentObject = {
 			textAlign: 'left',
 			contentArray: [
 				{ size: 'l', text: 'Kontakt', textEn: 'Contact' },
-				{ size: 'm', text: 'minigolf.hard@gmail.com<br/><a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noopener noreferrer">Instagram @minigolfhard</a><br/><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noopener noreferrer">Whatsapp Chat →</a>', textEn: 'minigolf.hard@gmail.com<br/><a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noopener noreferrer">Instagram @minigolfhard</a><br/><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noopener noreferrer">WhatsApp chat →</a>' },
+				{
+					size: 'm',
+					text: 'minigolf.hard@gmail.com<br/><a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noopener noreferrer">Instagram @minigolfhard</a><br/><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noopener noreferrer">Whatsapp Chat →</a>',
+					textEn:
+						'minigolf.hard@gmail.com<br/><a href="https://www.instagram.com/minigolfhard/" target="_blank" rel="noopener noreferrer">Instagram @minigolfhard</a><br/><a href="https://chat.whatsapp.com/KSS5ESyOHEI5J8M3xI8jNp" target="_blank" rel="noopener noreferrer">WhatsApp chat →</a>'
+				},
 				{ size: 'm', text: 'Adresse', textEn: 'Address' },
-				{ size: 'm', text: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich', textEn: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich' }
+				{
+					size: 'm',
+					text: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich',
+					textEn: 'Verein Minigolf Hard<br/>Hardgutstrasse 7<br/>8048 Zürich'
+				}
 			]
 		},
 		{
@@ -118,17 +187,42 @@ const content: ContentObject = {
 			contentArray: [
 				{ size: 'l', text: 'Unterstützung', textEn: 'Support' },
 				{ size: 'm', text: 'Jugendkulturhaus Dynamo' },
-				{ size: 's', text: 'Materielle Unterstützung: Partizipative Bau-Phase 2023 und 2024, Sommer Fest 2024 und Betrieb', textEn: 'Material support: participatory build phases in 2023 and 2024, Summer Festival 2024, and ongoing operations' },
+				{
+					size: 's',
+					text: 'Materielle Unterstützung: Partizipative Bau-Phase 2023 und 2024, Sommer Fest 2024 und Betrieb',
+					textEn:
+						'Material support: participatory build phases in 2023 and 2024, Summer Festival 2024, and ongoing operations'
+				},
 				{ size: 'm', text: 'Sozialdepartement Stadt Zürich' },
-				{ size: 's', text: 'Finanzielle Unterstützung: Partizipative Bau-Phase 2023, Sommer Fest 2024', textEn: 'Financial support: participatory build phase 2023 and Summer Festival 2024' },
+				{
+					size: 's',
+					text: 'Finanzielle Unterstützung: Partizipative Bau-Phase 2023, Sommer Fest 2024',
+					textEn: 'Financial support: participatory build phase 2023 and Summer Festival 2024'
+				},
 				{ size: 'm', text: 'Grün Stadt Zürich' },
-				{ size: 's', text: 'Materielle Unterstützung: Partizipative Bau-Phase 2023', textEn: 'Material support: participatory build phase 2023' },
+				{
+					size: 's',
+					text: 'Materielle Unterstützung: Partizipative Bau-Phase 2023',
+					textEn: 'Material support: participatory build phase 2023'
+				},
 				{ size: 'm', text: 'Sportamt Stadt Zürich' },
-				{ size: 's', text: 'Finanzielle Unterstützung: Infrastruktur 2023', textEn: 'Financial support: infrastructure 2023' },
+				{
+					size: 's',
+					text: 'Finanzielle Unterstützung: Infrastruktur 2023',
+					textEn: 'Financial support: infrastructure 2023'
+				},
 				{ size: 'm', text: 'Migros Kulturprozent' },
-				{ size: 's', text: 'Finanzielle Unterstützung: Partizipative Bau-Phase 2023, Sommer Fest 2024.', textEn: 'Financial support: participatory build phase 2023 and Summer Festival 2024' },
+				{
+					size: 's',
+					text: 'Finanzielle Unterstützung: Partizipative Bau-Phase 2023, Sommer Fest 2024.',
+					textEn: 'Financial support: participatory build phase 2023 and Summer Festival 2024'
+				},
 				{ size: 'm', text: 'Verein Baustell' },
-				{ size: 's', text: 'Materielle Unterstützung, Räumlichkeiten, Prozess', textEn: 'Material support, workspace, and project development' }
+				{
+					size: 's',
+					text: 'Materielle Unterstützung, Räumlichkeiten, Prozess',
+					textEn: 'Material support, workspace, and project development'
+				}
 			]
 		}
 	],

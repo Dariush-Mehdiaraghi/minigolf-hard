@@ -1,7 +1,7 @@
 import ICAL from 'ical.js';
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import type { CalendarEvent } from '$lib/utils/getCalendarDates';
+import type { CalendarEvent } from '#lib/utils/getCalendarDates.js';
 
 const CALENDAR_URL =
 	'https://hardgutbrache.netlify.app/google-calendar/calendar/ical/72209cbca9a3e2b2d1ad251b672cb6487df1e55535eed90d7a603caeea202344%40group.calendar.google.com/public/basic.ics';
@@ -100,7 +100,10 @@ export const GET: RequestHandler = async () => {
 	try {
 		const response = await fetch(CALENDAR_URL);
 		if (!response.ok) {
-			return json({ message: `Kalender konnte nicht geladen werden (${response.status}).` }, { status: 502 });
+			return json(
+				{ message: `Kalender konnte nicht geladen werden (${response.status}).` },
+				{ status: 502 }
+			);
 		}
 
 		const events = parseCalendar(await response.text());

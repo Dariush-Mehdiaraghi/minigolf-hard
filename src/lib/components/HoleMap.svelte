@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { gameStore } from '$lib/stores/gameStore';
+	import { gameStore } from '#lib/stores/gameStore.js';
 
 	let {
 		onHoleSelected,

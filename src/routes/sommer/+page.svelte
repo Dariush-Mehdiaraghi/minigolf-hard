@@ -77,7 +77,12 @@
 
 			<div class="box">
 				<div class="image-container">
-					<img src="./images/choose-the-juice.webp" loading="lazy" decoding="async" alt="Choose the Juice" />
+					<img
+						src="./images/choose-the-juice.webp"
+						loading="lazy"
+						decoding="async"
+						alt="Choose the Juice"
+					/>
 				</div>
 				<h3>Choose the Juice spielen am Samstag, 6. Juni um 16:00</h3>
 				<p>
@@ -170,7 +175,12 @@
 
 		<div class="box-attraktion">
 			<div class="image-container">
-				<img src="./images/kinderbaustell.webp" loading="lazy" decoding="async" alt="Kinderbaustelle" />
+				<img
+					src="./images/kinderbaustell.webp"
+					loading="lazy"
+					decoding="async"
+					alt="Kinderbaustelle"
+				/>
 			</div>
 			<div>
 				<p>

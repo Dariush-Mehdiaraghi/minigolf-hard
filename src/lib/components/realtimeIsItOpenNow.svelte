@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { fetchIsOpenToday } from '$lib/utils/shiftPlan';
-	import { language } from '$lib/stores/language';
+	import { fetchIsOpenToday } from '#lib/utils/shiftPlan.js';
+	import { language } from '#lib/stores/language.js';
 
 	let isItOpen = false;
 	let isLoaded = false;
@@ -20,15 +20,19 @@
 <section id="is-it-open-widget">
 	{#if isLoaded}
 		{#if isItOpen}
-			<span>{$language === 'de' ? 'Heute ist die Mini Bar offen!' : 'The Mini Bar is open today!'}</span>
+			<span
+				>{$language === 'de'
+					? 'Heute ist die Mini Bar offen!'
+					: 'The Mini Bar is open today!'}</span
+			>
 		{:else}
 			<span>{$language === 'de' ? 'Heute keine Mini Bar' : 'The Mini Bar is closed today'}</span>
 		{/if}
 	{:else}
 		<span id="loading"
-			>{$language === 'de' ? 'Heute Mini Bar?' : 'Mini Bar open today?'}<span class="loader__dot">.</span><span class="loader__dot">.</span><span
-				class="loader__dot">.</span
-			></span
+			>{$language === 'de' ? 'Heute Mini Bar?' : 'Mini Bar open today?'}<span class="loader__dot"
+				>.</span
+			><span class="loader__dot">.</span><span class="loader__dot">.</span></span
 		>
 	{/if}
 </section>

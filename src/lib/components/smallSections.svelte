@@ -1,5 +1,5 @@
 <script lang="ts">
-	import content from '$lib/content/content';
+	import content from '#lib/content/content.js';
 	import CalendarSection from './calendarSection.svelte';
 	import SmallSection from './smallSection.svelte';
 	const smallSectionsArray = content.smallSections as SmallSectionProps[];

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { gameStore } from '$lib/stores/gameStore';
-	import { grow } from '$lib/utils/growTransition';
+	import { gameStore } from '#lib/stores/gameStore.js';
+	import { grow } from '#lib/utils/growTransition.js';
 	import ScoreBoardH1 from './ScoreBoardH1.svelte';
 </script>
 

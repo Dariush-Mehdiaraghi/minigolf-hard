@@ -1,10 +1,10 @@
 <script lang="ts">
-	import content from '$lib/content/content';
+	import content from '#lib/content/content.js';
 	import HoleMap from './HoleMap.svelte';
-	import { gameStore, type HoleScore } from '$lib/stores/gameStore';
+	import { gameStore, type HoleScore } from '#lib/stores/gameStore.js';
 	import ScoreboardTable from './ScoreboardTable.svelte';
 	import ScoreBoardH1 from './ScoreBoardH1.svelte';
-	import { grow } from '$lib/utils/growTransition';
+	import { grow } from '#lib/utils/growTransition.js';
 	// Local UI state
 	let setupModalIsOpen = $state(false);
 	let newPlayerName = $state('');

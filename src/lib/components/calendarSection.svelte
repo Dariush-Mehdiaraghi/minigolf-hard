@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { getCalendarDates, type CalendarEvent } from '$lib/utils/getCalendarDates';
-	import { language } from '$lib/stores/language';
+	import { getCalendarDates, type CalendarEvent } from '#lib/utils/getCalendarDates.js';
+	import { language } from '#lib/stores/language.js';
 
 	let events: CalendarEvent[] = [];
 	let isLoading = true;
@@ -11,29 +11,45 @@
 		try {
 			events = await getCalendarDates();
 		} catch (error) {
-			errorMessage = error instanceof Error ? error.message : 'Kalender konnte nicht geladen werden.';
+			errorMessage =
+				error instanceof Error ? error.message : 'Kalender konnte nicht geladen werden.';
 		} finally {
 			isLoading = false;
 		}
 	});
 </script>
 
-<section id="kalender" class="calendar-section" aria-labelledby="calendar-heading" aria-busy={isLoading}>
+<section
+	id="kalender"
+	class="calendar-section"
+	aria-labelledby="calendar-heading"
+	aria-busy={isLoading}
+>
 	<div class="calendar-content">
 		<h2 id="calendar-heading">{$language === 'de' ? 'Kalender' : 'Calendar'}</h2>
 
 		{#if isLoading}
-			<p class="calendar-state" role="status">{$language === 'de' ? 'Kalender wird geladen...' : 'Loading calendar...'}</p>
+			<p class="calendar-state" role="status">
+				{$language === 'de' ? 'Kalender wird geladen...' : 'Loading calendar...'}
+			</p>
 		{:else if errorMessage}
-			<p class="calendar-state" role="status">{$language === 'de' ? errorMessage : 'Could not load the calendar.'}</p>
+			<p class="calendar-state" role="status">
+				{$language === 'de' ? errorMessage : 'Could not load the calendar.'}
+			</p>
 		{:else if events.length === 0}
-			<p class="calendar-state">{$language === 'de' ? 'Zurzeit sind keine kommenden Veranstaltungen eingetragen.' : 'There are no upcoming events at the moment.'}</p>
+			<p class="calendar-state">
+				{$language === 'de'
+					? 'Zurzeit sind keine kommenden Veranstaltungen eingetragen.'
+					: 'There are no upcoming events at the moment.'}
+			</p>
 		{:else}
 			<div class="events">
 				{#each events as event, index (`${event.startTimestamp}-${index}`)}
 					<article class="event">
 						<time class="event-date" datetime={event.startDateTime}>
-							{event.date}<span>{event.startTime}{#if event.endTime !== event.startTime}–{event.endTime}{/if}</span>
+							{event.date}<span
+								>{event.startTime}{#if event.endTime !== event.startTime}–{event.endTime}{/if}</span
+							>
 						</time>
 						<div class="event-details">
 							<h3>{event.title}</h3>
@@ -51,7 +67,9 @@
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			{$language === 'de' ? 'Alle Veranstaltungen auf hardgutbrache.ch' : 'All events on hardgutbrache.ch'} <span aria-hidden="true">↗</span>
+			{$language === 'de'
+				? 'Alle Veranstaltungen auf hardgutbrache.ch'
+				: 'All events on hardgutbrache.ch'} <span aria-hidden="true">↗</span>
 		</a>
 	</div>
 </section>

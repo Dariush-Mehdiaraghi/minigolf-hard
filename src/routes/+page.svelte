@@ -1,8 +1,8 @@
 <script>
-	import About from '$lib/components/about.svelte';
-	import Landing from '$lib/components/landing.svelte';
-	import SmallSections from '$lib/components/smallSections.svelte';
-	import { language } from '$lib/stores/language';
+	import About from '#lib/components/about.svelte';
+	import Landing from '#lib/components/landing.svelte';
+	import SmallSections from '#lib/components/smallSections.svelte';
+	import { language } from '#lib/stores/language.js';
 </script>
 
 <svelte:head>
@@ -63,7 +63,7 @@
 			rgba(225, 255, 1, 0.78) 32%,
 			rgba(225, 255, 1, 0.58) 50%,
 			rgba(225, 255, 1, 0.28) 72%,
-			rgba(225, 255, 1, 0.10) 88%,
+			rgba(225, 255, 1, 0.1) 88%,
 			rgba(225, 255, 1, 0) 100%
 		);
 	}
@@ -95,8 +95,8 @@
 
 			span {
 				transform: translateY(-0.3em);
-			font-size: 0.7em;
-			line-height: 1;
+				font-size: 0.7em;
+				line-height: 1;
 			}
 
 			&:hover,
@@ -108,7 +108,10 @@
 		@media (max-width: 600px) {
 			gap: 0.36rem;
 			padding: 0.24rem;
-			.language-switch { order: -1; flex-shrink: 0; }
+			.language-switch {
+				order: -1;
+				flex-shrink: 0;
+			}
 
 			a {
 				padding: 0.54rem 0.42rem;
@@ -117,10 +120,10 @@
 				display: none;
 			}
 
-		.language-switch button {
-			padding: 0.48rem 0.66rem;
-			font-size: 0.96rem;
-		}
+			.language-switch button {
+				padding: 0.48rem 0.66rem;
+				font-size: 0.96rem;
+			}
 		}
 
 		.language-switch {

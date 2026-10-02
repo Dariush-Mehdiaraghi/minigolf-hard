@@ -1,5 +1,5 @@
 <script>
-	import content from '$lib/content/content';
+	import content from '#lib/content/content.js';
 	const linksPage = content.linksPage;
 </script>
 

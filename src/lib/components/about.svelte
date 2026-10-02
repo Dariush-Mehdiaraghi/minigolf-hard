@@ -1,6 +1,6 @@
 <script>
-	import content from '$lib/content/content';
-	import { language } from '$lib/stores/language';
+	import content from '#lib/content/content.js';
+	import { language } from '#lib/stores/language.js';
 	const description = content.about.description;
 	const descriptionEn = content.about.descriptionEn;
 </script>
