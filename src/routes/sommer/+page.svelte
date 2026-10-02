@@ -41,7 +41,7 @@
 
 			<div class="box">
 				<div class="image-container">
-					<img src="./images/corinora.png" alt="Cori Nora" />
+					<img src="./images/corinora.webp" loading="lazy" decoding="async" alt="Cori Nora" />
 				</div>
 				<h3>Cori Nora spielt am Freitag, 5. Juni um 19:30</h3>
 				<p>
@@ -57,7 +57,7 @@
 
 			<div class="box">
 				<div class="image-container">
-					<img src="./images/awalion.png" alt="AWA LION" />
+					<img src="./images/awalion.webp" loading="lazy" decoding="async" alt="AWA LION" />
 				</div>
 				<h3>AWA LION spielen am Freitag, 5. Juni um 22:00 Uhr</h3>
 				<p>
@@ -77,7 +77,7 @@
 
 			<div class="box">
 				<div class="image-container">
-					<img src="./images/choose-the-juice.png" alt="Choose the Juice" />
+					<img src="./images/choose-the-juice.webp" loading="lazy" decoding="async" alt="Choose the Juice" />
 				</div>
 				<h3>Choose the Juice spielen am Samstag, 6. Juni um 16:00</h3>
 				<p>
@@ -97,7 +97,7 @@
 
 			<div class="box">
 				<div class="image-container">
-					<img src="./images/nophase.png" alt="no phase" />
+					<img src="./images/nophase.webp" loading="lazy" decoding="async" alt="no phase" />
 				</div>
 				<h3>no phase spielen am Samstag, 6. Juni um 19:30</h3>
 				<p>
@@ -116,7 +116,7 @@
 
 			<div class="box">
 				<div class="image-container">
-					<img src="./images/namaka.png" alt="Namaka" />
+					<img src="./images/namaka.webp" loading="lazy" decoding="async" alt="Namaka" />
 				</div>
 				<h3>Namaka spielen am Samstag, 6. Juni um 22:00</h3>
 				<p>
@@ -138,7 +138,7 @@
 		<h1>Attraktionen</h1>
 		<div class="box-attraktion">
 			<div class="image-container">
-				<img src="./images/minibar.png" alt="Mini Bar" />
+				<img src="./images/minibar.webp" loading="lazy" decoding="async" alt="Mini Bar" />
 			</div>
 
 			<div>
@@ -152,7 +152,7 @@
 
 		<div class="box-attraktion">
 			<div class="image-container">
-				<img src="./images/gekoech.png" alt="Geköch" />
+				<img src="./images/gekoech.webp" loading="lazy" decoding="async" alt="Geköch" />
 			</div>
 			<div>
 				<p>Leckere Tofu Satay & Rice Bowls von Geköch.</p>
@@ -161,7 +161,7 @@
 
 		<div class="box-attraktion">
 			<div class="image-container">
-				<img src="./images/siebdruck.png" alt="Siebdruck" />
+				<img src="./images/siebdruck.webp" loading="lazy" decoding="async" alt="Siebdruck" />
 			</div>
 			<div>
 				<p>Komma 3 macht einen Siebdruck-Stand. Bring dein eigenes T-Shirt mit!</p>
@@ -170,7 +170,7 @@
 
 		<div class="box-attraktion">
 			<div class="image-container">
-				<img src="./images/kinderbaustell.png" alt="Kinderbaustelle" />
+				<img src="./images/kinderbaustell.webp" loading="lazy" decoding="async" alt="Kinderbaustelle" />
 			</div>
 			<div>
 				<p>
@@ -181,7 +181,7 @@
 
 		<div class="box-attraktion">
 			<div class="image-container">
-				<img src="./images/minigolf.png" alt="Minigolf" />
+				<img src="./images/minigolf.webp" loading="lazy" decoding="async" alt="Minigolf" />
 			</div>
 
 			<div>

@@ -14,7 +14,7 @@
 					<p id={block.id} class={block.size}>{@html $language === 'en' && block.textEn ? block.textEn : block.text}</p>
 				{/if}
 				{#if block.image}
-					<img class={block.size} src={block.image.src} alt={block.image.alt} />
+					<img class={block.size} src={block.image.src} srcset={block.image.srcset} sizes={block.image.sizes} alt={block.image.alt} loading="lazy" decoding="async" />
 				{/if}
 			{/each}
 		</div>

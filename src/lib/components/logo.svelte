@@ -326,6 +326,7 @@
 		max-height: 48vh;
 		opacity: 0;
 		max-width: 1300px;
+		filter: drop-shadow(0 2px 4px rgb(0 0 0 / 0.35)) drop-shadow(0 8px 24px rgb(0 0 0 / 0.25));
 		animation: fade-in 0.3s ease-in-out forwards;
 		#paths {
 			display: none;

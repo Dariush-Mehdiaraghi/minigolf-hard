@@ -1,12 +1,16 @@
-import dscf8115 from '../images/DSCF8115.webp';
-import betrieb9JaninaTanner from '../images/Betrieb9_JaninaTanner.webp';
+import dscf8115_800 from '../images/dscf8115-800.webp';
+import dscf8115_1200 from '../images/dscf8115-1200.webp';
+import dscf8115_1600 from '../images/dscf8115-1600.webp';
+import betrieb9_960 from '../images/betrieb9-960.webp';
+import betrieb9_1600 from '../images/betrieb9-1600.webp';
+import betrieb9_2560 from '../images/betrieb9-2560.webp';
 
 type ContentBlock = {
 	size: 'm' | 'l' | 's';
 	id?: string;
 	text?: string;
 	textEn?: string;
-	image?: { src: string; alt: string };
+	image?: { src: string; alt: string; srcset?: string; sizes?: string };
 };
 
 type ContentObject = {
@@ -61,7 +65,7 @@ const content: ContentObject = {
 		{
 			color: 'yellow',
 			textAlign: 'left',
-			contentArray: [{ size: 'm', image: { src: dscf8115, alt: 'Visitors playing minigolf at Minigolf Hard' } }]
+			contentArray: [{ size: 'm', image: { src: dscf8115_1200, srcset: `${dscf8115_800} 800w, ${dscf8115_1200} 1200w, ${dscf8115_1600} 1600w`, sizes: '(min-width: 800px) 50vw, 100vw', alt: 'Visitors playing minigolf at Minigolf Hard' } }]
 		},
 		{
 			id: 'kalender',
@@ -74,7 +78,7 @@ const content: ContentObject = {
 			color: 'yellow',
 			textAlign: 'left',
 			isFullWidth: true,
-			contentArray: [{ size: 'm', image: { src: betrieb9JaninaTanner, alt: 'Visitors playing minigolf at Minigolf Hard' } }]
+			contentArray: [{ size: 'm', image: { src: betrieb9_1600, srcset: `${betrieb9_960} 960w, ${betrieb9_1600} 1600w, ${betrieb9_2560} 2560w`, sizes: '100vw', alt: 'Visitors playing minigolf at Minigolf Hard' } }]
 		},
 		{
 			id: 'faq',

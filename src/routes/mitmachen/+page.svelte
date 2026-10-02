@@ -27,7 +27,7 @@
 			Zelte, Küchen und Tische, um etwas zu veranstalten.
 		</p>
 	</div>
-	<img src="./images/Instagramm_export21.png" alt="Minigolf Hard" />
+	<img src="./images/Instagramm_export21.webp" width="1080" height="1080" alt="Minigolf Hard" />
 	<div class="box">
 		<h2>Bauen</h2>
 		<p>
@@ -85,6 +85,7 @@
 	img {
 		align-self: center;
 		width: 60%;
+		height: auto;
 		padding-left: 20%;
 		padding-right: 20%;
 	}
